@@ -6,7 +6,7 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 2. git clone https://github.com/tanc7/Arms-Commander
 3. cd Arms-Commander/
 4. chmod 777 autoInstallLinux.sh dependencyInstall.sh
-5. ./dependencyInstall.sh
+5. ./dependencyInstall.sh # Required for installation of Python 2.7, and specifically Termcolor Python Module
 6. ./autoInstallLinux.sh
 
 ArmsCommander is now able to run from the Terminal or from the Desktop Launcher
