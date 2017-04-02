@@ -25,3 +25,13 @@ ArmsCommander.py
 
 1. Added a portion of still-working exploits as described by the author of Violent Python T.J. O'Connor, including but not limited to, a SSH Bruteforcer and a Credit Card Information Sniffer
 2. Added /logs/ folder to save captured credentials
+
+# Alpha Version 0.0.4
+
+1. Added Keystroke Injection/BadUSB Attack Interface
+2. Easy inject.bin generator for USB Rubber Duckies from Hak5 Shops
+3. Forked in copies of ducky-flasher
+
+# Alpha Version 0.0.3
+1. Added the Ruby-based Android APK Malware Injection Module
+2. Also forked over the required Java Signing Apps and required keys and certificates
