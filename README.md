@@ -19,6 +19,26 @@ ArmsCommander.py
 2. chmod 777 uninstall.sh
 3. ./uninstall.sh
 
+# Current Capabilities (From the Main Menu)
+	#1. Battery One: URL RECON, Recon a webpage, Dig + Nslookup + Fierce DNS + Whois Lookup
+	#2. Battery Two: LOCATE WEBAPP WEAKNESSES, Pop a smoke screen by flooding their Intrusion Detection System while simultaneously running a SQLMap and OWASP scanner attack
+	#3. Battery Three: IP RECON via Port Scan using NMap and other tools
+	#4. Battery Four: STANDARD DEFENSIVE MEASURES, activate Tor and Proxychains, all required monitoring tools
+	#5. Battery Five: ANDROID APK MALWARE INJECTION, Inject a Metasploit Meterpreter Payload into a Android APK Installer File.
+	#6. Battery Six: ACTVE NETWORK DEFENSES, terminate connections with NGrep and TCPKill, change your MAC address
+	#7. Battery Seven: BOOTERS
+	#8. Battery Eight: REMOTE EXPLOITATION, Metasploit, MSFVenom, Armitage, Veil-Evasion, Social Engineer Tookit
+	#9. Battery Nine: BAD USB ATTACKS, Use the BadUSB Vulnerability to deliver undetectable attacks by thumbdrive
+	#10. Battery Ten: Violent Python (From the Book) Working Proof of Concepts (POCs)
+
+# Current Capabilities (Violent Python Menu)
+	#1. SSH Server/Client Brute Forcer
+	#2. Zip File Password Cracker (Better, Kali APT-Repo Alternative)
+	#3. Wireless Network Credit Card Info Sniffer
+	#4. Local FTP-Server Credential Sniffer
+	#5. Exif Data Fetcher
+	#6. Mitnick Attack Reenactment 
+
 # Update History
 
 # Alpha Version 0.0.5
