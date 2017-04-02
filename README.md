@@ -13,3 +13,15 @@ ArmsCommander is now able to run from the Terminal or from the Desktop Launcher
 
 # Running Arms Commander for the first time, open a terminal and type
 ArmsCommander.py
+
+# Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
+1. cd /root/ArmsCommander
+2. chmod 777 uninstall.sh
+3. ./uninstall.sh
+
+# Update History
+
+# Alpha Version 0.0.5
+
+1. Added a portion of still-working exploits as described by the author of Violent Python T.J. O'Connor, including but not limited to, a SSH Bruteforcer and a Credit Card Information Sniffer
+2. Added /logs/ folder to save captured credentials
