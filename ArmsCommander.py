@@ -236,14 +236,14 @@ def batteryFour():
     elif B4_Opt_Choice == "2":
         #IDS
         print colored('Launching Intrusion Detection System','red','on_white')
-        os.system("gnome-terminal -e 'bash -c \"sudo /root/ArmsCommander/IDS.sh; exec bash\"'")
+        os.system("gnome-terminal -e 'bash -c \"sudo snort -q -A console -c /etc/snort/snort.conf; exec bash\"'")
 
         #p0f
         print colored('Starting p0f, passive OS fingerprinter','red','on_white')
         os.system("gnome-terminal -e 'bash -c \"sudo p0f; exec bash\"'")
         #viewActiveConnections
         print colored('Listing Real Time Active Connections','red','on_white')
-        os.system("gnome-terminal -e 'bash -c \"sudo /root/ArmsCommander/viewActiveConnections.sh; exec bash\"'")
+        os.system("gnome-terminal -e 'bash -c \"sudo watch -b -c ss -tp; exec bash\"'")
     elif B4_Opt_Choice == "0":
         main_Menu()
     elif B4_Opt_Choice == "3":
