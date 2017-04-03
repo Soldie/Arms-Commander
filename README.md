@@ -4,7 +4,7 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 # Installation, Type the Following Commands to Easily Install in a Linux Box
 We now have a official How-To-Install Video for Kali Linux, for those with ZERO familiarity with Linux/Debian/Ubuntu in general, check it out: https://raw.githubusercontent.com/tanc7/Arms-Commander/master/How-To-Videos/How-To-Install-Arms-Commander.webm, no audio
 1. cd /tmp/
-2. git clone https://github.com/tanc7/Arms-Commander
+2. git clone https://github.com/tanc7/Arms-Commander # git cloning also downloads all of the How-To Vids into your hard drive, you can delete them if you like. 
 3. cd Arms-Commander/
 4. chmod 777 autoInstallLinux.sh dependencyInstall.sh
 5. ./dependencyInstall.sh # Required for installation of Python 2.7, and specifically Termcolor Python Module
