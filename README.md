@@ -2,6 +2,7 @@
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects. 
 
 # Installation, Type the Following Commands to Easily Install in a Linux Box
+We now have a official How-To-Install Video for Kali Linux, for those with ZERO familiarity with Linux/Debian/Ubuntu in general, check it out: https://raw.githubusercontent.com/tanc7/Arms-Commander/master/How-To-Videos/How-To-Install-Arms-Commander.webm, no audio
 1. cd /tmp/
 2. git clone https://github.com/tanc7/Arms-Commander
 3. cd Arms-Commander/
