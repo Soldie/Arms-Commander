@@ -426,8 +426,12 @@ def batteryNine():
 
 def batteryTen():
     os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/Violent-Python-POCs/Violent_Python_Menu.py; exec bash\"'")
+    main_Menu()
     return
-
+def batteryEleven():
+    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/DIAMOND_SHARK/DS_Menu.py; exec bash\"'")
+    main_Menu()
+    return
 def main_Menu_Decision_Loop():
     main_Opt_Choice = str(raw_input("CHOICE: "))
     if main_Opt_Choice == "1":
@@ -460,6 +464,9 @@ def main_Menu_Decision_Loop():
     elif main_Opt_Choice == "10":
         os.system('clear')
         batteryTen()
+    elif main_Opt_Choice == "11":
+        os.system('clear')
+        batteryEleven()
     elif main_Opt_Choice == "INSTALL":
         os.system('clear')
         installer()
@@ -486,6 +493,7 @@ main_Opt_List = [
                 '#8. Battery Eight: REMOTE EXPLOITATION, Metasploit, MSFVenom, Armitage, Veil-Evasion, Social Engineer Tookit',
                 '#9. Battery Nine: BAD USB ATTACKS, Use the BadUSB Vulnerability to deliver undetectable attacks by thumbdrive',
                 '#10. Battery Ten: Violent Python (From the Book) Working Proof of Concepts (POCs)',
+                '#11. Battery Eleven: Mobile Device Hacking, DIAMONDSHARK, the interactive StageFright Exploit Generator based on JDuck initial work',
                 'Type INSTALL in ALL CAPS if you require a installation of the toolkit'
 ]
 

