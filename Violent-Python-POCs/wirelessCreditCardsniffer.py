@@ -16,6 +16,10 @@ modified_Filename = basic_Filename + timestr + '.txt'
 
 saved_Creds = open(modified_Filename, 'w')
 
+# TCP Dump Procedure that will run at each time the sniffer starts
+
+
+
 def findCreditCard(pkt):
     raw = pkt.sprintf('%Raw.load%')
     americaRE = re.findall('3[47][0-9]{13}', raw)

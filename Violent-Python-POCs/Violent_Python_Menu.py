@@ -3,6 +3,7 @@ import socket
 import operator
 from termcolor import colored
 import sys
+import time
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
 os.system('cat /root/ArmsCommander/Violent-Python-POCs/banner_VP.txt')
@@ -60,13 +61,21 @@ def start_credit_card_attack():
     # text writefile containing creds
     # /root/ArmsCommander/Violent-Python-POCs/wirelessCreditCardsniffer.py
     # tcp_Dump_PCAP = open("/root/ArmsCommander/logs/creditcard_Pkt_Capture.pcap", 'w')
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+
+    basic_Filename = "/root/ArmsCommander/logs/CreditCard_Pkt_Capture_"
+    modified_Filename = basic_Filename + timestr + '.pcap'
+
     monitor_Interface = str(raw_input("Enter your monitor interface: "))
     # stored_Creds_File = str(raw_input("Enter where do you want to store captured creds: "))
     cmd_String = "gnome-terminal -e 'bash -c \"sudo python /root/ArmsCommander/Violent-Python-POCs/wirelessCreditCardsniffer.py -i {0}; exec bash\"'".format(
         monitor_Interface
     )
-    tcp_Dump_String = "gnome-terminal -e 'bash -c \"sudo tcpdump -i {0} -w /root/ArmsCommander/logs/creditcard_Pkt_Capture.pcap*; exec bash\"'".format(
-        monitor_Interface
+
+
+    tcp_Dump_String = "gnome-terminal -e 'bash -c \"sudo tcpdump -i {0} -w {1}; exec bash\"'".format(
+        monitor_Interface,
+        modified_Filename
         )
     # cred_Writefile_String = cmd_String + '>> {0}*.txt'.format(
     #     stored_Creds_File
