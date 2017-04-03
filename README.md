@@ -55,3 +55,17 @@ ArmsCommander.py
 # Alpha Version 0.0.3
 1. Added the Ruby-based Android APK Malware Injection Module
 2. Also forked over the required Java Signing Apps and required keys and certificates
+
+# Why Isn't There a Windows Version?
+So normally, as AC is a python script/program, then in theory it should work on Windows right? Well, no. And I can explain.
+
+AC is a simple menu that automates several popular tools in Kali Linux. And it only works with Kali Linux tools, and requires it's specifications, like System-Level Root and it's unique upstream kernel. You most certainly can get it working on Ubuntu, but that requires a lot of customization and a lot of Linux-breaking commands. I'd say, you are much better off just installing a VM image of Kali Linux in accordance to their guidelines: https://www.kali.org/downloads/ and here: http://docs.kali.org/category/installation
+
+# Do I need a official hard disk installation of Kali Linux?
+For most users, never. The question is, do you want to end up breaking your HDD install of Kali Linux and being forced to reinstall everything and possibly lose your work? Does the benefits outweigh the costs? 
+
+I have two installs of Kali. One is my HDD install on my laptop. And another is a VM image running on Hyper-V Server, with a Windows Server 2016 install acting as "Host".
+
+If you have the following issues, then maybe you do require a HDD install of Kali Linux:
+1. Password crackers like Aircrack-ng, JohnTheRipper, RainbowCrack running way too slowly, because it's a Virtual Machine image that cannot take advantage of the actual hardware. You might need a actual hard-disk install of Kali Linux.
+2. Any external Wi-Fi card compatibility issues with VirtualBox + Kali VM Images. If you have trouble getting your external network card running and being detected normally, you MIGHT need to install a HDD copy. BUT, you should first consider just making a persistent USB installation. Now I know the official guide is a bit hard: http://docs.kali.org/downloading/kali-linux-live-usb-persistence but I personally felt that this older version of the guide: , using fdisk was much better written.
