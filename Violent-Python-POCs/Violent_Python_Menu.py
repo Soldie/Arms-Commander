@@ -205,6 +205,9 @@ def main():
         # option_9()
         main()
         return
+    elif opt_Choice == "0":
+        os.system('clear')
+        main()
     elif KeyboardInterrupt:
         exit(0)
     else:
