@@ -49,8 +49,39 @@ def batteryFive():
     return
 
 def batteryOne():
+
+    opt_List = [
+        '\n\t#0. Return to Main Menu',
+        '#1. Multi-Tool Recon on a single host, run dig, nslookup, fierce, and theharvester against a single webhost',
+        '#2. Use CornHarvester, to Mass-Harvest Email Addresses for Spear-Phishing, Phishing, and Spam Email Attacks from a wordlist of domains'
+    ]
+
+    print ("\n\t".join(opt_List))
+    opt_Choice = str(raw_input("Enter a OPTION: "))
+
+    if opt_Choice == "1":
+        multi_tool_recon()
+        main_Menu()
+    elif opt_Choice == "2":
+        CornHarvester()
+        main_Menu()
+    elif opt_Choice == "0":
+        main_Menu()
+    else:
+        print colored('You have entered a invalid option','red','on_white')
+        batteryOne()
+    return
+
+def CornHarvester():
+    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/CornHarvester.py; exec bash\"'")
+    main_Menu()
+    return
+def multi_tool_recon():
     B1_Target_URL = str(raw_input("Enter the URL you want to perform recon on: "))
-    B1_Save_Output = str(raw_input("Enter the full path of the output file you want to save to: "))
+    # B1_Save_Output = str(raw_input("Enter the full path of the output file you want to save to: "))
+    logfile_directory = '/root/ArmsCommander/logs/multi_tool_recon/'
+    B1_Save_Output = logfile_directory + B1_Target_URL + '_recon.txt'
+    print colored('Your log file for the reconnaissance is located at %s','blue','on_white') % B1_Save_Output
     print colored('Scans Commencing, Do Not Interrupt until Completed! (The command prompt tells you completed)','red','on_white')
     #dig and Nslookup
     B1_cmd_str_1 = "dig {0} >> {1}".format(
@@ -197,15 +228,15 @@ def batteryThree():
         scan_Target = str(raw_input("Either enter a specific IP address, or a entire IP address range: "))
         scan_Save = str(raw_input("Enter the full path of the save file location: "))
         print colored('Beginning a stealthy FIN Scan. This may be quick, depending on how many machines you are scanning. Usually gets past firewalls','red','on_white')
-        nmap_cmd_string = "sudo proxychains nmap -v -O -sF -Pn -T4 -O -F --version-light --traceroute %s -oG %s" % (scan_Target, scan_Save)
+        nmap_cmd_string = "sudo proxychains nmap -v -O -sF -Pn -T4 -O -F --version-light --traceroute %s -oN %s" % (scan_Target, scan_Save)
         print colored(nmap_cmd_string,'red','on_white')
         os.system(nmap_cmd_string)
         print colored('Following up with a slightly more intrusive XMas Scan. The information returned usually is exactly the same as before','red','on_white')
-        nmap_cmd_string = "sudo proxychains nmap -v -O -sX -Pn -T4 -O -F --version-light --traceroute %s -oG %s" % (scan_Target, scan_Save)
+        nmap_cmd_string = "sudo proxychains nmap -v -O -sX -Pn -T4 -O -F --version-light --traceroute %s -oN %s" % (scan_Target, scan_Save)
         print colored(nmap_cmd_string,'red','on_white')
         os.system(nmap_cmd_string)
         print colored('Now finalizing with a Comprehensive NMap scan','red','on_white')
-        nmap_cmd_string = "sudo proxychains nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script default %s -oG %s" % (scan_Target, scan_Save)
+        nmap_cmd_string = "sudo proxychains nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script default %s -oN %s" % (scan_Target, scan_Save)
         print colored(nmap_cmd_string,'red','on_white')
         os.system(nmap_cmd_string)
         print colored('Scans complete, find your scans at %s','red','on_white') % scan_Save
