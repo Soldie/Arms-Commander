@@ -23,6 +23,14 @@ ArmsCommander.py
 
 # Alpha Version 0.0.6
 
+Sing along time!
+
+	Rain makes corn
+	Corn makes whiskey
+	Whiskey makes my baby...
+	Feel a little frisky
+
+
 The installation steps are still the same. Gitclone this repo's URL into a directory, run the dependency installer and autoinstaller scripts.
 
 1. Added CornHarvester, the upgraded version of TheHarvester, allowing you to repeatedly harvest emails from a wordlist containing domain.com on each line so you can target them in a spearphishing attack
