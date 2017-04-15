@@ -46,9 +46,11 @@ I am going to use Atom for this, but you can use anything you like or use contro
 There is a error in the payload generator file on line #114
 
 Change 
+		
 		creds_src=open("crypto/credentials.py","r").read()
 
 into 
+		
 		creds_src=open("/root/pupy/pupy/crypto/credentials.py","r").read()
 
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
