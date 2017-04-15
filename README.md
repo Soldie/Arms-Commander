@@ -37,6 +37,22 @@ Arms Commander will naturally run Pupy from it's Menu assuming that:
 
 Please double check. That the above instructions are followed perfectly. This is critical because Pupy relies on other packages, such as Empire for Powershell based payloads.
 
+# There is also a bug in Pupy. But it is easily fixed. 
+
+Usually if you don't fix it, then you would get a "File Not Found Error for Crypto/Credentials.py" on payload generation.
+
+1. Go to your Pupy directory and open /root/pupy/pupy/crypto/credentials.py with a text editor, preferably something that counts lines, like Atom.
+
+2. Go down to line 114, where it says:
+
+creds_src=open("crypto/credentials.py","r").read()
+
+3. and change it to a more clear and descriptive...
+
+creds_src=open("/root/pupy/pupy/crypto/credentials.py","r").read()
+
+The error shows up because the entire path was not referenced. And I guess the Python interpreter was searching the wrong directory.
+
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
 1. cd /root/ArmsCommander
 2. chmod 777 uninstall.sh
