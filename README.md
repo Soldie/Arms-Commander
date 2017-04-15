@@ -45,6 +45,8 @@ I am going to use Atom for this, but you can use anything you like or use contro
 
 There is a error in the payload generator file on line #114
 
+		/root/pupy/pupy/pupygen.py
+
 Change 
 		
 		creds_src=open("crypto/credentials.py","r").read()
