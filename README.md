@@ -34,6 +34,7 @@ It’s just a few things on the terminal. Don’t worry, no keyboard breaking ra
 	git submodule update
 	pip install -r requirements.txt 
 
+How To Interact with Pupy Shell: https://github.com/tanc7/Arms-Commander/raw/master/How-To-Videos/How-To-Interact-With-Pupy-Server-Shell.webm
 # Post install modifications
 Currently there are two bugs
 1. The Linux binary templates are missing, I can’t fix that (but Python payloads work out of the box  against Linux boxes). And #1 isn’t even necessary to hack into Linux boxes, I will show you either in a different video or this one.
