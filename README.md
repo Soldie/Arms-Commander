@@ -65,6 +65,28 @@ into
 
 # Update History
 
+# Proposed Alpha Version 0.0.8
+
+The "DLLA Update", or "Don't Look Like Ass Update"
+
+We need to Redesign main-menu and submodules for easier organization
+Merging of similar types of hacking/exploitation tools into one streamlined Menu (instead of a cluster-fuck of random shit added in each week)
+Furthermore, I noticed that the constant pop-ups of most of the Windows are unnecessary and annoying and may resemble "pop-up ads". Only employ pop-up terminals if needed. Otherwise, ensure that the loops work to guide the user back to the main menu.
+Code will either be truncated, or rebuilt as separate modules for efficiency and ease of maintenance
+Perhaps even employing multiple folders, with a main program in main directory
+the Idea is that Arms Commander is supposed to be a "modular, easily customizable platform to use optimized penetration testing tools at record speed and time"
+The "logs" folder was a great idea, let's keep at it and incorporate all of the other old work into taking advantage of that.
+
+From now on, the Menus will be rebuilt back from the ground up to avoid clutter and will be strictly organized into the following subtypes
+
+1. Reconnaissance Tools & Vulnerability Scanners
+2. Network Defenses & Monitoring
+3. Remote Exploitation/Hacking (Spearphishing and payload generators for example) --- Considering including the BadUSB and Keystroke Injection Type Attacks into this, since it ultimately results in remote exploitation
+4. Smartphone/Mobile Device Hacking
+5. Wireless Attacks (Not even implemented, but it's basically a port of Cylon-Raider-Lite into AC: DLLA)
+6. Password Attacks (for now, considering just leaving it at the Wireless attack category, there is no GPU support until I see a more enthusiatic community (the hashcat crowd doesn't seem to be "cool with Kali" rrecently and I am not here to break anyone's machine from a botched video driver install))
+7. "Book Learning", still-working and useful tools adapted from literature such as Violent Python and Black Hat Python
+
 # Alpha Version 0.0.7
 
 1. First step in integration with alternative RAT, Pupy.
