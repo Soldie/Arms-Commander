@@ -21,6 +21,10 @@ ArmsCommander.py
 
 # Update History
 
+# Upcoming, Integration with Pupy, Python-Based RAT (Remote Access Trojan)
+Right now, I am just ironing out the bugs and quirks and making sure everything runs reliably.
+Most of the part, is just testing the stuff.
+
 # Alpha Version 0.0.6
 
 Sing along time!
