@@ -28,6 +28,7 @@ It is best to install Pupy as a standalone install, I tried to automate it, and 
 
 It’s just a few things on the terminal. Don’t worry, no keyboard breaking raage for you!
 
+	cd /root
 	git clone https://github.com/n1nj4sec/pupy.git pupy
 	cd pupy
 	git submodule init
