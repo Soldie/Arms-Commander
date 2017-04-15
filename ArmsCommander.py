@@ -13,9 +13,9 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 global show_banner
 global main_Opt_Choice
 global scan_Target
-global scan_Save
+global nmap_logfile_fullpath
 scan_Target = None
-scan_Save = None
+nmap_logfile_fullpath = None
 
 #def global_Banner():
 
@@ -53,7 +53,8 @@ def batteryOne():
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. Multi-Tool Recon on a single host, run dig, nslookup, fierce, and theharvester against a single webhost',
-        '#2. Use CornHarvester, to Mass-Harvest Email Addresses for Spear-Phishing, Phishing, and Spam Email Attacks from a wordlist of domains'
+        '#2. Use CornHarvester, to Mass-Harvest Email Addresses for Spear-Phishing, Phishing, and Spam Email Attacks from a wordlist of domains',
+        '#3. View your loot for CornHarvester (all harvested emails and domains)'
     ]
 
     print ("\n\t".join(opt_List))
@@ -66,6 +67,9 @@ def batteryOne():
         CornHarvester()
         main_Menu()
     elif opt_Choice == "0":
+        main_Menu()
+    elif opt_Choice == "3":
+        os.system('cat /root/ArmsCommander/logs/CornHarvester/*')
         main_Menu()
     else:
         print colored('You have entered a invalid option','red','on_white')
@@ -226,20 +230,29 @@ def batteryThree():
 
     if B3_Opt_Choice == "1":
         scan_Target = str(raw_input("Either enter a specific IP address, or a entire IP address range: "))
-        scan_Save = str(raw_input("Enter the full path of the save file location: "))
+        nmap_log_directory = '/root/ArmsCommander/logs/nmap/'
+        nmap_scan_logfile = str(raw_input("What would you like to call the logfile?: "))
+        nmap_logfile_fullpath = nmap_log_directory + nmap_scan_logfile
+        # nmap_logfile_fullpath = str(raw_input("Enter the full path of the save file location: ")) # make it so that it autosaves in log directory
         print colored('Beginning a stealthy FIN Scan. This may be quick, depending on how many machines you are scanning. Usually gets past firewalls','red','on_white')
-        nmap_cmd_string = "sudo proxychains nmap -v -O -sF -Pn -T4 -O -F --version-light --traceroute %s -oN %s" % (scan_Target, scan_Save)
+        nmap_cmd_string = "sudo proxychains nmap -v -O -sF -Pn -T4 -O -F --version-light --traceroute %s -oN %s" % (scan_Target, nmap_logfile_fullpath)
         print colored(nmap_cmd_string,'red','on_white')
         os.system(nmap_cmd_string)
+        logfile_cmd_string = (nmap_cmd_string + ' >> ' + '%s' + '_logfile') % nmap_logfile_fullpath
+        os.system(logfile_cmd_string)
         print colored('Following up with a slightly more intrusive XMas Scan. The information returned usually is exactly the same as before','red','on_white')
-        nmap_cmd_string = "sudo proxychains nmap -v -O -sX -Pn -T4 -O -F --version-light --traceroute %s -oN %s" % (scan_Target, scan_Save)
+        nmap_cmd_string = "sudo proxychains nmap -v -O -sX -Pn -T4 -O -F --version-light --traceroute %s -oN %s" % (scan_Target, nmap_logfile_fullpath)
         print colored(nmap_cmd_string,'red','on_white')
         os.system(nmap_cmd_string)
+        logfile_cmd_string = (nmap_cmd_string + ' >> ' + '%s' + '_logfile') % nmap_logfile_fullpath
+        os.system(logfile_cmd_string)
         print colored('Now finalizing with a Comprehensive NMap scan','red','on_white')
-        nmap_cmd_string = "sudo proxychains nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script default %s -oN %s" % (scan_Target, scan_Save)
+        nmap_cmd_string = "sudo proxychains nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script default %s -oN %s" % (scan_Target, nmap_logfile_fullpath)
         print colored(nmap_cmd_string,'red','on_white')
         os.system(nmap_cmd_string)
-        print colored('Scans complete, find your scans at %s','red','on_white') % scan_Save
+        logfile_cmd_string = (nmap_cmd_string + ' >> ' + '%s' + '_logfile') % nmap_logfile_fullpath
+        os.system(logfile_cmd_string)
+        print colored('Scans complete, find your scans at %s','red','on_white') % nmap_logfile_fullpath
         main_Menu()
     elif B3_Opt_Choice == "2":
         os.system("gnome-terminal -e 'bash -c \"sudo python /root/ArmsCommander/CustomNMap.py; exec bash\"'")
@@ -396,6 +409,10 @@ def batterySeven():
     os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/batterySeven.py; exec bash\"'")
     main_Menu()
 
+def pupy_menu():
+    os.system('python /root/ArmsCommander/Pupy_Menu.py')
+    main_Menu()
+    return
 def batteryEight():
     opt_List = [
         '\n\t#0 Return to Main Menu',
@@ -403,7 +420,8 @@ def batteryEight():
         '#2. Armitage',
         '#3. Easy-Peasey, MSFVenom Payload Generator',
         '#4. Veil-Evasion',
-        '#5. Social Engineers Toolkit'
+        '#5. Social Engineers Toolkit',
+        '#6. Pupy, the Python Cross-Platform RAT (Better odds of evading detection)'
     ]
 
     print ("\n\t".join(opt_List))
@@ -424,6 +442,9 @@ def batteryEight():
     elif opt_Choice == "5":
         os.system('clear')
         socialengineertoolkit()
+    elif opt_Choice == "6":
+        os.system('clear')
+        pupy_menu()
     elif opt_Choice == "0":
         main_Menu()
     else:

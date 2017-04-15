@@ -21,6 +21,8 @@ print '\tCorn makes whiskey'
 print '\tWhiskey makes my baby...'
 print '\tFeel a little frisky'
 print "\n\t'Rain is a Good Thing' by Luke Bryan"
+
+# def harvest_wordlist():
 # ask user to provide wordlist
 user_input = str(raw_input("Enter a wordlist file of domains containing 'example.com' on each line: "))
 wordlist = open(user_input, 'r')
@@ -59,6 +61,28 @@ while True:
         print 'ENDING PROGRAM'
         exit(0)
 
+
+# def list_all_loot():
+#     os.system('cat /root/ArmsCommander/logs/CornHarvester/*')
+#     main()
+#     return
+# def main():
+#     opt_List = [
+#         '\n\t#1. Provide a wordlist for CornHarvester to farm emails and domains from',
+#         '#2. List all loot gathered by CornHarvester'
+#     ]
+#
+#     print ("\n\t".join(opt_List))
+#     opt_Choice = str(raw_input(""))
+#
+#     if opt_Choice == "1":
+#         harvest_wordlist()
+#     elif opt_Choice == "2":
+#         list_all_loot()
+#     else:
+#         print colored('You have entered a invalid option','red','on_white')
+#     return
+# main()
 #
 # results = []
 # with open('/root/Documents/domainsRelatedToNiantic', 'r') as inputFile:
