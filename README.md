@@ -8,11 +8,34 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 4. chmod 777 autoInstallLinux.sh dependencyInstall.sh
 5. ./dependencyInstall.sh # Required for installation of Python 2.7, and specifically Termcolor Python Module
 6. ./autoInstallLinux.sh
-
 ArmsCommander is now able to run from the Terminal or from the Desktop Launcher
 
 # Running Arms Commander for the first time, open a terminal and type
 ArmsCommander.py
+
+# Optional, Pupy Installation
+https://github.com/n1nj4sec/pupy/wiki/Installation
+Pupy is a alternative RAT based on Python that may increase your odds of successfully evading antivirus. 
+Installation is not required, however, You will lose out on it's features
+
+After several tests with the install, I have came to the conclusion that Pupy is best handled by installing it standalone because it generates very sensitive data including SSL keys made for it's payloads.
+
+However, ArmsCommander is designed to interface with Pupy via a /root/ directory installation. So in other words... (to isntall Pupy),
+
+1. cd /root/
+2. git clone https://github.com/n1nj4sec/pupy.git pupy
+3. cd pupy
+4. git submodule init
+5. git submodule update
+6. pip install -r requirements.txt
+
+At this point you are done. 
+
+Arms Commander will naturally run Pupy from it's Menu assuming that:
+1. Pupy Server is at /root/pupy/pupy/pupysh.py
+2. Pupy Payload Generator is at /root/pupy/pupy/pupygen.py
+
+Please double check. That the above instructions are followed perfectly. This is critical because Pupy relies on other packages, such as Empire for Powershell based payloads.
 
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
 1. cd /root/ArmsCommander
