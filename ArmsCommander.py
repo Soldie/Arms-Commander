@@ -317,16 +317,21 @@ def fuser():
                 '\n\t#1. LOOKUP all process IDs of a port and protocol',
                 '#2. Terminate all connections of a port/protocol'
     ]
+
+    print ("\n\t".join(opt_List))
+    opt_Choice = str(raw_input("Enter a OPTION: "))
     if opt_Choice == "1":
         fuser_port = str(raw_input("Enter a PORT: "))
-        fuser_protocol = str(raw_input("Enter a PROTOCOL(TCP/UDP): "))
+        fuser_protocol = str(raw_input("Enter a PROTOCOL(tcp/udp): "))
         fuser_cmd_string = "fuser %s/%s" % (fuser_port, fuser_protocol)
         os.system(fuser_cmd_string)
     elif opt_Choice == "2":
         fuser_port = str(raw_input("Enter a PORT: "))
-        fuser_protocol = str(raw_input("Enter a PROTOCOL(TCP/UDP): "))
+        fuser_protocol = str(raw_input("Enter a PROTOCOL(tcp/udp): "))
         fuser_cmd_string = "fuser -k %s/%s" % (fuser_port, fuser_protocol)
         os.system(fuser_cmd_string)
+    elif opt_Choice == "0":
+        main_Menu()
     else:
         print colored('You have entered a invalid option','red','on_white')
     main_Menu()
