@@ -24,6 +24,7 @@ ArmsCommander.py
 5. For those with a minimal amount of Python knowledge, very easy to debug issues
 
 # Installation (Pupy)
+How to install Pupy: https://github.com/tanc7/Arms-Commander/raw/master/How-To-Videos/How-To-Install-Pupy.webm
 It is best to install Pupy as a standalone install, I tried to automate it, and it caused more headaches than I can imagine
 
 It’s just a few things on the terminal. Don’t worry, no keyboard breaking raage for you!
