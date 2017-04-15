@@ -14,12 +14,47 @@ ArmsCommander is now able to run from the Terminal or from the Desktop Launcher
 # Running Arms Commander for the first time, open a terminal and type
 ArmsCommander.py
 
+# How to Install and Use Pupy, the alternative Python-based RAT (Remote Access Trojan)
+
+# Benefits
+1. Harder to detect, not as common as Metasploit’s Meterpreter
+2. A lot of work has been put into this project by the repo’s developer Ninjasec
+3. Carries many of the same evasion tools that Metasploit uses, including staged encryption
+4. Similar command and control scheme
+5. For those with a minimal amount of Python knowledge, very easy to debug issues
+
+# Installation (Pupy)
+It is best to install Pupy as a standalone install, I tried to automate it, and it caused more headaches than I can imagine
+
+It’s just a few things on the terminal. Don’t worry, no keyboard breaking raage for you!
+
+	git clone https://github.com/n1nj4sec/pupy.git pupy
+	cd pupy
+	git submodule init
+	git submodule update
+	pip install -r requirements.txt 
+
+# Post install modifications
+Currently there are two bugs
+1. The Linux binary templates are missing, I can’t fix that (but Python payloads work out of the box  against Linux boxes). And #1 isn’t even necessary to hack into Linux boxes, I will show you either in a different video or this one.
+2. There is a file-path error that I can show you how to fix right now. If you don’t fix it, it will spit out File Not Found Errors when you attempt to generate payloads. https://github.com/tanc7/Arms-Commander/blob/master/README.md
+
+Basically, for #2, we are going to give it a more “complete” file path. Since it can’t see the “credentials.py” file right out of the box. Just one line to modify code on. 
+
+I am going to use Atom for this, but you can use anything you like or use control find or something
+
+There is a error in the payload generator file on line #114
+
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
 1. cd /root/ArmsCommander
 2. chmod 777 uninstall.sh
 3. ./uninstall.sh
 
 # Update History
+
+# Alpha Version 0.0.7
+
+1. First step in integration with alternative RAT, Pupy.
 
 # Alpha Version 0.0.5
 
