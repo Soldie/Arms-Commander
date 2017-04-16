@@ -1,5 +1,5 @@
 # Arms-Commander-Stable
-Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects. 
+Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
 # Installation, Type the Following Commands to Easily Install in a Linux Box
 1. cd /tmp/
@@ -34,7 +34,7 @@ It’s just a few things on the terminal. Don’t worry, no keyboard breaking ra
 	cd pupy
 	git submodule init
 	git submodule update
-	pip install -r requirements.txt 
+	pip install -r requirements.txt
 
 How To Interact with Pupy Shell: https://github.com/tanc7/Arms-Commander/raw/master/How-To-Videos/How-To-Interact-With-Pupy-Server-Shell.webm
 # Post install modifications
@@ -42,7 +42,7 @@ Currently there are two bugs
 1. The Linux binary templates are missing, I can’t fix that (but Python payloads work out of the box  against Linux boxes). And #1 isn’t even necessary to hack into Linux boxes, I will show you either in a different video or this one.
 2. There is a file-path error that I can show you how to fix right now. If you don’t fix it, it will spit out File Not Found Errors when you attempt to generate payloads. https://github.com/tanc7/Arms-Commander/blob/master/README.md
 
-Basically, for #2, we are going to give it a more “complete” file path. Since it can’t see the “credentials.py” file right out of the box. Just one line to modify code on. 
+Basically, for #2, we are going to give it a more “complete” file path. Since it can’t see the “credentials.py” file right out of the box. Just one line to modify code on.
 
 I am going to use Atom for this, but you can use anything you like or use control find or something
 
@@ -50,12 +50,12 @@ There is a error in the payload generator file on line #114
 
 		/root/pupy/pupy/pupygen.py
 
-Change 
-		
+Change
+
 		creds_src=open("crypto/credentials.py","r").read()
 
-into 
-		
+into
+
 		creds_src=open("/root/pupy/pupy/crypto/credentials.py","r").read()
 
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
@@ -90,7 +90,7 @@ the Idea is that Arms Commander is supposed to be a "modular, easily customizabl
 The "logs" folder was a great idea, let's keep at it and incorporate all of the other old work into taking advantage of that.
 
 
-Also, to get around the github "making folders" frustration, we can just make a script that will build the directory tree as part of the installer script (for logfiles or /root/ArmsCommander/logs). I just realized ArmsCommander puts out a TON of output. Probably more than what most casual users and cybersecurity students could handle. And we need to organize it all. 
+Also, to get around the github "making folders" frustration, we can just make a script that will build the directory tree as part of the installer script (for logfiles or /root/ArmsCommander/logs). I just realized ArmsCommander puts out a TON of output. Probably more than what most casual users and cybersecurity students could handle. And we need to organize it all.
 
 
 From now on, the Menus will be rebuilt back from the ground up to avoid clutter and will be strictly organized into the following subtypes
