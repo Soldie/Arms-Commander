@@ -67,17 +67,31 @@ into
 
 # Proposed Alpha Version 0.0.8
 
-The "DLLA Update", or "Don't Look Like Ass Update"
+The "DLLA Update", or "Don't Look Like Ass Update". For the average user, they will barely notice anything. But for us, we won't have to deal with so much crap when it comes to adding more features, and it helps keep everything organized and easier to debug. Our progress is in a different repo: https://github.com/tanc7/AC-DLLA
 
 We need to Redesign main-menu and submodules for easier organization
+
+
 Merging of similar types of hacking/exploitation tools into one streamlined Menu (instead of a cluster-fuck of random shit added in each week)
+
+
 Furthermore, I noticed that the constant pop-ups of most of the Windows are unnecessary and annoying and may resemble "pop-up ads". Only employ pop-up terminals if needed. Otherwise, ensure that the loops work to guide the user back to the main menu.
+
+
 Code will either be truncated, or rebuilt as separate modules for efficiency and ease of maintenance
+
+
 Perhaps even employing multiple folders, with a main program in main directory
+
+
 the Idea is that Arms Commander is supposed to be a "modular, easily customizable platform to use optimized penetration testing tools at record speed and time"
+
+
 The "logs" folder was a great idea, let's keep at it and incorporate all of the other old work into taking advantage of that.
 
+
 Also, to get around the github "making folders" frustration, we can just make a script that will build the directory tree as part of the installer script (for logfiles or /root/ArmsCommander/logs). I just realized ArmsCommander puts out a TON of output. Probably more than what most casual users and cybersecurity students could handle. And we need to organize it all. 
+
 
 From now on, the Menus will be rebuilt back from the ground up to avoid clutter and will be strictly organized into the following subtypes
 
