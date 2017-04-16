@@ -77,6 +77,8 @@ Perhaps even employing multiple folders, with a main program in main directory
 the Idea is that Arms Commander is supposed to be a "modular, easily customizable platform to use optimized penetration testing tools at record speed and time"
 The "logs" folder was a great idea, let's keep at it and incorporate all of the other old work into taking advantage of that.
 
+Also, to get around the github "making folders" frustration, we can just make a script that will build the directory tree as part of the installer script (for logfiles or /root/ArmsCommander/logs). I just realized ArmsCommander puts out a TON of output. Probably more than what most casual users and cybersecurity students could handle. And we need to organize it all. 
+
 From now on, the Menus will be rebuilt back from the ground up to avoid clutter and will be strictly organized into the following subtypes
 
 1. Reconnaissance Tools & Vulnerability Scanners
