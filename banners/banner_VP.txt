@@ -1,0 +1,23 @@
+WARNING:
+
+Under no circumstances should you be "inspired" or "motivated" to carry out the cyberattacks documented
+in the book Violent Python.
+
+The people that have been incarcerated for the criminal acts that are being reenacted in the book,
+have done SERIOUS TIME as a result of their choices. In some cases, they have acted as foreign enemy combatants,
+international fugitives, and domestic terrorists. The stereotype of the "awkward but honest/noble Revenge of the Nerds Outcast" died
+decades ago. Nowadays, there are some seriously bad actors that are exploiting technology as we speak (ISIS fighters
+mounting grenades onto little AR Parrot Drones in Iraq.)
+
+The author of this "Malware Suite", Chang Tan Lister, claims no responsibility for the actions that you may be charged for.
+As the intent was to write AC for academic purposes only.
+
+With a bit of modification some of the less viable or ("up-to-date") cyberattacks can be adapted to cause serious damage.
+
+Cybercrimes, unless otherwise specified in detail under local and state law, are almost always considered to be
+Federal Level Offense, by which you must serve 85% of your sentence before consideration of parole.
+
+Chapter 18 of the United States Code, Subsection 1030 covers a MAJORITY of the offenses that may be charged against you
+if suspected and convicted of cybercrimes, but it is by no means a definite interpretation of the law.
+
+TLDR. "Retain a good lawyer".
