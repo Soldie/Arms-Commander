@@ -369,12 +369,12 @@ def router_sploit():
 
     if opt_Choice == "1":
         os.system('clear')
-        os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/wirelessattacks/Cylon-Raider/routersploit/rsf.py; exec bash\"'")
+        os.system("gnome-terminal -e 'bash -c \"python /root/routersploit/rsf.py; exec bash\"'")
         main()
     elif opt_Choice == "INSTALL":
         os.system('clear')
         print 'Git Cloning RouterSploit into your Cylon-Raider Installation'
-        os.system('cd /root/ArmsCommander/wirelessattacks/Cylon-Raider')
+        os.system('cd /root')
         os.system('git clone https://github.com/reverse-shell/routersploit.git')
         print 'Routersploit install complete'
         main()
