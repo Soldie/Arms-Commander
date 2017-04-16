@@ -1,0 +1,20 @@
+Diamond Shark, is the interactive menu for JDuck's exploit code of the Stagefright exploit:
+https://github.com/jduck/cve-2015-1538-1
+
+All you need to know is your victim's phone number and cell phone carrier, because MMS text messages are sent like email.
+
+If your phone number is...
+
+"310-123-4567"
+
+And you use T-Mobile then your MMS address (or victim's) will be:
+
+"13101234567@tmomail.net"
+
+For your listener you need to use Metasploit's exploit/android/browser/stagefright_mp4_tx3g_64bit exploit
+Upon generating a payload, a resource file will be made in your ArmsCommander Directory so you can quickly load up Metasploit and start up your listener
+
+The author of the code claims that it only has been tested on a Android 4.0 Galaxy Nexus Device, but it also worked on my HTC One M8 running Android 6.0
+
+Just Press 1 to see all possible Phone Number + Carrier Domain ("Email Address") Combos
+Just Press 2 to generate a payload by entering LHOST, LPORT, and desired output filename
