@@ -65,43 +65,80 @@ into
 
 # Update History
 
-# Proposed Alpha Version 0.0.8
+# Alpha Version 0.0.8, "DLLA" or "Don't Look Like Ass Update" has been uploaded to GitHub
 
-The "DLLA Update", or "Don't Look Like Ass Update". For the average user, they will barely notice anything. But for us, we won't have to deal with so much crap when it comes to adding more features, and it helps keep everything organized and easier to debug. Our progress is in a different repo: https://github.com/tanc7/AC-DLLA
+Overall it's not a update for the end-user (Unless you are writing in Python). It is something like, "LTS" Long-Term Support preparations to make debugging easier, and reconfiguring the menu much simpler.
 
-We need to Redesign main-menu and submodules for easier organization
+In recent headlines, there were several major events that might cause me to take a further interest in "zero-day exploits", and I think all of us are double-timing to catch up with the new news updates.
 
+In a short while, I will also update the README and How-To-Videos, but none of the original tools in the videos have been altered. Its that their location has been changed in the menu to make room. 
 
-Merging of similar types of hacking/exploitation tools into one streamlined Menu (instead of a cluster-fuck of random shit added in each week)
+Major changes
 
-
-Furthermore, I noticed that the constant pop-ups of most of the Windows are unnecessary and annoying and may resemble "pop-up ads". Only employ pop-up terminals if needed. Otherwise, ensure that the loops work to guide the user back to the main menu.
-
-
-Code will either be truncated, or rebuilt as separate modules for efficiency and ease of maintenance
-
-
-Perhaps even employing multiple folders, with a main program in main directory
-
-
-the Idea is that Arms Commander is supposed to be a "modular, easily customizable platform to use optimized penetration testing tools at record speed and time"
-
-
-The "logs" folder was a great idea, let's keep at it and incorporate all of the other old work into taking advantage of that.
-
-
-Also, to get around the github "making folders" frustration, we can just make a script that will build the directory tree as part of the installer script (for logfiles or /root/ArmsCommander/logs). I just realized ArmsCommander puts out a TON of output. Probably more than what most casual users and cybersecurity students could handle. And we need to organize it all.
-
+1. Pruning of the entire menu tree
+2. There are now seven categories to choose from rather than 11. Two of the seven are all new tools that were part of my other projects (Wireless Attacks being one of them)
+3. Reorganized directory structure
+4. Automatic logging now enabled for a majority of the recon packages
+5. Several bugs fixed
+6. Dramatic shortening of source code and commented out code
+7. Several changes, including... Automatic Starting of Tor when you run SQLMap. Furthermore all NMap commands are now proxychained by default. 
 
 From now on, the Menus will be rebuilt back from the ground up to avoid clutter and will be strictly organized into the following subtypes
 
-1. Reconnaissance Tools & Vulnerability Scanners
-2. Network Defenses & Monitoring
-3. Remote Exploitation/Hacking (Spearphishing and payload generators for example) --- Considering including the BadUSB and Keystroke Injection Type Attacks into this, since it ultimately results in remote exploitation
-4. Smartphone/Mobile Device Hacking
-5. Wireless Attacks (Not even implemented, but it's basically a port of Cylon-Raider-Lite into AC: DLLA)
-6. Password Attacks (for now, considering just leaving it at the Wireless attack category, there is no GPU support until I see a more enthusiatic community (the hashcat crowd doesn't seem to be "cool with Kali" rrecently and I am not here to break anyone's machine from a botched video driver install))
-7. "Book Learning", still-working and useful tools adapted from literature such as Violent Python and Black Hat Python
+# 1. Reconnaissance Tools & Vulnerability Scanners
+	#1. Multi-Tool Single Host Recon, use Dig, NSLookup, fierce, and theharvester against a single target
+	#2. CornHarvester, mass-harvest emails for phishing/Spear-Phishing
+	#3. NMap Scans (preset for maximum information discovery), starts with FIN scan, then XMAS scan, and finally a comprehensive scan
+	#4. Run SQLMap (Automatically set to route traffic through Tor)
+	#5. OWASP Zaproxy (Alternative vulnerability scanner, much faster than SQLMap)
+	#6. BurpSuite
+
+# 2. Network Defenses & Monitoring
+	#0 Return to Main Menu
+	#1. Tor + Proxychains, conceal your outbound traffic
+	#2. Network Monitoring Tools, p0f, Snort, and view active network connections
+	#3. Cover your tracks, clear your bash history and wipe your thumbnails cache
+	#4. TCP Kill a connection by host, IP, or port
+	#5. NGrep or "Network Grep", investigate a suspicious connection
+	#6. MacChanger, change your network card MAC address temporarily
+	#7. Fuser, identify and kill processes within a port range
+	#8. IDS Flooder, overwhelm a Intrusion Detection System with false-flag DDoS attacks to draw attention away from your actual activity
+
+# 3. Remote Exploitation/Hacking 
+	#0. Return to Main Menu
+	#1. Metasploit Framework, with a Manual-Start Script to overcome any database init issues
+	#2. Armitage
+	#3. Easy-Peasey, msfvenom payload generator
+	#4. Veil-Evasion, changes signature of msfvenom type payloads
+	#5. Social Engineers Toolkit (SET), a expansive toolkit by itself that covers spearphishing attacks to SMS spoofing to Arduino-attacks
+	#6. Pupy, Cross-Platform, Pythonic version of a Remote Access Trojan (RAT) with abilities that are comparable/superior to Meterpreter shells, with added benefits of being rarer and therefore harder to detect, and supports powershell injection
+	#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies
+
+(Spearphishing and payload generators for example) --- Considering including the BadUSB and Keystroke Injection Type Attacks into this, since it ultimately results in remote exploitation
+# 4. Smartphone/Mobile Device Hacking
+	#0 Return to Main Menu
+	#1. Android APK file Malware Injection
+	#2. DIAMONDSHARK, Easy-to-use readaption of the Stagefright Exploit (mp4 file, shellcode injection)
+
+# 5. Wireless Attacks (Not even implemented, but it's basically a port of Cylon-Raider-Lite into AC: DLLA)
+	#0. Return to Main Menu
+	#1. Cylon-Raider, automate wireless "Replay-Attacks" from the Aircrack-ng Suite
+	#2. Cylon Heavy-Raider, automate the WPS PIN brute-forcing vulnerability with Reaver
+	#3. Router-Sploit, Post-Exploitation hacking of APs that you cracked the passwords of
+	#4. ARP Injection Test, seeing if your external wireless card is working properly
+	#5. Hidden Network Decloaker, uncover hidden wireless APs
+
+# 6. Password Attacks
+	#0 Return to Main Menu
+	#1. Aircrack-ng, crack captured WPA handshakes
+ 
+(for now, considering just leaving it at the Wireless attack category, there is no GPU support until I see a more enthusiatic community (the hashcat crowd doesn't seem to be "cool with Kali" rrecently and I am not here to break anyone's machine from a botched video driver install))
+# 7. "Book Learning", 
+	#0. Return to Main Menu
+	#1. Violent Python POCs
+	#2. Black Hat Python POCs
+
+still-working and useful tools adapted from literature such as Violent Python and Black Hat Python
 
 # Alpha Version 0.0.7
 
