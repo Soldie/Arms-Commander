@@ -44,11 +44,12 @@ def output_data():
 
     print 'For further reference, all data was saved in your /root/ArmsCommander/logs/ directory if you wanted to access them or back it up manually'
     opt_List = [
-        '#0. Return to Previous Menu',
+        '\n\t#0. Return to Previous Menu',
         '#1. Output all MULTI-TOOL SCAN DATA',
         '#2. Output all CORNHARVESTER DATA',
         '#3. Output all NMAP DATA',
-        '#4. Make a logfile backup of the data using RSYNC (unintrusive, wont copy over files)'
+        '#4. Make a logfile backup of the data using RSYNC (unintrusive, wont copy over files)',
+        '#5. IMPORT logfile backups from a specified directory'
     ]
 
     print("\n\t".join(opt_List))
@@ -76,6 +77,13 @@ def output_data():
         os.system(cmd_String)
         user_String = 'All files backed up in folder: /root/Documents/ArmsCommander_logs_backup'
         print colored(user_String,'red','on_white')
+        output_data()
+    elif opt_Choice == "5":
+        import_directory = str(raw_input("Enter the full directory path where the to-be-imported files are located: "))
+        import_path = import_directory + '/*'
+        cmd_String = "rsync -v -r %s /root/ArmsCommander/logs" % import_path
+        os.system(cmd_String)
+        print colored('All log files imported to /root/ArmsCommander/logs','red','on_white')
         output_data()
     else:
         print 'You have entered a invalid option'
