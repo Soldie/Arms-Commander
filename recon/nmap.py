@@ -47,7 +47,7 @@ def main():
         print colored('Scans complete, find your scans at %s','red','on_white') % nmap_logfile_fullpath
         main()
     elif opt_Choice == "2":
-        os.system("gnome-terminal -e 'bash -c \"sudo python /root/ArmsCommander/CustomNMap.py; exec bash\"'")
+        os.system("gnome-terminal -e 'bash -c \"sudo python /root/ArmsCommander/recon/CustomNMap.py; exec bash\"'")
     elif opt_Choice == "0":
         os.system('python /root/ArmsCommander/ArmsCommander.py')
     else:
