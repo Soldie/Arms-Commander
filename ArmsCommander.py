@@ -256,11 +256,40 @@ def social_engineers_toolkit():
 
 def pupy_menu():
     os.system('python /root/ArmsCommander/remoteexploits/Pupy_Menu.py')
+    main()
     return
 
 def DPMB():
     os.system('python /root/ArmsCommander/remoteexploits/DPMB.py')
+    main()
     return
+
+def VT_Checker():
+    os.system('cat /root/ArmsCommander/banners/disclaimer_VT_Checker.txt')
+
+    opt_List = [
+        '\n\t#0. Return to Main Menu',
+        '#1. Submit a single HASH checksum to Virus Total',
+        '#2. Check a entire directory at a time (probably filled with generated malware)'
+    ]
+    print("\n\t".join(opt_List))
+    opt_Choice = str(raw_input("Enter a OPTION: "))
+    if opt_Choice == "1":
+        sample_file = str(raw_input("Enter the full path of the file you want to check: "))
+        cmd_String = "ruby /usr/share/veil-evasion/tools/vt-notify/vt-notify.rb -s %s" % sample_file
+        os.system(cmd_String)
+    elif opt_Choice == "2":
+        sample_directory = str(raw_input("Enter the full path of the directory that you want to check: "))
+        cmd_String = "ruby /usr/share/veil-evasion/tools/vt-notify/vt-notify.rb -d %s" % sample_directory
+        os.system(cmd_String)
+    elif opt_Choice == "0":
+        main()
+    else:
+        print 'You have entered a invalid option'
+        VT_Checker()
+    main()
+    return
+
 
 
 def three_remote_exploits():
@@ -272,7 +301,8 @@ def three_remote_exploits():
         '#4. Veil-Evasion, changes signature of msfvenom type payloads',
         '#5. Social Engineers Toolkit (SET), a expansive toolkit by itself that covers spearphishing attacks to SMS spoofing to Arduino-attacks',
         '#6. Pupy, Cross-Platform, Pythonic version of a Remote Access Trojan (RAT) with abilities that are comparable/superior to Meterpreter shells, with added benefits of being rarer and therefore harder to detect, and supports powershell injection',
-        '#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies'
+        '#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies',
+        '#8. Virus-Total Checker, safely check whether or not your custom payload is detectable without alerting Virus-Total and AV developers'
 
     ]
 
@@ -310,6 +340,9 @@ def three_remote_exploits():
     elif opt_Choice == "7":
         os.system('clear')
         DPMB()
+    elif opt_Choice == "8":
+        os.system('clear')
+        VT_Checker()
         # burpsuite()
     else:
         print 'You have entered a invalid option'
