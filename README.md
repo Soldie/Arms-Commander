@@ -58,6 +58,28 @@ into
 
 		creds_src=open("/root/pupy/pupy/crypto/credentials.py","r").read()
 
+# Big time bug in Pupy
+
+Sometimes you will find this error pop up. 
+
+		'BLAH BLAH. Traceback error, BLAH BLAH. SSL key file not found, OR credentials not found'
+
+As it turns out you have to navigate to /$PATH/pupy/pupy before executing 'python pupysh.py' otherwise the errors will come up and your listener and any connections it manages to catch will fail
+
+for example, at home, if my laptop is my listener:
+
+		'cd /root/pupy/pupy'
+		'python pupysh.py'
+
+Or if my Amazon AWS server is my listener:
+
+		'sudo su'
+		[enter password]
+		'cd /home/ec2-user/pupy/pupy'
+		'python pupysh.py'
+
+However, these commands can be easily automated by a script. And that means a quick-fix is on it's way folks. Just gonna generate a script and execute it (the auto-start script). 
+
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
 1. cd /root/ArmsCommander
 2. chmod 777 uninstall.sh
