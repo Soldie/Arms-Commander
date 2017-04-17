@@ -1,0 +1,18 @@
+ALL SCAN TYPES
+ENTER THE OPTION AS IT SHOWS HERE TO SELECT SCAN TYPE
+
+'SYN'
+'Connect'
+'ACK'
+'Window',
+'Maimon',
+'UDP'
+'Null'
+'FIN'
+'Xmas'
+'Idle'
+'Zombie'
+'SCTP INIT'
+'COOKIE-ECHO'
+'IP Protocol'
+'FTP Bounce'
