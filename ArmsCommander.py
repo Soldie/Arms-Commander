@@ -40,6 +40,48 @@ def burpsuite():
     main()
     return
 
+def output_data():
+
+    print 'For further reference, all data was saved in your /root/ArmsCommander/logs/ directory if you wanted to access them or back it up manually'
+    opt_List = [
+        '#0. Return to Previous Menu',
+        '#1. Output all MULTI-TOOL SCAN DATA',
+        '#2. Output all CORNHARVESTER DATA',
+        '#3. Output all NMAP DATA',
+        '#4. Make a logfile backup of the data using RSYNC (unintrusive, wont copy over files)'
+    ]
+
+    print("\n\t".join(opt_List))
+
+    opt_Choice = str(raw_input("Enter a OPTION: "))
+
+    if opt_Choice == "1":
+        os.system('clear')
+        os.system('cat /root/ArmsCommander/logs/multi_tool_recon/*')
+        output_data()
+    elif opt_Choice == "2":
+        os.system('clear')
+        os.system('cat /root/ArmsCommander/logs/CornHarvester/*')
+        output_data()
+    elif opt_Choice == "3":
+        os.system('clear')
+        os.system('cat /root/ArmsCommander/logs/nmap/*')
+        output_data()
+    elif opt_Choice == "0":
+        os.system('clear')
+        one_recon_and_vuln_scan()
+    elif opt_Choice == "4":
+        os.system('clear')
+        cmd_String = "rsync -v -r /root/ArmsCommander/logs /root/Documents/ArmsCommander_logs_backup"
+        os.system(cmd_String)
+        user_String = 'All files backed up in folder: /root/Documents/ArmsCommander_logs_backup'
+        print colored(user_String,'red','on_white')
+        output_data()
+    else:
+        print 'You have entered a invalid option'
+        output_data()
+
+    return
 def one_recon_and_vuln_scan():
     opt_List = [
         '\n\t#0. Return to Main Menu',
@@ -48,7 +90,8 @@ def one_recon_and_vuln_scan():
         '#3. NMap Scans (preset for maximum information discovery), starts with FIN scan, then XMAS scan, and finally a comprehensive scan',
         '#4. Run SQLMap (Automatically set to route traffic through Tor)',
         '#5. OWASP Zaproxy (Alternative vulnerability scanner, much faster than SQLMap)',
-        '#6. BurpSuite'
+        '#6. BurpSuite',
+        '#7. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap'
     ]
     print ("\n\t".join(opt_List))
 
@@ -77,7 +120,9 @@ def one_recon_and_vuln_scan():
     elif opt_Choice == "6":
         os.system('clear')
         burpsuite()
-
+    elif opt_Choice == "7":
+        os.system('clear')
+        output_data()
     else:
         print 'You have entered a invalid option'
         one_recon_and_vuln_scan()
