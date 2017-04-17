@@ -23,7 +23,19 @@ ArmsCommander.py
 4. Similar command and control scheme
 5. For those with a minimal amount of Python knowledge, very easy to debug issues
 
-# Installation (Pupy)
+# Arms-Commander, now has a included Python Script that will automatically install Pupy, initialize/update submodules, and install the required Python modules for you.
+		Run ArmsCommander in terminal 'ArmsCommander.py'
+		Select #3 'Remote Exploitation'
+		Select #6 'Pupy'
+		Type 'INSTALL' and hit [Enter]
+		Grab yourself some coffee, it's gonna take a while!
+
+# Note, EVERYTHING below this line is OUT-OF-DATE due to a new exploit + usability update that NinjaSec had updated on April 17th.
+The devs truncated a lot of things and basically made everything better.
+They eliminated outdated exploits and added new crypters
+
+
+# (Outdated) Installation (Pupy)
 How to install Pupy: https://github.com/tanc7/Arms-Commander/raw/master/How-To-Videos/How-To-Install-Pupy.webm
 It is best to install Pupy as a standalone install, I tried to automate it, and it caused more headaches than I can imagine
 
@@ -37,11 +49,7 @@ It’s just a few things on the terminal. Don’t worry, no keyboard breaking ra
 	pip install -r requirements.txt
 
 How To Interact with Pupy Shell: https://github.com/tanc7/Arms-Commander/raw/master/How-To-Videos/How-To-Interact-With-Pupy-Server-Shell.webm
-
-# Pupy is in the middle of being updated right now. As of 2:16pm PST, April 17th.
-It seems that NinjaSec is scrapping a lot of the features because they don't work anymore. There doesn't seem to be a Windows payload present, and he is changing a lot of the syntax. I am gonna wait this out you guys until he is done. 
-
-# Post install modifications
+# (Outdated) Post install modifications
 Currently there are two bugs
 1. The Linux binary templates are missing, I can’t fix that (but Python payloads work out of the box  against Linux boxes). And #1 isn’t even necessary to hack into Linux boxes, I will show you either in a different video or this one.
 2. There is a file-path error that I can show you how to fix right now. If you don’t fix it, it will spit out File Not Found Errors when you attempt to generate payloads. https://github.com/tanc7/Arms-Commander/blob/master/README.md
@@ -62,7 +70,7 @@ into
 
 		creds_src=open("/root/pupy/pupy/crypto/credentials.py","r").read()
 
-# Big time bug in Pupy
+# (Outdated) Big time bug in Pupy
 
 Sometimes you will find this error pop up. 
 
