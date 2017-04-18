@@ -1,7 +1,21 @@
 # Arms-Commander-Stable
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
-# Installation, Type the Following Commands to Easily Install in a Linux Box
+# (NEW) Completely automated installer written in Python
+
+Instead of fiddling with uncertain terminal commands, for those new Linux users, you can now simply download ONE FILE and run that to automate the setup harmlessly.
+
+		1. Download "Xperi_Setup.py" which is the Experimental Arms-Commander Python Installer.
+		2. Run the script, type 'python XPeri_Setup.py'
+		3. It will automate the Git Cloning process for you as well as the git submodule inits and updating and python module installations
+		4. It will also warn you to back up the log files provided by previous installs of Arms-Commander. You will have to type "CONTINUE" in all caps and hit [Enter] to proceed with replacing the old AC with the new AC
+		5. As soon as it is done installing the prerequisites, it will automatically start ArmsCommander's Console. At this point you can start AC with the terminal command 'ArmsCommander.py' or double click the launcher on your /root/Desktop directory.
+
+		NOTE: I also included a easy-installer for Pupy as well, the alternative Python-based RAT provided by NinjaSec. I spent all day adapting to the new syntax and learning a few tricks on getting terminal commands (particularly chdir) to work right. Follow the on screen instructions to learn how, it's just another single command!
+
+That is the best that I can do for Pupy easy-install. Because Pupy generates unique SSL keys that are special just to your personal machines. Failing to authenticate means that none of the features will work. Pupy must be installed by the end-user by themselves. Plus you definitely don't want to lose those credentials!
+
+# (Manual) Installation, Type the Following Commands to Easily Install in a Linux Box
 1. cd /tmp/
 2. git clone https://github.com/tanc7/Arms-Commander
 3. cd Arms-Commander/
