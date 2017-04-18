@@ -1,1 +1,2 @@
-sudo python /root/ArmsCommander/pupysh.py -t obfs3 -p 443
+cd /root/pupy/pupy
+sudo python /root/pupy/pupy/pupysh.py -t ssl -p 443
