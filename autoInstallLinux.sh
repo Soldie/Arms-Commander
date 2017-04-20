@@ -10,6 +10,7 @@ echo Creating a new directory for /root/ArmsCommander
 mkdir /root/ArmsCommander #creates the new directory
 echo Creating logfile directories
 mkdir /root/ArmsCommander/payloads
+mkdir /root/ArmsCommander/payloads/tester
 mkdir /root/ArmsCommander/logs/
 mkdir /root/ArmsCommander/logs/nmap
 mkdir /root/ArmsCommander/logs/CornHarvester

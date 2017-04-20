@@ -343,6 +343,10 @@ def VT_Checker():
     main()
     return
 
+def embed_payload_pdf():
+    os.system('python /root/ArmsCommander/remoteexploits/embed_pdf_pupy.py')
+    main()
+    return
 
 
 def three_remote_exploits():
@@ -355,7 +359,8 @@ def three_remote_exploits():
         '#5. Social Engineers Toolkit (SET), a expansive toolkit by itself that covers spearphishing attacks to SMS spoofing to Arduino-attacks',
         '#6. Pupy, Cross-Platform, Pythonic version of a Remote Access Trojan (RAT) with abilities that are comparable/superior to Meterpreter shells, with added benefits of being rarer and therefore harder to detect, and supports powershell injection',
         '#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies',
-        '#8. Virus-Total Checker, safely check whether or not your custom payload is detectable without alerting Virus-Total and AV developers'
+        '#8. Virus-Total Checker, safely check whether or not your custom payload is detectable without alerting Virus-Total and AV developers',
+        '#9. Embed a custom made payload into a PDF file'
 
     ]
 
@@ -397,6 +402,9 @@ def three_remote_exploits():
         os.system('clear')
         VT_Checker()
         # burpsuite()
+    elif opt_Choice == "9":
+        os.system('clear')
+        embed_payload_pdf()
     else:
         print 'You have entered a invalid option'
         three_remote_exploits()

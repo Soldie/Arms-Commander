@@ -35,7 +35,7 @@ def installer():
 
     print 'Now installing two required Python modules for Python 2.7 through pip, termcolor and StringIO'
     # Install the required modules
-    os.system('pip install -r /root/ArmsCommander/requiredModules.txt')
+    os.system('pip install -r /tmp/Arms-Commander/requiredModules.txt')
     print 'Installation complete'
     # Inform the user it has been installed
 
