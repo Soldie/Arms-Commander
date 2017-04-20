@@ -63,73 +63,15 @@ It’s just a few things on the terminal. Don’t worry, no keyboard breaking ra
 	pip install -r requirements.txt
 
 How To Interact with Pupy Shell: https://github.com/tanc7/Arms-Commander/raw/master/How-To-Videos/How-To-Interact-With-Pupy-Server-Shell.webm
-# (Outdated) Post install modifications
-Currently there are two bugs
-1. The Linux binary templates are missing, I can’t fix that (but Python payloads work out of the box  against Linux boxes). And #1 isn’t even necessary to hack into Linux boxes, I will show you either in a different video or this one.
-2. There is a file-path error that I can show you how to fix right now. If you don’t fix it, it will spit out File Not Found Errors when you attempt to generate payloads. https://github.com/tanc7/Arms-Commander/blob/master/README.md
 
-Basically, for #2, we are going to give it a more “complete” file path. Since it can’t see the “credentials.py” file right out of the box. Just one line to modify code on.
-
-I am going to use Atom for this, but you can use anything you like or use control find or something
-
-There is a error in the payload generator file on line #114
-
-		/root/pupy/pupy/pupygen.py
-
-Change
-
-		creds_src=open("crypto/credentials.py","r").read()
-
-into
-
-		creds_src=open("/root/pupy/pupy/crypto/credentials.py","r").read()
-
-# (Outdated) Big time bug in Pupy
-
-Sometimes you will find this error pop up. 
-
-		'BLAH BLAH. Traceback error, BLAH BLAH. SSL key file not found, OR credentials not found'
-
-As it turns out you have to navigate to /$PATH/pupy/pupy before executing 'python pupysh.py' otherwise the errors will come up and your listener and any connections it manages to catch will fail
-
-for example, at home, if my laptop is my listener:
-
-		'cd /root/pupy/pupy'
-		'python pupysh.py'
-
-Or if my Amazon AWS server is my listener:
-
-		'sudo su'
-		[enter password]
-		'cd /home/ec2-user/pupy/pupy'
-		'python pupysh.py'
-
-However, these commands can be easily automated by a script. And that means a quick-fix is on it's way folks. Just gonna generate a script and execute it (the auto-start script). 
 
 # Uninstallation Instructions (Removes Desktop Launcher, the Terminal command, and /root/ArmsCommander directory, including log files)
 1. cd /root/ArmsCommander
 2. chmod 777 uninstall.sh
 3. ./uninstall.sh
 
-# Update History
 
-# Alpha Version 0.0.8, "DLLA" or "Don't Look Like Ass Update" has been uploaded to GitHub
 
-Overall it's not a update for the end-user (Unless you are writing in Python). It is something like, "LTS" Long-Term Support preparations to make debugging easier, and reconfiguring the menu much simpler.
-
-In recent headlines, there were several major events that might cause me to take a further interest in "zero-day exploits", and I think all of us are double-timing to catch up with the new news updates.
-
-In a short while, I will also update the README and How-To-Videos, but none of the original tools in the videos have been altered. Its that their location has been changed in the menu to make room. 
-
-Major changes
-
-1. Pruning of the entire menu tree
-2. There are now seven categories to choose from rather than 11. Two of the seven are all new tools that were part of my other projects (Wireless Attacks being one of them)
-3. Reorganized directory structure
-4. Automatic logging now enabled for a majority of the recon packages
-5. Several bugs fixed
-6. Dramatic shortening of source code and commented out code
-7. Several changes, including... Automatic Starting of Tor when you run SQLMap. Furthermore all NMap commands are now proxychained by default. 
 
 From now on, the Menus will be rebuilt back from the ground up to avoid clutter and will be strictly organized into the following subtypes
 
@@ -188,21 +130,3 @@ From now on, the Menus will be rebuilt back from the ground up to avoid clutter 
 
 still-working and useful tools adapted from literature such as Violent Python and Black Hat Python
 
-# Alpha Version 0.0.7
-
-1. First step in integration with alternative RAT, Pupy.
-
-# Alpha Version 0.0.5
-
-1. Added a portion of still-working exploits as described by the author of Violent Python T.J. O'Connor, including but not limited to, a SSH Bruteforcer and a Credit Card Information Sniffer
-2. Added /logs/ folder to save captured credentials
-
-# Alpha Version 0.0.4
-
-1. Added Keystroke Injection/BadUSB Attack Interface
-2. Easy inject.bin generator for USB Rubber Duckies from Hak5 Shops
-3. Forked in copies of ducky-flasher
-
-# Alpha Version 0.0.3
-1. Added the Ruby-based Android APK Malware Injection Module
-2. Also forked over the required Java Signing Apps and required keys and certificates
