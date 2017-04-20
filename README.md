@@ -44,9 +44,17 @@ ArmsCommander.py
 		Type 'INSTALL' and hit [Enter]
 		Grab yourself some coffee, it's gonna take a while!
 
-# Note, EVERYTHING below this line is OUT-OF-DATE due to a new exploit + usability update that NinjaSec had updated on April 17th.
-The devs truncated a lot of things and basically made everything better.
-They eliminated outdated exploits and added new crypters
+# Warning: On remote/cloud server usage
+
+It became apparent from extensive testing, that if you are to use Amazon AWS to act as a remote proxy listener (or what the CIA calls "LPs" or "Listening Posts"...
+The "manufacturing process of the payload" MUST be conducted on the LISTENER. 
+You cannot just, make a payload on your laptop, and expect your remote server to listen to the connection
+This is due to the way that the SSL certs are negotiated. It is meant to conceal your backdoor traffic and avoid alerting the IT dept.
+However, that also means the SSL certs are UNIQUE to your machine. Hence, no one else, not even a alternative device could "hijack" the session.
+
+It makes configuring my remote listener a pain. Because I have to use ArmsCommander to make the file on the remote server, then go back and download it back into my machine, embed a payload, start up listener, test it, etc. 
+
+The credentials are automatically stored in your GNOME keyring, but I have failed to proper copy the creds over into my AWS instance for some reason.
 
 
 # (Outdated) Installation (Pupy)
