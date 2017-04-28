@@ -25,6 +25,8 @@ def installer():
         os.system('git clone https://github.com/tanc7/Arms-Commander')
         AC_Dir = tmp_dir + 'Arms-Commander'
         os.chdir(AC_Dir) # change to the new directory in /tmp/Arms-Commander
+        os.system('git submodule init')
+        os.system('git submodule update')
 
         print 'Running autoinstaller'
         # Run the autoInstaller Script
