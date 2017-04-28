@@ -2,12 +2,23 @@
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
 # New Update: New installer, Error-Handling features, and Integration
-		1. Added Stitch, yet another Python alternative RAT (Remote Access Trojan) similar to Meterpreter, with a autoinstall script in the menu
-		2. As before, last week I implemented Pupy Pythonic alt-RAT with it's autoinstallation script
-		3. Made the experimental python installer permanent. It is now 'setup.py'
-		4. Added a few experimental error-handling features for critical parts of the suite
-# (NEW) Completely automated installer written in Python
+		>1. Added Stitch, yet another Python alternative RAT (Remote Access Trojan) similar to Meterpreter, with a autoinstall script in the menu.
 
+The main difference between Stitch compared to Pupy & Metasploit is that Stitch is much more newbie friendly. It has its own little 'for-dummies' menu like I have in ArmsCommander.
+
+		>2. As before, last week I implemented Pupy Pythonic alt-RAT with it's autoinstallation script
+
+Warning, Pupy Windows 10 Payloads running Scramblesuit is now detectable since April 12th in the latest Windows Defender Update if employed in the wild! As "Fuery".
+See: https://www.microsoft.com/en-us/security/portal/Threat/Encyclopedia/Entry.aspx?Name=Trojan:Win32/Fuery.B!cl
+
+		>3. Made the experimental python installer permanent.
+
+It is now 'setup.py'
+
+		>4. Added a few experimental error-handling features for critical parts of the suite
+
+
+# Installation
 Instead of fiddling with uncertain terminal commands, for those new Linux users, you can now simply download ONE FILE and run that to automate the setup harmlessly.
 
 NOTE: I just updated this part of the guide. I simply renamed the XPeri_setup.py to setup.py
@@ -79,7 +90,7 @@ And vice versa, from a remaining Meterpreter shell.... after you getsystem:
 		Type 'INSTALL' and hit [Enter]
 		Grab yourself some coffee, it's gonna take a while!
 
-# Warning: On remote/cloud server usage for Pupy
+# Warning: On remote/cloud server usage for Pupy (& also Stitch's AES Encrypted payloads)
 
 It became apparent from extensive testing, that if you are to use Amazon AWS to act as a remote proxy listener (or what the CIA calls "LPs" or "Listening Posts"...
 The "manufacturing process of the payload" MUST be conducted on the LISTENER.
@@ -130,6 +141,10 @@ From now on, the Menus will be rebuilt back from the ground up to avoid clutter 
 	#5. Social Engineers Toolkit (SET), a expansive toolkit by itself that covers spearphishing attacks to SMS spoofing to Arduino-attacks
 	#6. Pupy, Cross-Platform, Pythonic version of a Remote Access Trojan (RAT) with abilities that are comparable/superior to Meterpreter shells, with added benefits of being rarer and therefore harder to detect, and supports powershell injection
 	#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies
+	#8. Virus-Total Checker, safely check whether or not your custom payload is detectable without alerting Virus-Total and AV developers
+	#9. Embed a custom made payload into a PDF file
+	#10. Stitch, another Cross-Platform, Pythonic RAT
+
 
 (Spearphishing and payload generators for example) --- Considering including the BadUSB and Keystroke Injection Type Attacks into this, since it ultimately results in remote exploitation
 # 4. Smartphone/Mobile Device Hacking
@@ -149,7 +164,7 @@ From now on, the Menus will be rebuilt back from the ground up to avoid clutter 
 	#0 Return to Main Menu
 	#1. Aircrack-ng, crack captured WPA handshakes
 
-(for now, considering just leaving it at the Wireless attack category, there is no GPU support until I see a more enthusiatic community (the hashcat crowd doesn't seem to be "cool with Kali" rrecently and I am not here to break anyone's machine from a botched video driver install))
+(for now, considering just leaving it at the Wireless attack category, there is no GPU support until I see a more enthusiatic community (the hashcat crowd doesn't seem to be "cool with Kali" recently and I am not here to break anyone's machine from a botched video driver install))
 # 7. "Book Learning",
 	#0. Return to Main Menu
 	#1. Violent Python POCs
