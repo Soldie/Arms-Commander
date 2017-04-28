@@ -51,7 +51,7 @@ def main():
     opt_Choice = str(raw_input("Enter a OPTION: "))
 
     if opt_Choice == "0":
-        os.system('python /root/ArmsCommander/ArmsCommander.py')
+        main()
     elif opt_Choice == "1":
         run_DuckYourself()
     else:
