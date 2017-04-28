@@ -12,7 +12,7 @@ import StringIO
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
 # Banner Page
-os.system('cat /root/ArmsCommander/banners/banner_cornharvester.txt')
+os.system('cat /root/ArmsCommander/banner_cornharvester.txt')
 # Intro Page
 # # Rain makes corn, corn makes whiskey / Whiskey makes my baby, feel a little frisky
 
@@ -73,7 +73,7 @@ while True:
 #     ]
 #
 #     print ("\n\t".join(opt_List))
-#     opt_Choice = str(raw_input("Enter a OPTION: "))
+#     opt_Choice = str(raw_input(""))
 #
 #     if opt_Choice == "1":
 #         harvest_wordlist()

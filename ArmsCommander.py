@@ -13,6 +13,7 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 
 os.system('cat /root/ArmsCommander/banners/ACBanner.txt')
 
+
 def MT_host_recon():
     os.system('python /root/ArmsCommander/recon/multi_tool_recon.py')
     return
@@ -348,6 +349,9 @@ def embed_payload_pdf():
     main()
     return
 
+def stitch_menu():
+    os.system('python /root/ArmsCommander/remoteexploits/Stitch_Menu.py')
+    return
 
 def three_remote_exploits():
     opt_List = [
@@ -360,7 +364,8 @@ def three_remote_exploits():
         '#6. Pupy, Cross-Platform, Pythonic version of a Remote Access Trojan (RAT) with abilities that are comparable/superior to Meterpreter shells, with added benefits of being rarer and therefore harder to detect, and supports powershell injection',
         '#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies',
         '#8. Virus-Total Checker, safely check whether or not your custom payload is detectable without alerting Virus-Total and AV developers',
-        '#9. Embed a custom made payload into a PDF file'
+        '#9. Embed a custom made payload into a PDF file',
+        '#10. Stitch, another Cross-Platform, Pythonic RAT'
 
     ]
 
@@ -405,6 +410,9 @@ def three_remote_exploits():
     elif opt_Choice == "9":
         os.system('clear')
         embed_payload_pdf()
+    elif opt_Choice == "10":
+        os.system('clear')
+        stitch_menu()
     else:
         print 'You have entered a invalid option'
         three_remote_exploits()
@@ -581,6 +589,8 @@ def seven_book_learning():
         os.system('clear')
         Black_Hat_Python_Menu()
         # MT_host_recon()
+    elif Exception:
+        error_handling()
     else:
         print 'You have entered a invalid option'
         seven_book_learning()
@@ -625,7 +635,45 @@ def main():
         seven_book_learning()
     else:
         print 'You have entered a invalid option'
+        error_handling()
         main()
     main()
     return
+
+# ERROR HANDLING BLOCK
+def error_handling():
+    while Exception == True:
+        try:
+            print '[*] A unidentified exception is raised!'
+        except (TypeError,NameError):
+            print TypeError,NameError
+            print '[-] Please report this error to the dev'
+        except KeyboardInterrupt:
+            print '[-] Received exit command, quitting'
+            exit(0)
+        except EOFError:
+            print EOFError
+            print '[-] Error end of file reached'
+            print '[-] Please report this error to the dev'
+        except SyntaxError:
+            print SyntaxError
+            print '[-] Invalid syntax was used'
+        except ValueError:
+            print ValueError
+            print '[-] Invalid number used'
+        except IOError:
+            print '[-] IO Error raised'
+            print IOError
+            print 'Either a file is not found or disk is full'
+        except MemoryError:
+            print MemoryError
+            print '[-] Ran out of local memory resources'
+        except IndentationError:
+            print IndentationError
+            print '[-] Looks like the dev has a bug in the program. Notify him and what line and file it happened in'
+            print "Or you can fix the whitespaces yourself if you'd like, Mr. Dev is prolly masterbating to porn or something"
+
+if Exception:
+    error_handling()
+    main()
 main()
