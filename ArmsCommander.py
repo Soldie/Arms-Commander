@@ -42,6 +42,8 @@ def burpsuite():
     return
 
 def output_data():
+    Menu_Header = colored('OUTPUT, BACKUP, IMPORT YOUR LOGFILES', 'cyan', attrs=['bold'])
+    print Menu_Header
 
     print 'For further reference, all data was saved in your /root/ArmsCommander/logs/ directory if you wanted to access them or back it up manually'
     opt_List = [
@@ -92,6 +94,8 @@ def output_data():
 
     return
 def one_recon_and_vuln_scan():
+    Menu_Header = colored('RECONNAISSANCE AND ENUMERATION', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. Multi-Tool Single Host Recon, use Dig, NSLookup, fierce, and theharvester against a single target',
@@ -197,6 +201,8 @@ def macchanger():
     return
 
 def fuser():
+    Menu_Header = colored('FUSER', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
                 '\n\t#1. LOOKUP all process IDs of a port and protocol',
                 '#2. Terminate all connections of a port/protocol'
@@ -228,6 +234,8 @@ def IDS_Flooder():
     return
 
 def two_net_defense_traffic_monitor():
+    Menu_Header = colored('NETWORK DEFENSE', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0 Return to Main Menu',
         '#1. Tor + Proxychains, conceal your outbound traffic',
@@ -247,34 +255,42 @@ def two_net_defense_traffic_monitor():
         main()
     elif opt_Choice == "1":
         os.system('clear')
+        print colored('[+] Starting Tor + Proxychains','green', attrs=['bold'])
         tor_and_proxychains()
         # MT_host_recon()
     elif opt_Choice == "2":
         os.system('clear')
+        print colored('[+] Starting Monitoring Tools','green', attrs=['bold'])
         network_monitor_tools()
         # CornHarvester()
     elif opt_Choice == "3":
         os.system('clear')
+        print colored('[+] Starting Cover Your Tracks','green', attrs=['bold'])
         cover_tracks()
         # NMap_Auto()
     elif opt_Choice == "4":
         os.system('clear')
+        print colored('[+] Starting TCP Kill','green', attrs=['bold'])
         TCPKill()
         # NMap_Custom()
     elif opt_Choice == "5":
         os.system('clear')
+        print colored('[+] Starting Network Grep','green', attrs=['bold'])
         NGrep()
         # SQLMap()
     elif opt_Choice == "6":
         os.system('clear')
+        print colored('[+] Starting Mac Changer Interactive Menu','green', attrs=['bold'])
         macchanger()
         # OWASP_zaproxy()
     elif opt_Choice == "7":
         os.system('clear')
+        print colored('[+] Starting Fuser','green', attrs=['bold'])
         fuser()
         # burpsuite()
     elif opt_Choice == "8":
         os.system('clear')
+        print colored('[+] Starting IDS Flooder Module','green', attrs=['bold'])
         IDS_Flooder()
     else:
         print colored('You have entered a invalid option','red')
@@ -319,6 +335,8 @@ def DPMB():
     return
 
 def VT_Checker():
+    Menu_Header = colored('VIRUS-TOTAL SAFE-CHECKER', 'cyan', attrs=['bold'])
+    print Menu_Header
     os.system('cat /root/ArmsCommander/banners/disclaimer_VT_Checker.txt')
 
     opt_List = [
@@ -354,6 +372,9 @@ def stitch_menu():
     return
 
 def payload_generators_listeners():
+    Menu_Header = colored('REMOTE EXPLOITS-PAYLOAD GENERATORS AND LISTENERS/HANDLERS', 'cyan', attrs=['bold'])
+    print Menu_Header
+
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. EASY-PEASEY, the EZ-Mode Interactive MSFVenom Payload Generation Menu',
@@ -386,6 +407,8 @@ def payload_generators_listeners():
     return
 
 def remote_exploits_toolkits():
+    Menu_Header = colored('REMOTE EXPLOITS-TOOLKITS', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. VEIL-EVASION, change the signature of a Metasploit payload to evade antivirus (the msfvenom encoder hides you from Intrusion Detection Systems ONLY)',
@@ -430,6 +453,8 @@ def remote_exploits_toolkits():
     return
 
 def remote_exploits_other():
+    Menu_Header = colored('REMOTE EXPLOITS-OTHER', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. DONT PATCH ME BRO, the easy-mode menu to generate inject.bin files for DuckEncoder and DuckyScript Languages on USB Rubber Duckies',
@@ -459,6 +484,9 @@ def remote_exploits_other():
     return
 
 def three_remote_exploits_redesigned(): # Tentative project to reduce bloat
+    Menu_Header = colored('REMOTE EXPLOITATION', 'cyan', attrs=['bold'])
+    print Menu_Header
+
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. PAYLOAD GENERATORS & LISTENERS, Metasploit Msfvenom, and open source alternatives RATs like Pupy and Stitch',
@@ -488,69 +516,7 @@ def three_remote_exploits_redesigned(): # Tentative project to reduce bloat
         print colored('You have entered a invalid option','red')
         three_remote_exploits_redesigned()
     return
-# def three_remote_exploits():
-#     opt_List = [
-#         '\n\t#0. Return to Main Menu',
-#         '#1. Metasploit Framework, with a Manual-Start Script to overcome any database init issues',
-#         '#2. Armitage',
-#         '#3. Easy-Peasey, msfvenom payload generator',
-#         '#4. Veil-Evasion, changes signature of msfvenom type payloads',
-#         '#5. Social Engineers Toolkit (SET), a expansive toolkit by itself that covers spearphishing attacks to SMS spoofing to Arduino-attacks',
-#         '#6. Pupy, Cross-Platform, Pythonic version of a Remote Access Trojan (RAT) with abilities that are comparable/superior to Meterpreter shells, with added benefits of being rarer and therefore harder to detect, and supports powershell injection',
-#         '#7. Dont Patch Me Bro :(, the easy-mode inject.bin generator for Hak5 USB Rubber Duckies',
-#         '#8. Virus-Total Checker, safely check whether or not your custom payload is detectable without alerting Virus-Total and AV developers',
-#         '#9. Embed a custom made payload into a PDF file',
-#         '#10. Stitch, another Cross-Platform, Pythonic RAT'
-#
-#     ]
-#
-#     print ("\n\t".join(opt_List))
-#
-#     opt_Choice = str(raw_input("Enter a OPTION: "))
-#
-#     if opt_Choice == "0":
-#         os.system('clear')
-#         main()
-#     elif opt_Choice == "1":
-#         os.system('clear')
-#         metasploit()
-#         # MT_host_recon()
-#     elif opt_Choice == "2":
-#         os.system('clear')
-#         armitage()
-#         # CornHarvester()
-#     elif opt_Choice == "3":
-#         os.system('clear')
-#         easy_peasey()
-#         # NMap_Auto()
-#     elif opt_Choice == "4":
-#         os.system('clear')
-#         veil_evasion()
-#         # NMap_Custom()
-#     elif opt_Choice == "5":
-#         os.system('clear')
-#         social_engineers_toolkit()
-#         # SQLMap()
-#     elif opt_Choice == "6":
-#         os.system('clear')
-#         pupy_menu()
-#         # OWASP_zaproxy()
-#     elif opt_Choice == "7":
-#         os.system('clear')
-#         DPMB()
-#     elif opt_Choice == "8":
-#         os.system('clear')
-#         VT_Checker()
-#         # burpsuite()
-#     elif opt_Choice == "9":
-#         os.system('clear')
-#         embed_payload_pdf()
-#     elif opt_Choice == "10":
-#         os.system('clear')
-#         stitch_menu()
-#     else:
-#         print colored('You have entered a invalid option','red')
-#         three_remote_exploits()
+
 
 def APK_Malware_Injection():
     os.system('python /root/ArmsCommander/mobiledevices/APKmalwareInjector.py')
@@ -563,6 +529,8 @@ def DIAMONDSHARK():
     return
 
 def four_mobile_dev_hacking():
+    Menu_Header = colored('MOBILE DEVICE HACKING', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0 Return to Main Menu',
         '#1. Android APK file Malware Injection',
@@ -631,6 +599,8 @@ def hidden_network_decloaker():
     return
 
 def five_wireless_attacks():
+    Menu_Header = colored('WIRELESS ATTACKS', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. Cylon-Raider, automate wireless "Replay-Attacks" from the Aircrack-ng Suite',
@@ -676,6 +646,8 @@ def aircrack():
     return
 
 def six_password_attacks():
+    Menu_Header = colored('PASSWORD CRACKERS AND OTHER RELATED ATTACKS', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0 Return to Main Menu',
         '#1. Aircrack-ng, crack captured WPA handshakes'
@@ -706,6 +678,8 @@ def Black_Hat_Python_Menu():
     return
 
 def seven_book_learning():
+    Menu_Header = colored('BOOK LEARNING MENU', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. Violent Python POCs',
@@ -733,6 +707,8 @@ def seven_book_learning():
 
 def main():
     os.system('cat /root/ArmsCommander/banners/banner_mainmenu.txt\n\n')
+    Menu_Header = colored('MAIN MENU', 'cyan', attrs=['bold'])
+    print Menu_Header
     opt_List = [
         '\n\t#1. Reconnaissance Tools & Vulnerability Scanners',
         '#2. Network Defenses & Traffic Monitoring',
