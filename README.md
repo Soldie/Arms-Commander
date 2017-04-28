@@ -1,12 +1,20 @@
 # Arms-Commander-Stable
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
+# New Update: New installer, Error-Handling features, and Integration
+		1. Added Stitch, yet another Python alternative RAT (Remote Access Trojan) similar to Meterpreter, with a autoinstall script in the menu
+		2. As before, last week I implemented Pupy Pythonic alt-RAT with it's autoinstallation script
+		3. Made the experimental python installer permanent. It is now 'setup.py'
+		4. Added a few experimental error-handling features for critical parts of the suite
 # (NEW) Completely automated installer written in Python
 
 Instead of fiddling with uncertain terminal commands, for those new Linux users, you can now simply download ONE FILE and run that to automate the setup harmlessly.
 
-		1. Download "Xperi_Setup.py" which is the Experimental Arms-Commander Python Installer.
-		2. Run the script, type 'python XPeri_Setup.py'
+NOTE: I just updated this part of the guide. I simply renamed the XPeri_setup.py to setup.py
+> just run 'python setup.py' in /$PATH/Arms-Commander
+
+		1. Download "setup.py" which is the Experimental Arms-Commander Python Installer.
+		2. Run the script, type 'python setup.py'
 		3. It will automate the Git Cloning process for you as well as the git submodule inits and updating and python module installations
 		4. It will also warn you to back up the log files provided by previous installs of Arms-Commander. You will have to type "CONTINUE" in all caps and hit [Enter] to proceed with replacing the old AC with the new AC
 		5. As soon as it is done installing the prerequisites, it will automatically start ArmsCommander's Console. At this point you can start AC with the terminal command 'ArmsCommander.py' or double click the launcher on your /root/Desktop directory.
