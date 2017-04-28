@@ -1,6 +1,9 @@
 # Arms-Commander-Stable
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6, originally intended to only perform the Reconnaissance and Enumeration Stages (it's role is dramatically expanded now). Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
+# Coming Soon: Integration with Stitch
+Once I figure out these damned installation errors, Error Code 1 in Pip?!? I believe it's permissions based but... i already Chmodded everything with 777?!?
+
 # (NEW) Completely automated installer written in Python
 
 Instead of fiddling with uncertain terminal commands, for those new Linux users, you can now simply download ONE FILE and run that to automate the setup harmlessly.
