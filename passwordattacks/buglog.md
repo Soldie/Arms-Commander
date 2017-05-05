@@ -84,3 +84,9 @@ And then, it should get more "specific"
  for example
  
  SHA_Menu_layer_1() --> SSHA_layer_2() --> LDAP (SSHA512)_layer_3()
+
+OR menu #1, #2, #3 and so on.
+
+So we can build the menus quickly, not using opt_List(), but instead have the python program run the 'cat' command on a text file. And the text file menus can be produced with spreadsheets with tables. That'll be easier and quicker.
+
+That way, we can use it as a refererence, and the user just has to "Push button #1 ,2 3 etc."
