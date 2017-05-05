@@ -1,1 +1,1 @@
-Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input prompt. 
+Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input prompt. "Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "
