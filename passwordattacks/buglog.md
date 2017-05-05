@@ -49,3 +49,12 @@ for a six-letter password with words and numbers
 You can also specify a "mask". And you can find your preloaded mask files with "locate masks" in terminal
 
 "hashcat -a 3 <hash to attack> <mask_file.hcmask>"
+
+
+What worked?
+
+This command worked, which specified a six digit password of both letters and numbers:
+
+"hashcat -a3 -m 2500 /media/root/Data/HashCatConverted/hashcat_20170405-013557.cap-01.cap.hccapx ?l?d ?l?l?l?l?l?l"
+
+I should use the mask file method as a separate method. 
