@@ -73,3 +73,14 @@ This command worked, which specified a six digit password of both letters and nu
 
 THere appears to be... over 230 different types of hashes. They can be easily organized however. The -m made no sense anyways but Its easy for me to reorganize it alphabetically and categorize them.
 
+Okay. So this requires a lot of organization. Because the crypto types are all over the place in the Hashcat help menu. However, we can just create a multi-tiered menu with several dicts in each. The dict formats should indicate what layer. For example
+
+SHA_menu_layer_1()
+-->SHA 1 types
+-->SHA 256 Types
+-->SHA 512 Types
+
+And then, it should get more "specific"
+ for example
+ 
+ SHA_Menu_layer_1() --> SSHA_layer_2() --> LDAP (SSHA512)_layer_3()
