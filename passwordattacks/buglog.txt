@@ -27,3 +27,5 @@ so if you type '?l' 5-times for password length, it means the password is five-l
 "hashcat -a 3 <charset switch> <charset hcchr file> <number switch> <password length>"
 
 Where number switch = '?l?d'
+
+But you see, WPA2-PSK by itself, requires the user to have EIGHT characters at a minimum. So we should start the menu at that. However, I am not gonna just number that to the maximum bits. I'd rather have the user input it themselves.
