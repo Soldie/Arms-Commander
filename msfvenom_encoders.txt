@@ -13,7 +13,7 @@ ALL ENCODERS:
 #9   mipsbe/byte_xori                               normal     Byte XORi Encoder
 #10   mipsbe/longxor                                 normal     XOR Encoder
 #11   mipsle/byte_xori                               normal     Byte XORi Encoder
-#12   mipsle/longxor                                 normal     XOR Encoder
+#12  mipsle/longxor                                 normal     XOR Encoder
 #13   php/base64                                     great      PHP Base64 Encoder
 #14   ppc/longxor                                    normal     PPC LongXOR Encoder
 #15   ppc/longxor_tag                                normal     PPC LongXOR Encoder
