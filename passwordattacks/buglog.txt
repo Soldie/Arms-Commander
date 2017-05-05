@@ -2,6 +2,8 @@ FIXED: Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input p
 
 FIXED: Hybrid and Reverse-Hybrid Attacks
 
+FIXED: Combinator Attacks. I confused the switch for Brute Force with Combinator. Combinator = 1, Brute Force (Mask) = 3
+
 **BUGGED: "Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now**
 
 Source: https://hashcat.net/wiki/doku.php?id=mask_attack
