@@ -22,11 +22,11 @@ Which is located in this folder: /usr/share/hashcat/charsets/
 
 So I am guessing this is how its supposed to be done
 
-"hashcat -a 3 <charset switch> <charset hcchr file> <password length>"
+"hashcat -a 3 (charset switch) (charset hcchr file) (password length)"
 
 so if you type '?l' 5-times for password length, it means the password is five-letters long, and letters ONLY. To include numbers its 
 
-"hashcat -a 3 <charset switch> <charset hcchr file> <number switch> <password length>"
+"hashcat -a 3 (charset switch) (charset hcchr file) (number switch) (password length)"
 
 Where number switch = '?l?d'
 
@@ -34,21 +34,21 @@ But you see, WPA2-PSK by itself, requires the user to have EIGHT characters at a
 
 Yeesh that is one ugly documentation. But okay one way that works is..
 
-"hashcat -a 3 <hashfile> <pw length>" 
+"hashcat -a 3 (hashfile) (pw length)" 
 
 which is letters ONLY. To include numbers its...
 
-"hashcat -a 3 <hashfile> <include numbers> <pw length>"
+"hashcat -a 3 (hashfile) (include numbers) (pw length)"
 
 So its
 
-"hashcat -a 3 <hashfile> ?l?d ?l?l?l?l?l?l"
+"hashcat -a 3 (hashfile) ?l?d ?l?l?l?l?l?l"
 
 for a six-letter password with words and numbers
 
 You can also specify a "mask". And you can find your preloaded mask files with "locate masks" in terminal
 
-"hashcat -a 3 <hash to attack> <mask_file.hcmask>"
+"hashcat -a 3 (hash to attack) (mask_file.hcmask)"
 
 
 What worked?
@@ -65,6 +65,6 @@ This one worked too:
 
 So its...
 
-"hashcat -a 3 -1 <maskfile> -m <hash type> <hash file> <number switch> <password length>"
+"hashcat -a 3 -1 (maskfile) -m (hash type) (hash file) (number switch) (password length)"
 
 But there are four types of charset switches. This will need to be placed on hiatus until I get down ALL of it.
