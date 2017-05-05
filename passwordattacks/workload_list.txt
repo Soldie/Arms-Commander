@@ -1,0 +1,6 @@
+# | Performance | Runtime | Power Consumption | Desktop Impact
+===+=============+=========+===================+=================
+1 | Low         |   2 ms  | Low               | Minimal
+2 | Default     |  12 ms  | Economic          | Noticeable
+3 | High        |  96 ms  | High              | Unresponsive
+4 | Nightmare   | 480 ms  | Insane            | Headless
