@@ -51,15 +51,15 @@ So I am guessing this is how its supposed to be done**
 "hashcat -a 3 (hash to attack) (mask_file.hcmask)"
 
 
-**What worked?
+**What worked?**
 
 This command worked, which specified a six digit password of both letters and numbers:**
 
 "hashcat -a3 -m 2500 /media/root/Data/HashCatConverted/hashcat_20170405-013557.cap-01.cap.hccapx ?l?d ?l?l?l?l?l?l"
 
-**I should use the mask file method as a separate method. 
+**I should use the mask file method as a separate method** 
 
-**This one worked too:
+**This one worked too:**
 
 "hashcat -a3 -1 charsets/special/Russian/ru_ISO-8859-5-special.hcchr -m 2500 /media/root/Data/HashCatConverted/hashcat_20170405-013557.cap-01.cap.hccapx ?l?d ?l?l?l?l?l?l"
 
