@@ -90,3 +90,42 @@ OR menu #1, #2, #3 and so on.
 So we can build the menus quickly, not using opt_List(), but instead have the python program run the 'cat' command on a text file. And the text file menus can be produced with spreadsheets with tables. That'll be easier and quicker.
 
 That way, we can use it as a refererence, and the user just has to "Push button #1 ,2 3 etc."
+
+#1 **Example Table of Layer #1** (Not Actual)
+	Option Number	Encryption
+Option #	1	MD (4, 5, HMAC PBKDF)
+Option #	2	SHA (1, 256, 512, etc.)
+Option #	3	GOST
+Option #	4	DES (incl 3DES)
+Option #	5	Skype
+Option #	6	WPA/WPA2
+Option #	7	CHAP
+Option #	8	IKE-PSK
+Option #	9	NTLM (incl NetNTLM)
+Option #	10	Kerberos
+Option #	11	DNSSEC
+Option #	12	PostgresSQL
+Option #	13	MS Office
+Option #	14	Bitcoin
+Option #	15	Blockchain
+Option #	16	AIX
+Option #	17	CISCO
+Option #	18	MySQL
+Option #	19	Winzip
+Option #	20	Oracle
+Option #	21	Apache
+Option #	22	NSIDAPS
+Option #	23	Blowfish
+Option #	24	Windows Phone
+Option #	25	Samsung Android
+Option #	26	Grub
+Option #	27	Aruba
+Option #	28	SAP
+Option #	29	Lotus
+Option #	30	Peoplesoft
+Option #	31	RAR
+Option #	32	Winzip
+Option #	33	LUKS
+Option #	34	PDF
+Option #	35	Plaintext
+Option #	36	aes
