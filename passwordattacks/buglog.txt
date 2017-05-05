@@ -4,6 +4,8 @@ FIXED: Hybrid and Reverse-Hybrid Attacks
 
 **BUGGED: "Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now**
 
+Source: https://hashcat.net/wiki/doku.php?id=mask_attack
+
 Okay... so they use a lot of fancy terms to describe something simple, for example "optparse" but for hashcat to properly use a character set you can either use "-1" or full length wise... "--custom-charset1=CS"
 
 And....
@@ -15,3 +17,13 @@ Just means
 "--custom-charset1=CS charsets/special/Russian/ru_ISO-8859-5-special.hcchr"
 
 Which is located in this folder: /usr/share/hashcat/charsets/
+
+So I am guessing this is how its supposed to be done
+
+"hashcat -a 3 <charset switch> <charset hcchr file> <password length>"
+
+so if you type '?l' 5-times for password length, it means the password is five-letters long, and letters ONLY. To include numbers its 
+
+"hashcat -a 3 <charset switch> <charset hcchr file> <number switch> <password length>"
+
+Where number switch = '?l?d'
