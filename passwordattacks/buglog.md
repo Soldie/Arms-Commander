@@ -1,10 +1,10 @@
-FIXED: Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input prompt. "Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "
+# FIXED: Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input prompt. "Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "
 
-FIXED: Hybrid and Reverse-Hybrid Attacks
+# FIXED: Hybrid and Reverse-Hybrid Attacks
 
-FIXED: Combinator Attacks. I confused the switch for Brute Force with Combinator. Combinator = 1, Brute Force (Mask) = 3
+# FIXED: Combinator Attacks. I confused the switch for Brute Force with Combinator. Combinator = 1, Brute Force (Mask) = 3
 
-**BUGGED: "Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now**
+# **BUGGED: "Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now**
 
 Source: https://hashcat.net/wiki/doku.php?id=mask_attack
 
@@ -91,7 +91,7 @@ So we can build the menus quickly, not using opt_List(), but instead have the py
 
 That way, we can use it as a refererence, and the user just has to "Push button #1 ,2 3 etc."
 
-#1 **Example Table of Layer #1** (Not Actual)
+# **Example Table of Layer #1** (Not Actual)
 	Option Number	Encryption
 Option #	1	MD (4, 5, HMAC PBKDF)
 Option #	2	SHA (1, 256, 512, etc.)
@@ -129,3 +129,13 @@ Option #	33	LUKS
 Option #	34	PDF
 Option #	35	Plaintext
 Option #	36	aes
+
+# Design characteristics (under the hood) of Menu:
+
+1. Rapidly put together via Microsoft Excel + Texteditors.
+2. Has a "dual-key" to value pair. That means, "either press 1 will get you WPA2-PSK encryption cracking, OR, you can just type 2500", either way the opt_Dict = {'1': 2500, '2500':2500}
+3. At least a "two-layer" submenu to help users choose.
+4. May require multiple python modules. To better visualize and debug. 
+5. Probably better to start with the most common cryptos first, OR, we can just use word to format the strings for the dicts. Or excel. 
+
+This definitely can't be sorted in one day, but we can later add curly brackets, colons, semicolons in there to make the process much quicker. 
