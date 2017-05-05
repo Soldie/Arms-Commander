@@ -58,3 +58,13 @@ This command worked, which specified a six digit password of both letters and nu
 "hashcat -a3 -m 2500 /media/root/Data/HashCatConverted/hashcat_20170405-013557.cap-01.cap.hccapx ?l?d ?l?l?l?l?l?l"
 
 I should use the mask file method as a separate method. 
+
+This one worked too:
+
+"hashcat -a3 -1 charsets/special/Russian/ru_ISO-8859-5-special.hcchr -m 2500 /media/root/Data/HashCatConverted/hashcat_20170405-013557.cap-01.cap.hccapx ?l?d ?l?l?l?l?l?l"
+
+So its...
+
+"hashcat -a 3 -1 <maskfile> -m <hash type> <hash file> <number switch> <password length>"
+
+But there are four types of charset switches. This will need to be placed on hiatus until I get down ALL of it.
