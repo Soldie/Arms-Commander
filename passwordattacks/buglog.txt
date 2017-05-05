@@ -1,1 +1,7 @@
-Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input prompt. "Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "
+FIXED: Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input prompt. "Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "
+
+FIXED: Hybrid and Reverse-Hybrid Attacks
+
+
+"Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now
+
