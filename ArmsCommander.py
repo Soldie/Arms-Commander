@@ -8,7 +8,7 @@ import socket
 import operator
 from termcolor import colored
 import sys
-sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
+# sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
 
 os.system('cat /root/ArmsCommander/banners/ACBanner.txt')
@@ -646,25 +646,8 @@ def aircrack():
     return
 
 def six_password_attacks():
-    Menu_Header = colored('PASSWORD CRACKERS AND OTHER RELATED ATTACKS', 'cyan', attrs=['bold'])
-    print Menu_Header
-    opt_List = [
-        '\n\t#0 Return to Main Menu',
-        '#1. Aircrack-ng, crack captured WPA handshakes'
-    ]
-    print ("\n\t".join(opt_List))
-
-    opt_Choice = str(raw_input("Enter a OPTION: "))
-
-    if opt_Choice == "0":
-        main()
-    elif opt_Choice == "1":
-        os.system('clear')
-        aircrack()
-        # MT_host_recon()
-    else:
-        print colored('You have entered a invalid option','red')
-        six_password_attacks()
+    os.system('python /root/ArmsCommander/passwordattacks.py')
+    main()
     return
 
 def Violent_Python_Menu():
@@ -710,7 +693,8 @@ def main():
     Menu_Header = colored('MAIN MENU', 'cyan', attrs=['bold'])
     print Menu_Header
     opt_List = [
-        '\n\t#1. Reconnaissance Tools & Vulnerability Scanners',
+        '\n\t#0 Exit Program',
+        '#1. Reconnaissance Tools & Vulnerability Scanners',
         '#2. Network Defenses & Traffic Monitoring',
         '#3. Remote Exploitation/Hacking',
         '#4. Mobile Device Hacking',
@@ -726,6 +710,9 @@ def main():
     if opt_Choice == "1":
         os.system('clear')
         one_recon_and_vuln_scan()
+    elif opt_Choice == "0":
+        print 'Exiting Program'
+        exit(0)
     elif opt_Choice == "2":
         os.system('clear')
         two_net_defense_traffic_monitor()
