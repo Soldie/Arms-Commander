@@ -8,9 +8,13 @@ import operator
 from termcolor import colored
 
 def boost_mode():
+    print colored('Warning: Some features may not be available except to Titan Series GPUs, nvidia-smi will tell you which ones you can do','red',attrs=['bold'])
+    gpu_clock = str(raw_input("Enter your maximum GPU clock in mhz (e.g. 1124): "))
+    mem_clock = str(raw_input("Enter your maximum memory clock in mhz (e.g. 960): "))
     os.system('nvidia-smi -pm 1')
     os.system('nvidia-smi -e 1')
-    os.system('nvidia-smi -ac 960,1124')
+    cmd_String = 'nvidia-smi -ac %s,%s' % (mem_clock,gpu_clock)
+    os.system(cmd_String)
     os.system('nvidia-smi --auto-boost-permission=0')
     os.system('nvidia-smi --auto-boost-default=1')
     print colored('[*] Clock set to 1124 mhz GPU, 960 mhz memory','yellow',attrs=['bold'])
@@ -29,7 +33,7 @@ def main():
     print colored('MAIN MENU','cyan',attrs=['bold'])
     opt_List = [
         '\n\t#0. Exit Program',
-        '#1. Set my video card to full constant-boost mode, at 1124 mhz GPU clock, 960 mhz memory clock',
+        '#1. Set my video card to full constant-boost mode',
         '#2. Activate all monitoring systems'
     ]
 
