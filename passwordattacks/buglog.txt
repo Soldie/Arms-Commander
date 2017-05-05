@@ -2,6 +2,16 @@ FIXED: Selecting Option #5 "Inter-Cat", gives a incorrectly ordered user input p
 
 FIXED: Hybrid and Reverse-Hybrid Attacks
 
+**BUGGED: "Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now**
 
-"Mask-Attack" or "Brute-Force" syntax is bugged. Reading the manual on hashcat right now
+Okay... so they use a lot of fancy terms to describe something simple, for example "optparse" but for hashcat to properly use a character set you can either use "-1" or full length wise... "--custom-charset1=CS"
 
+And....
+
+"-1 charsets/special/Russian/ru_ISO-8859-5-special.hcchr"
+
+Just means
+
+"--custom-charset1=CS charsets/special/Russian/ru_ISO-8859-5-special.hcchr"
+
+Which is located in this folder: /usr/share/hashcat/charsets/
