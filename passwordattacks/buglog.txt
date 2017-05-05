@@ -31,3 +31,21 @@ so if you type '?l' 5-times for password length, it means the password is five-l
 Where number switch = '?l?d'
 
 But you see, WPA2-PSK by itself, requires the user to have EIGHT characters at a minimum. So we should start the menu at that. However, I am not gonna just number that to the maximum bits. I'd rather have the user input it themselves.
+
+Yeesh that is one ugly documentation. But okay one way that works is..
+
+"hashcat -a 3 <hashfile> <pw length>" 
+
+which is letters ONLY. To include numbers its...
+
+"hashcat -a 3 <hashfile> <include numbers> <pw length>"
+
+So its
+
+"hashcat -a 3 <hashfile> ?l?d ?l?l?l?l?l?l"
+
+for a six-letter password with words and numbers
+
+You can also specify a "mask". And you can find your preloaded mask files with "locate masks" in terminal
+
+"hashcat -a 3 <hash to attack> <mask_file.hcmask>"
