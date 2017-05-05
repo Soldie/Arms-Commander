@@ -68,3 +68,8 @@ This command worked, which specified a six digit password of both letters and nu
 "hashcat -a 3 -1 (maskfile) -m (hash type) (hash file) (number switch) (password length)"
 
 **But there are four types of charset switches. This will need to be placed on hiatus until I get down ALL of it.
+
+** Trying to Implement this interactive hash selection menu but...** 
+
+THere appears to be... over 230 different types of hashes. They can be easily organized however. The -m made no sense anyways but Its easy for me to reorganize it alphabetically and categorize them.
+
