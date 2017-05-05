@@ -57,33 +57,33 @@ def straight_attack():
     os.system(cmd_String_Straight)
     return
 
-def brute_attack():
-    attack_type = '3'
+def combination_attack():
+    attack_type = '1'
     hash_file = str(raw_input("Enter the full path of the hash file: "))
     dict_1 = str(raw_input("Enter your FIRST password dictionary file: "))
     dict_2 = str(raw_input("Enter your SECOND password dictionary file: "))
     os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
     workload_profile = str(raw_input("Enter a OPTION: "))
     # cmd_String_Brute = "hashcat -a %s -w %s -m %s %s %s" % (attack_type, workload_profile, hash_type, charset, pw_len_range)
-    cmd_String_Brute = """
+    cmd_String_Combinator = """
     hashcat -a %s -w %s -m %s '%s' '%s' '%s'
     """% (attack_type, workload_profile, hash_type, hash_file, dict_1, dict_2)
-    print cmd_String_Brute
-    os.system(cmd_String_Brute)
+    print cmd_String_Combinator
+    os.system(cmd_String_Combinator)
     return
 
-def combination_attack():
-    attack_type = '1'
+def brute_attack():
+    attack_type = '3'
     hash_file = str(raw_input("Enter the full path of the hash file: "))
-    charset = str(raw_input("Enter the character set you wish to attack with: "))
+    charset = str(raw_input("Enter the PATH of the character set you wish to attack with: "))
     pw_len_range = str(raw_input("Enter the password length range you are attacking: "))
     os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
     workload_profile = str(raw_input("Enter a OPTION: "))
-    cmd_String_Combinator = """
-    hashcat -a %s -w %s -m %s '%s' '%s' '%s'
+    cmd_String_Brute = """
+    hashcat -a %s -w %s -m %s '%s' %s %s
     """% (attack_type, workload_profile, hash_type, hash_file, charset, pw_len_range)
-    print cmd_String_Combinator
-    os.system(cmd_String_Combinator)
+    print cmd_String_Brute
+    os.system(cmd_String_Brute)
     return
 
 def hybrid_attack():
