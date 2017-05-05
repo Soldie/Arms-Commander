@@ -20,11 +20,11 @@ hashcat_converted_dir = '/root/ArmsCommander/logs/HashCat'
 wordlist = '/root/ArmsCommander/passwordattacks/MeowMix/wordlist'
 
 def convert_wordlist():
-    os.system('python /root/Documents/Easy-Suite/MeowMix/convert.py')
+    os.system('python /root/ArmsCommander/passwordattacks/MeowMix/convert.py')
     main()
 
 def edit_wordlist():
-    cmd_String = 'leafpad /root/Documents/Easy-Suite/MeowMix/wordlist'
+    cmd_String = 'leafpad /root/ArmsCommander/passwordattacks/MeowMix/wordlist'
     os.system(cmd_String)
     main()
     return
