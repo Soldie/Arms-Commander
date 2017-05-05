@@ -35,21 +35,25 @@ sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets windo
 
 print colored('WARNING: This portion of the password-attacks section is still in development, the dev is still learning how the hashcat syntax works','white',attrs=['bold'])
 
-dict_file = str(raw_input("Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "))
+# dict_file = str(raw_input("Enter the FULL PATH to your PASSWORD DICTIONARY FILE: "))
 hash_type = '2500'
 
 # We need to add other types of hash types into a dictionary file
 
-# the non-straight attack types should be used with a crunched wordlist. 
+# the non-straight attack types should be used with a crunched wordlist.
 def straight_attack():
     attack_type = '0'
     # hash_type = hash_dict[hash_user_input]
     hash_file = str(raw_input("Enter the full path of the hash file: "))
+    dict_file = str(raw_input("Enter the full path of the dict file: "))
     # workload_user_input = str(raw_input("Enter a OPTION: "))
     # workload_profile = workload_dict[workload_user_input]
     os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
     workload_profile = str(raw_input("Enter a OPTION: "))
-    cmd_String_Straight = "hashcat -a %s -w %s -m %s %s %s" % (attack_type, workload_profile, hash_type, hash_file, dict_file)
+    cmd_String_Straight = """
+    hashcat -a %s -w %s -m %s '%s' '%s'
+    """ % (attack_type, workload_profile, hash_type, hash_file, dict_file)
+    print cmd_String_Straight
     os.system(cmd_String_Straight)
     return
 
@@ -61,7 +65,10 @@ def brute_attack():
     os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
     workload_profile = str(raw_input("Enter a OPTION: "))
     # cmd_String_Brute = "hashcat -a %s -w %s -m %s %s %s" % (attack_type, workload_profile, hash_type, charset, pw_len_range)
-    cmd_String_Combinator = "hashcat -a %s -w %s -m %s %s %s %s" % (attack_type, workload_profile, hash_type, hash_file, dict_1, dict_2)
+    cmd_String_Brute = """
+    hashcat -a %s -w %s -m %s '%s' '%s' '%s'
+    """% (attack_type, workload_profile, hash_type, hash_file, dict_1, dict_2)
+    print cmd_String_Brute
     os.system(cmd_String_Brute)
     return
 
@@ -72,14 +79,39 @@ def combination_attack():
     pw_len_range = str(raw_input("Enter the password length range you are attacking: "))
     os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
     workload_profile = str(raw_input("Enter a OPTION: "))
-    cmd_String_Brute = "hashcat -a %s -w %s -m %s %s %s" % (attack_type, workload_profile, hash_type, charset, pw_len_range)
-    os.system(cmd_String_Brute)
+    cmd_String_Combinator = """
+    hashcat -a %s -w %s -m %s '%s' '%s' '%s'
+    """% (attack_type, workload_profile, hash_type, hash_file, charset, pw_len_range)
+    print cmd_String_Combinator
+    os.system(cmd_String_Combinator)
     return
 
 def hybrid_attack():
+    attack_type = '6'
+    hash_file = str(raw_input("Enter the full path of the hash file: "))
+    dict_file = str(raw_input("Enter your password DICTIONARY FILE: "))
+    charset = str(raw_input("Enter the CHARACTER SET that follows the password: "))
+    os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
+    workload_profile = str(raw_input("Enter a OPTION: "))
+    cmd_String_Hybrid = """
+    hashcat -a %s -w %s -m %s '%s' '%s' '%s'
+    """ % (attack_type, workload_profile, hash_type, hash_file, dict_file, charset)
+    print cmd_String_Hybrid
+    os.system(cmd_String_Hybrid)
     return
 
 def reverse_hybrid_attack():
+    attack_type = '7'
+    hash_file = str(raw_input("Enter the full path of the hash file: "))
+    dict_file = str(raw_input("Enter your password DICTIONARY FILE: "))
+    charset = str(raw_input("Enter the CHARACTER SET that follows the password: "))
+    os.system('cat /root/ArmsCommander/passwordattacks/workload_list.txt')
+    workload_profile = str(raw_input("Enter a OPTION: "))
+    cmd_String_Hybrid_Reverse = """
+    hashcat -a %s -w %s -m %s '%s' '%s' '%s'
+    """ % (attack_type, workload_profile, hash_type, hash_file, charset, dict_file)
+    print cmd_String_Hybrid_Reverse
+    os.system(cmd_String_Hybrid_Reverse)
     return
 
 def dump_cracked_hashes():
