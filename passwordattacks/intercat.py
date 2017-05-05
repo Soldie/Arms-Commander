@@ -42,6 +42,7 @@ hash_type = '2500'
 
 # the non-straight attack types should be used with a crunched wordlist.
 def straight_attack():
+    print colored('[*] Selected Straight/Direct Dictionary Attack','green',attrs=['bold'])
     attack_type = '0'
     # hash_type = hash_dict[hash_user_input]
     hash_file = str(raw_input("Enter the full path of the hash file: "))
@@ -58,6 +59,8 @@ def straight_attack():
     return
 
 def combination_attack():
+    print colored('[*] Selected Combinator (2x Dictionary) Attack','yellow',attrs=['bold'])
+
     attack_type = '1'
     hash_file = str(raw_input("Enter the full path of the hash file: "))
     dict_1 = str(raw_input("Enter your FIRST password dictionary file: "))
@@ -73,6 +76,8 @@ def combination_attack():
     return
 
 def brute_attack():
+    print colored('[*] Selected Mask/Brute Force Attack','red',attrs=['bold'])
+
     attack_type = '3'
     hash_file = str(raw_input("Enter the full path of the hash file: "))
     charset = str(raw_input("Enter the PATH of the character set you wish to attack with: "))
@@ -87,6 +92,8 @@ def brute_attack():
     return
 
 def hybrid_attack():
+    print colored('[*] Selected Hybrid Dictionary + Generated Attack','magenta',attrs=['bold'])
+
     attack_type = '6'
     hash_file = str(raw_input("Enter the full path of the hash file: "))
     dict_file = str(raw_input("Enter your password DICTIONARY FILE: "))
@@ -101,6 +108,8 @@ def hybrid_attack():
     return
 
 def reverse_hybrid_attack():
+    print colored('[*] Selected Reverse Hybrid Generated + Dictionary Attack','cyan',attrs=['bold'])
+
     attack_type = '7'
     hash_file = str(raw_input("Enter the full path of the hash file: "))
     dict_file = str(raw_input("Enter your password DICTIONARY FILE: "))
