@@ -137,5 +137,16 @@ Option #	36	aes
 3. At least a "two-layer" submenu to help users choose.
 4. May require multiple python modules. To better visualize and debug. 
 5. Probably better to start with the most common cryptos first, OR, we can just use word to format the strings for the dicts. Or excel. 
+6. When using a spreadsheet to build a "super-massive dict" you can use the columns of a Excel holder to hold each symbol. Example
+{
+'Key':'Value',
+}
+
+Column 1 Column 2 Column 3 Column 4 Column5 Column 6 Column 7 Column 8
+'	Key	'		:	'	Value	'	,
+
 
 This definitely can't be sorted in one day, but we can later add curly brackets, colons, semicolons in there to make the process much quicker. 
+
+And I got really important matters to do this morning. Ttyl all
+
