@@ -1,0 +1,13 @@
+Navigate to /root/WirelessAttackLite/KaliTerminalScripts
+
+1. Run monitorMode.sh to put your external wireless card + OTG cable into monitor mode
+2. Ctrl + C to freeze monitor mode
+3. Locate a BSSID of your target and then run targetedMode.sh
+4. In targetedMode.sh enter the BSSID MAC of target to only capture packets of that device
+5. Open a new terminal and run replayAttack.sh, enter BSSID MAC + # of deauth packets you want to send
+6. If you are successful with capturing the 4-way handshake, the terminal running targetedMode.sh will say WPA-Handshake on the top-right
+7. You should LEAVE the area as soon as you capture the 4-way handshake. 
+8. Cracking the handshake could be done at home 
+
+Steps 1 to 7 only takes at most, 10 minutes
+Step 8 could take days depending on the quality of your wordlist (Dictionary Attack)
