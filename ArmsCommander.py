@@ -553,7 +553,7 @@ def four_mobile_dev_hacking():
     return
 
 def cylon_raider():
-    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider/Cylon_Raider_Main.py')
+    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Cylon_Raider_Main.py')
     main()
     return
 
@@ -595,7 +595,7 @@ def ARP_injection_test():
     return
 
 def hidden_network_decloaker():
-    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider/sniffHidden.py')
+    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/sniffHidden.py')
     return
 
 def five_wireless_attacks():
@@ -641,7 +641,7 @@ def five_wireless_attacks():
         five_wireless_attacks()
 
 def aircrack():
-    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider/CrackHead_Aircrack.py')
+    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/CrackHead_Aircrack.py')
     main()
     return
 
@@ -735,43 +735,5 @@ def main():
         print colored('You have entered a invalid option','red')
         error_handling()
         main()
-    main()
     return
-
-# ERROR HANDLING BLOCK
-def error_handling():
-    while Exception == True:
-        try:
-            print '[*] A unidentified exception is raised!'
-        except (TypeError,NameError):
-            print TypeError,NameError
-            print '[-] Please report this error to the dev'
-        except KeyboardInterrupt:
-            print '[-] Received exit command, quitting'
-            exit(0)
-        except EOFError:
-            print EOFError
-            print '[-] Error end of file reached'
-            print '[-] Please report this error to the dev'
-        except SyntaxError:
-            print SyntaxError
-            print '[-] Invalid syntax was used'
-        except ValueError:
-            print ValueError
-            print '[-] Invalid number used'
-        except IOError:
-            print '[-] IO Error raised'
-            print IOError
-            print 'Either a file is not found or disk is full'
-        except MemoryError:
-            print MemoryError
-            print '[-] Ran out of local memory resources'
-        except IndentationError:
-            print IndentationError
-            print '[-] Looks like the dev has a bug in the program. Notify him and what line and file it happened in'
-            print "Or you can fix the whitespaces yourself if you'd like, Mr. Dev is prolly masterbating to porn or something"
-
-if Exception:
-    error_handling()
-    main()
 main()
