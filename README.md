@@ -22,6 +22,26 @@ Instead of fiddling with uncertain terminal commands, for those new Linux users,
 		3. It will automate the Git Cloning process for you as well as the git submodule inits and updating and python module installations
 		4. It will also warn you to back up the log files provided by previous installs of Arms-Commander. You will have to type "CONTINUE" in all caps and hit [Enter] to proceed with replacing the old AC with the new AC
 		5. As soon as it is done installing the prerequisites, it will automatically start ArmsCommander's Console. At this point you can start AC with the terminal command 'ArmsCommander.py' or double click the launcher on your /root/Desktop directory.
+		
+# Important Disclaimer about CUDA Setup Utility
+
+Because of the 
+
+1. proprietary factor of NVIDIA graphics drivers
+
+2. The volatile environment of buggy updates between all Linux and derivatives
+
+3. Various adaptions and buggy code in Arms-Commander that i am trying to fix as one person
+
+4. And that no one's machine is exactly alike (different drivers working for different NVIDIA models, breaking others, maybe requiring alternative desktop environments like XFCE for certain installations)
+
+Its safe to assume that this utility can regularly break your machine. 
+
+What it does do, is attempt to automate the basic meat and potatoes of the NVIDIA driver installation process for Linux.
+
+Technical support is lacking and incomplete. 
+
+You are in very dark waters, be warned.
 
 # (Manual) Installation, Type the Following Commands to Easily Install in a Linux Box
 1. cd /tmp/
