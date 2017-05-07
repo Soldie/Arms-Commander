@@ -39,7 +39,7 @@ def write_to_blacklist(blacklist_file):
     update_initramfs_reboot()
     return blacklist_file
 
-def second_reboot_cycle(): #blacklist Nouveau Kernel Modules, update initramfs, and then reboot
+def second_reboot_cycle(blacklist_file): #blacklist Nouveau Kernel Modules, update initramfs, and then reboot
     print colored('SECOND reboot cycle: Blacklisting stock OS Open-Source Drivers','red',attrs=['bold'])
     print colored('[!] Warning! After this reboot, your display will NOT WORK and you will have to rely on running this from the TTY terminals (CTRL + ALT + 1 to 6)','red',attrs=['bold'])
     continue_question = str(raw_input("Type CONTINUE to proceed with blacklisting Nouveau and modifying Kernel: "))
