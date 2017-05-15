@@ -12,14 +12,17 @@ echo Creating logfile directories
 mkdir /root/ArmsCommander/payloads
 mkdir /root/ArmsCommander/payloads/tester
 mkdir /root/ArmsCommander/logs/
-mkdir /root/ArmsCommander/logs/nmap
 mkdir /root/ArmsCommander/logs/CornHarvester
-mkdir /root/ArmsCommander/logs/multi_tool_recon
-mkdir /root/ArmsCommander/logs/SQLMap
-mkdir /root/ArmsCommander/logs/OWASP
-mkdir /root/ArmsCommander/logs/Cylon-Raider
+mkdir /root/ArmsCommander/logs/createafolder
 mkdir /root/ArmsCommander/logs/CreditCardInfo
+mkdir /root/ArmsCommander/logs/Cylon-Raider
+mkdir /root/ArmsCommander/logs/HashCat
+mkdir /root/ArmsCommander/logs/multi_tool_recon
 mkdir /root/ArmsCommander/logs/ngrep
+mkdir /root/ArmsCommander/logs/nmap
+mkdir /root/ArmsCommander/logs/OWASP
+mkdir /root/ArmsCommander/logs/Pyrit
+mkdir /root/ArmsCommander/logs/SQLMap
 echo Copying main installation into /root/ArmsCommander
 cp -r ./ /root/ArmsCommander #copies contents to the new directory
 echo Copying launcher icon to Kali Desktop

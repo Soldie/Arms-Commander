@@ -64,6 +64,11 @@ def cuda_setup_utils():
     main()
     return
 
+def pyrit_analyze():
+    print colored('[*] Launching Pyrit-Analyze','yellow',attrs=['bold'])
+    os.system('python /root/ArmsCommander/passwordattacks/Pyrit/Pyrit.py')
+    main()
+
 def main():
     opt_List = [
         '\n\t#0. Main Menu',
@@ -72,6 +77,7 @@ def main():
         '#3. Video card tuner for NVIDIA CUDA core GPUs and GPU monitoring systems',
         '#4. Dump cracked hashes',
         '#5. Run, INTER-CAT, the interactive menu to simplify the usage of hashcat',
+        '#6. Pyrit-Analyze Capture Files, check whether or not your capture files have valid EAPOL handshakes',
         '#CUDAINSTALL. Run the CUDA Setup Suite to install drivers and configure fresh NVIDIA GPU systems for password cracking'
     ]
 
@@ -101,6 +107,10 @@ def main():
     elif opt_Choice == "5":
         os.system('clear')
         custom_hashcat()
+        main()
+    elif opt_Choice == "6":
+        os.system('clear')
+        pyrit_analyze()
         main()
     elif opt_Choice == "CUDAINSTALL" or "INSTALL":
         os.system('clear')

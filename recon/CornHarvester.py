@@ -9,22 +9,14 @@ import operator
 from termcolor import colored
 import sys
 import StringIO
+import recon_toolkits
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
-# Banner Page
-os.system('cat /root/ArmsCommander/banners/banner_cornharvester.txt')
-# Intro Page
-# # Rain makes corn, corn makes whiskey / Whiskey makes my baby, feel a little frisky
 
-print '\n\tRain makes corn'
-print '\tCorn makes whiskey'
-print '\tWhiskey makes my baby...'
-print '\tFeel a little frisky'
-print "\n\t'Rain is a Good Thing' by Luke Bryan"
 
 # def harvest_wordlist():
 # ask user to provide wordlist
-user_input = str(raw_input("Enter a wordlist file of domains containing 'example.com' on each line: "))
+user_input = '/root/ArmsCommander/recon/CornHarvester_Wordlist'
 wordlist = open(user_input, 'r')
 
 # opens wordlist asnd reads each line into a variable
@@ -39,19 +31,30 @@ while True:
     line = buf.readline().strip()
     if line != "":
     # makes variable for a file containing the harvest of the domain
+        line.replace('http://www.','')
+        line.replace('https://www.','')
+        line.replace('/','')
         log_directory = '/root/ArmsCommander/logs/CornHarvester/'
         harvest_file = line + '_harvest.txt'
         # sets the harvester command string
-        print colored('Now harvesting emails for %s','red','on_white') % line
+        # print colored('Now harvesting emails for %s','red','on_white') % line
+        print colored('[*] Now harvesting emails for %s','yellow',attrs=['bold']) % line
         # makes harvest file
         # command string
-        cmd_String = "theharvester -d %s -l 500 -b all -h myresults.html >> %s%s" % (line, log_directory, harvest_file)
+        save_filename = line
+        save_filename = save_filename.replace('http://www.','')
+        save_filename = save_filename.replace('https://www.','')
+        save_filename = save_filename.replace('/','')
+        save_file = log_directory + save_filename + '.txt'
+        cmd_String = "theharvester -d %s -l 500 -b all -h myresults.html >> %s" % (line, save_file)
         # cmd_String = "theharvester -d %s -l 500 -b all >> /root/ArmsCommander/logs/CornHarvester/%s/%s" % (line, domain_directory, harvest_file)
         # prints a copy of the command string for debugging purposes
         print colored(cmd_String,'red','on_white')
         # runs the command string
         os.system(cmd_String)
-        print colored('Completed harvest of %s','blue','on_white') % line
+        # print colored('Completed harvest of %s','blue','on_white') % line
+        print colored('Completed harvest of %s','green',attrs=['bold']) % line
+        recon_toolkits.cornharvester_to_csv(save_file)
         # except buf == "":
         #     print 'Reached end of line of wordlist'
         #     pass
@@ -60,41 +63,3 @@ while True:
         print 'Please check /root/ArmsCommander/logs/CornHarvester/ for your results'
         print 'ENDING PROGRAM'
         exit(0)
-
-
-# def list_all_loot():
-#     os.system('cat /root/ArmsCommander/logs/CornHarvester/*')
-#     main()
-#     return
-# def main():
-#     opt_List = [
-#         '\n\t#1. Provide a wordlist for CornHarvester to farm emails and domains from',
-#         '#2. List all loot gathered by CornHarvester'
-#     ]
-#
-#     print ("\n\t".join(opt_List))
-#     opt_Choice = str(raw_input("Enter a OPTION: "))
-#
-#     if opt_Choice == "1":
-#         harvest_wordlist()
-#     elif opt_Choice == "2":
-#         list_all_loot()
-#     else:
-#         print colored('You have entered a invalid option','red','on_white')
-#     return
-# main()
-#
-# results = []
-# with open('/root/Documents/domainsRelatedToNiantic', 'r') as inputFile:
-#     for line in inputFile:
-#         results.append(line.strip().split(',')) # this basically fills the list "results" three lienes back up
-# # convert each line of wordlist into a set
-#     for line in results:
-#         line = line.replace('"', "")
-#         line = line.replace("'", "")
-#         line = line.split("=")
-# # Run commands against the set using theharvester
-#         # theharvester -d microsoft.com -l 500 -b google -h myresults.html
-#     cmd_String = "theharvester -d %s -l 500 -b all" % line
-#     print cmd_String
-#     os.system(cmd_String)

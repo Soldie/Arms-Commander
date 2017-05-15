@@ -36,4 +36,4 @@ while True:
         os.system(cmd_String)
     else:
         print colored('Conversion to hashcat format completed, see %s for your results','green',attrs=['bold']) % hashcat_converted_dir
-        main()
+        os.system('python /root/ArmsCommander/passwordattacks/meowmix.py')

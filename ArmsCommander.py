@@ -12,14 +12,18 @@ import sys
 
 
 os.system('cat /root/ArmsCommander/banners/ACBanner.txt')
+logfile_directory = '/root/ArmsCommander/logs'
 
-
+def search_logs(search_term, logfile_directory):
+    cmd_String = 'find %s -iname "*%s*"' % (logfile_directory, search_term)
+    os.system(cmd_String)
+    one_recon_and_vuln_scan()
 def MT_host_recon():
     os.system('python /root/ArmsCommander/recon/multi_tool_recon.py')
     return
 
 def CornHarvester():
-    os.system('python /root/ArmsCommander/recon/CornHarvester.py')
+    os.system('python /root/ArmsCommander/recon/CornHarvester_Menu.py')
     return
 
 def NMap_Auto():
@@ -104,7 +108,8 @@ def one_recon_and_vuln_scan():
         '#4. Run SQLMap (Automatically set to route traffic through Tor)',
         '#5. OWASP Zaproxy (Alternative vulnerability scanner, much faster than SQLMap)',
         '#6. BurpSuite',
-        '#7. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap'
+        '#7. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap',
+        '#8. Search your logfile directories for anything that matches a term'
     ]
     print ("\n\t".join(opt_List))
 
@@ -136,6 +141,10 @@ def one_recon_and_vuln_scan():
     elif opt_Choice == "7":
         os.system('clear')
         output_data()
+    elif opt_Choice == "8":
+        search_term = str(raw_input("Enter the SEARCH TERM: "))
+        os.system('clear')
+        search_logs(search_term, logfile_directory)
     else:
         print colored('You have entered a invalid option','red')
         one_recon_and_vuln_scan()
@@ -710,9 +719,9 @@ def main():
     if opt_Choice == "1":
         os.system('clear')
         one_recon_and_vuln_scan()
-    elif opt_Choice == "0":
-        print 'Exiting Program'
-        exit(0)
+    # elif opt_Choice == "0" or "EXIT" or "exit":
+    #     print 'Exiting Program'
+    #     exit(0)
     elif opt_Choice == "2":
         os.system('clear')
         two_net_defense_traffic_monitor()
