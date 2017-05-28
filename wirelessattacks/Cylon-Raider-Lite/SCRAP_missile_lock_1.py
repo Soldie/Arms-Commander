@@ -24,10 +24,10 @@ successful_handshake_capture_str = 'WPA handshake:'
 capture_Interface = 'wlan1mon'
 
 # defining temporary files
-temp_airodump_recon_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file.csv'
-temp_file_airodump_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
-temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
-temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
+temp_airodump_recon_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file.csv'
+temp_file_airodump_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
+temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
+temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
 
 # defining devnull
 DEVNULL = open(os.devnull, 'w')
@@ -41,10 +41,10 @@ def airmon():
 
 
 def airodump_recon(capture_Interface, temp_airodump_recon_file, DEVNULL): # Either Whole or Targeted
-    temp_airodump_recon_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file.csv'
-    temp_file_airodump_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
-    temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
-    temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
+    temp_airodump_recon_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file.csv'
+    temp_file_airodump_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
+    temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
+    temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
     cmd_String = 'airodump-ng %s' % capture_Interface
     # process_recon = subprocess.Popen(cmd_String, stderr=DEVNULL, stdout=DEVNULL)
     process_recon = subprocess.Popen(cmd_String, shell=True, stderr=subprocess.STDOUT, stdout=subprocess.PIPE)
@@ -156,9 +156,9 @@ def airodump_targeted(BSSID_targeting_str, CLIENT_targeting_str, successful_hand
     )
 
     proc_airodump_targeted = subprocess.Popen(cmd_String, stdout=DEVNULL, stderr=DEVNULL)
-    temp_file_airodump_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
-    temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
-    temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
+    temp_file_airodump_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
+    temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
+    temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
     # open a writable main targeted airodump file
     w = open(temp_file_airodump_targeted,'w') # make sure its a regular 'w' so it can be overwritten
     w.write(proc_airodump_targeted) # write each line to a temporary file
@@ -246,7 +246,7 @@ def airodump_targeted(BSSID_targeting_str, CLIENT_targeting_str, successful_hand
             target_menu()
 
 def check_airodump(capture_BSSID, ESSID, capture_Channel, cap_file, capture_Interface):
-    temp_file_check_airodump = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_check_airodump.csv'
+    temp_file_check_airodump = '/root/Cylon-Raider-Lite/logs/temp_check_airodump.csv'
     BSSID = capture_BSSID
     cmd_airodump = "airodump-ng --bssid {0} -c {1} --write {2} {3}".format(
         capture_BSSID,
@@ -268,7 +268,7 @@ def check_airodump(capture_BSSID, ESSID, capture_Channel, cap_file, capture_Inte
             sentence = sentence.split(':')
             victim_AP = sentence[1]
             print 'FOUND HANDSHAKE FOR: %s' % victim_AP
-            permanent_handshake_cap_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/captured_handshake_%s_%s.cap' % (BSSID, ESSID)
+            permanent_handshake_cap_file = '/root/Cylon-Raider-Lite/logs/captured_handshake_%s_%s.cap' % (BSSID, ESSID)
             cmd_String = "cp -r '%s' '%s'" % (temp_file_check_airodump, permanent_handshake_cap_file)
             print 'Handshake saved as %s' % permanent_handshake_cap_file
             exit(0)
@@ -386,7 +386,7 @@ def main():
 
     if opt_Choice == "0":
         os.system('clear')
-        os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Cylon_Raider_Main.py')
+        os.system('python /root/Cylon-Raider-Lite/Cylon_Raider_Main.py')
     elif opt_Choice == "1":
         os.system('clear')
         airmon()

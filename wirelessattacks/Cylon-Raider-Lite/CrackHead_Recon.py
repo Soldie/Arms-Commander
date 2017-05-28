@@ -12,7 +12,7 @@ from subprocess import Popen
 from subprocess import PIPE
 import threading
 
-cap_file_dir = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs'
+cap_file_dir = '/root/Cylon-Raider-Lite/logs'
 capture_Interface = 'wlan1mon'
 dev_null = open(os.devnull,'w')
 # os.system('cat /root/Cylon-Raider-Lite/banner_airmon.txt')
@@ -26,7 +26,7 @@ proc_String = "python /root/Cylon-Raider-Lite/sniffHidden.py"
 
 def thread_1():
     # import variables
-    cap_file_dir = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs'
+    cap_file_dir = '/root/Cylon-Raider-Lite/logs'
     capture_Interface = 'wlan1mon'
     dev_null = open(os.devnull,'w')
 
@@ -35,13 +35,13 @@ def thread_1():
     cmd_String = "airodump-ng -a --write %s/%s_monitor_mode_capture.csv  --write-interval 5 --output-format csv wlan1mon" % (cap_file_dir, timestr)
     print cmd_String
     os.system(cmd_String)# we should open this in a new box to avoid disrupting the process
-    os.system('cat /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/*.csv > /sdcard/Cylon_Raider_Recon.txt')
-    os.system('cat /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/*.csv > /root/Cylon_Raider_Recon.txt')
+    os.system('cat /root/Cylon-Raider-Lite/logs/*.csv > /sdcard/Cylon_Raider_Recon.txt')
+    os.system('cat /root/Cylon-Raider-Lite/logs/*.csv > /root/Cylon_Raider_Recon.txt')
     return
 
 def thread_2():
     # import variables
-    cap_file_dir = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs'
+    cap_file_dir = '/root/Cylon-Raider-Lite/logs'
     capture_Interface = 'wlan1mon'
     dev_null = open(os.devnull,'w')
 
@@ -80,7 +80,7 @@ if KeyboardInterrupt:
 # from subprocess import PIPE
 # import threading
 #
-# cap_file_dir = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs'
+# cap_file_dir = '/root/Cylon-Raider-Lite/logs'
 # capture_Interface = 'wlan1mon'
 # dev_null = open(os.devnull,'w')
 # # os.system('cat /root/Cylon-Raider-Lite/banner_airmon.txt')

@@ -7,7 +7,7 @@ import operator
 import sys
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
-        #os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/IDS_flood.py; exec bash\"'")
+        #os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/IDS_flood.py; exec bash\"'")
 print colored('Mana-Toolkit Installer','red','on_white')
 
 def mana_installer():

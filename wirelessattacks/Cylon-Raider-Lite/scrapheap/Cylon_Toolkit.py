@@ -19,13 +19,13 @@ successful_handshake_capture_str = 'WPA handshake:'
 capture_Interface = 'wlan1mon'
 
 # defining temporary files
-temp_airodump_recon_capture_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_capture.cap'
+temp_airodump_recon_capture_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_capture.cap'
 temp_airodump_recon_csv_file = 'airodump_recon_file_csv_temp.csv'
 temp_airodump_recon_file = 'airodump_recon_file_csv_temp.csv'
-analysis_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
-temp_file_airodump_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
-temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
-temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
+analysis_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
+temp_file_airodump_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
+temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
+temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
 
 # defining devnull
 DEVNULL = open(os.devnull, 'w')
@@ -465,7 +465,7 @@ def read_temp_recon_file(temp_airodump_recon_file,target_number):
 # #
 # # def targeted_capture_subproc(BSSID, channel):
 # #     capture_Interface = 'wlan1mon'
-# #     logfile_dir = '/root/ArmsCommander/Cylon-Raider-Lite/logs/'
+# #     logfile_dir = '/root/Cylon-Raider-Lite/Cylon-Raider-Lite/logs/'
 # #     permanent_capture_file = logfile_dir + BSSID + 'perm_capture.cap'
 # #     cmd_String = "airodump-ng --bssid {0} -c {1} --write {2} {3}".format(
 # #         BSSID,
@@ -580,8 +580,8 @@ def read_temp_recon_file(temp_airodump_recon_file,target_number):
 # #     return target_chosen
 # #
 # # # def make_csv_recon_file():
-# # #     airodump_csv_output = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv*.csv'
-# # #     analysis_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
+# # #     airodump_csv_output = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv*.csv'
+# # #     analysis_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
 # # #     cmd_String = 'cat %s > %s' % (airodump_csv_output, analysis_file)
 # # #     os.system(cmd_String)
 # # #     determine_type_of_file(analysis_file)

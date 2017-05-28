@@ -19,13 +19,13 @@ successful_handshake_capture_str = 'WPA handshake:'
 capture_Interface = 'wlan1mon'
 
 # defining temporary files
-temp_airodump_recon_capture_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_capture.cap'
+temp_airodump_recon_capture_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_capture.cap'
 temp_airodump_recon_csv_file = 'airodump_recon_file_csv_temp.csv'
 temp_airodump_recon_file = 'airodump_recon_file_csv_temp.csv'
-analysis_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
-temp_file_airodump_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
-temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
-temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
+analysis_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
+temp_file_airodump_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
+temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
+temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
 
 # defining devnull
 DEVNULL = open(os.devnull, 'w')

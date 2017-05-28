@@ -20,11 +20,11 @@ successful_handshake_capture_str = 'WPA handshake:'
 capture_Interface = 'wlan1mon'
 
 # defining temporary files
-temp_airodump_recon_capture_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_capture.cap'
-temp_airodump_recon_csv_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv'
-temp_file_airodump_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
-temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
-temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
+temp_airodump_recon_capture_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_capture.cap'
+temp_airodump_recon_csv_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv'
+temp_file_airodump_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_airodump_targeted.csv'
+temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_BSSID_targeted.csv'
+temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/logs/temp_file_CLIENT_targeted.csv'
 
 # defining devnull
 DEVNULL = open(os.devnull, 'w')
@@ -32,7 +32,7 @@ DEVNULL = open(os.devnull, 'w')
 # class Logger(object):
 #     def __init__(self):
 #         self.terminal = stderr
-#         self.log = open("/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file.log", "a")
+#         self.log = open("/root/Cylon-Raider-Lite/logs/airodump_recon_file.log", "a")
 #
 #     def write(self,message):
 #         self.terminal.write(message)
@@ -59,7 +59,7 @@ def main():
     print ("\n\t".join(opt_List))
     opt_Choice = str(raw_input("Enter a OPTION: "))
     if opt_Choice == "0":
-        os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Cylon_Raider_Main.py')
+        os.system('python /root/Cylon-Raider-Lite/Cylon_Raider_Main.py')
     elif opt_Choice == "1":
         os.system('clear')
         os.system('airmon-ng check kill')
@@ -84,8 +84,8 @@ def main():
 
         if KeyboardInterrupt:
             main()
-        airodump_csv_output = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv*.csv'
-        analysis_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
+        airodump_csv_output = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv*.csv'
+        analysis_file = '/root/Cylon-Raider-Lite/logs/airodump_recon_file_csv_temp.csv'
         cmd_String = 'cat %s > %s' % (airodump_csv_output, analysis_file)
         print analysis_file
         cmd_String = 'cat %s' % analysis_file

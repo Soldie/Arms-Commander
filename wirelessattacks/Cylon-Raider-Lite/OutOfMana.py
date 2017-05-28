@@ -21,7 +21,7 @@ def start_mana():
     # # start TCP dump
     #
     # timestr = time.strftime("%Y%m%d-%H%M%S") # generates a unique filename by time
-    # tcpdump_file_dir = '/root/ArmsCommander/logs/mana_toolkit'
+    # tcpdump_file_dir = '/root/Cylon-Raider-Lite/logs/mana_toolkit'
     # tcpdump_file_name = "%s/mana_toolkit_tcp_dump_%s.pcap" % (tcpdump_file_dir, timestr)
     #
     # # cmd_String = "tcpdump -i wlan1 -w %s" % tcpdump_file_name # runs TCP dump on interface wlan1 and writing to a tcpdumpfile at the specified location    # os.system(cmd_String)

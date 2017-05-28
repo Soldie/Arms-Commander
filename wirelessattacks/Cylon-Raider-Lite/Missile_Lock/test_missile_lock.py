@@ -12,11 +12,11 @@ successful_handshake_capture_str = 'WPA handshake:'
 capture_Interface = 'wlan1mon'
 
 # defining temporary files
-permanent_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Missile_Lock/permanent_capture.cap'
-name_for_output_airodump = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Missile_Lock/airodump_recon_file_csv_'
-recon_file = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Missile_Lock/airodump_recon_file_csv_temp.csv'
-temp_file_BSSID_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Missile_Lock/temp_file_BSSID_targeted.csv'
-temp_file_CLIENT_targeted = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Missile_Lock/temp_file_CLIENT_targeted.csv'
+permanent_file = '/root/Cylon-Raider-Lite/Missile_Lock/permanent_capture.cap'
+name_for_output_airodump = '/root/Cylon-Raider-Lite/Missile_Lock/airodump_recon_file_csv_'
+recon_file = '/root/Cylon-Raider-Lite/Missile_Lock/airodump_recon_file_csv_temp.csv'
+temp_file_BSSID_targeted = '/root/Cylon-Raider-Lite/Missile_Lock/temp_file_BSSID_targeted.csv'
+temp_file_CLIENT_targeted = '/root/Cylon-Raider-Lite/Missile_Lock/temp_file_CLIENT_targeted.csv'
 regex_mac_addr = r"^((\d|([a-f]|[A-F])){2}:){5}(\d|([a-f]|[A-F])){2}"
 target_number = 0
 

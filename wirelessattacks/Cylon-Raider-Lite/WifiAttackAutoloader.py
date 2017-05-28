@@ -50,7 +50,7 @@ def mana_toolkit():
     print ("\n\t".join(opt_List))
     opt_Choice = str(raw_input("Enter a OPTION: "))
         #Sample open new terminal window code from other projects
-        #os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/IDS_flood.py; exec bash\"'")
+        #os.system("gnome-terminal -e 'bash -c \"python /root/Cylon-Raider-Lite/IDS_flood.py; exec bash\"'")
 
     if opt_Choice == "INSTALL":
         os.system('clear')
