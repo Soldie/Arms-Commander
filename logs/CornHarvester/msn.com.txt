@@ -1,0 +1,89 @@
+
+*******************************************************************
+*                                                                 *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __| '_ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* TheHarvester Ver. 2.7                                           *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*******************************************************************
+
+
+Full harvest..
+[-] Searching in Google..
+	Searching 0 results...
+	Searching 100 results...
+[-] Searching in PGP Key server..
+[-] Searching in Bing..
+	Searching 50 results...
+	Searching 100 results...
+[-] Searching in Exalead..
+	Searching 50 results...
+	Searching 100 results...
+	Searching 150 results...
+
+
+[+] Emails found:
+------------------
+949-7008cheersmpl@msn.com
+Cheersmpl@msn.com
+Roxygurl129@msn.com
+adroofing@msn.com
+amanjeet@msn.com
+antiochbaptistchurch@msn.com
+brianhales@msn.com
+charlotte.keenan@msn.com
+christine687@msn.com
+debarbieri@msn.com
+dorasilver@msn.com
+drubio08@msn.com
+figgie103@msn.com
+gsgetaways@msn.com
+henriettewamsteker@msn.com
+ilianamexico@msn.com
+kamboozone@msn.com
+kimvetter@msn.com
+loadingpole@msn.com
+motherof3ds@msn.com
+mrmurphy@msn.com
+physiqueswimming@msn.com
+pxxxxx@msn.com
+soa@msn.com
+stoog968@msn.com
+tedrossi@msn.com
+the_grounds_keeper@msn.com
+twistsnturns@msn.com
+zeth_chris@msn.com
+
+[+] Hosts found in search engines:
+------------------------------------
+[-] Resolving hostnames IPs... 
+13.88.15.24:Glo.msn.com
+50.204.7.20:Msnbc.msn.com
+131.253.14.76:ac3.msn.com
+8.254.45.254:ads1.msn.com
+40.86.86.178:answers.msn.com
+13.88.15.24:autotrader.autos.msn.com
+40.84.199.233:dating.ca.msn.com
+65.55.93.69:encarta.msn.com
+96.6.122.73:flights.msn.com
+131.253.40.59:g.msn.com
+168.61.170.191:games.msn.com
+104.45.224.254:get.msn.com
+204.79.197.203:live.msn.com
+40.86.86.208:membercenter.msn.com
+13.88.15.24:moneycentral.msn.com
+50.204.7.20:msnbc.msn.com
+65.55.108.23:msnbot-65-55-108-23.search.msn.com
+23.99.81.176:runonce.msn.com
+65.54.234.141:smtp.email.msn.com
+65.55.118.92:www.hotmail.msn.com
+204.79.197.203:www.msn.com
+184.180.124.96:www.msnbc.msn.com
+168.61.170.191:zone.msn.com
+[+] Virtual hosts:
+==================

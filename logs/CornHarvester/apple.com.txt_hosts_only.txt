@@ -1,0 +1,222 @@
+
+
+1-courier.push.apple.com
+1-courier.sandbox.push.apple.com
+Lists.apple.com
+albert.apple.com
+api.smoot.apple.com
+appleid.apple.com
+appleseed.apple.com
+appleweb.apple.com
+apsu.apple.com
+ara.apple.com
+asw.apple.com
+ax.init.itunes.apple.com
+beta.apple.com
+consultants.apple.com
+developer.apple.com
+discussions.apple.com
+forums.developer.apple.com
+getsupport.apple.com
+gsx.apple.com
+idmsa.apple.com
+investor.apple.com
+itunes.apple.com
+itunesconnect.apple.com
+itunespartner.apple.com
+jobs.apple.com
+jointventure.apple.com
+linkmaker.itunes.apple.com
+lists.apple.com
+locate.apple.com
+mapsconnect.apple.com
+mynews.apple.com
+phobos.apple.com
+remoteadvisor.apple.com
+school.apple.com
+searchads.apple.com
+seedsales.apple.com
+selfsolve.apple.com
+signin.info.apple.com
+support.apple.com
+trailers.apple.com
+www.apple.com
+www.lists.apple.com
+
+
+1-courier.push.apple.com
+ 17.249.44.881-courier.sandbox.push.apple.com
+ 17.188.166.11Lists.apple.com
+ 17.151.62.20albert.apple.com
+ 17.149.240.70api.smoot.apple.com
+ 17.249.41.246appleid.apple.com
+ 17.151.240.34appleseed.apple.com
+ 17.179.32.198appleweb.apple.com
+ 104.67.126.244apsu.apple.com
+ 17.253.5.202ara.apple.com
+ 17.254.2.187asw.apple.com
+ 17.151.20.115ax.init.itunes.apple.com
+ 70.186.11.65beta.apple.com
+consultants.apple.com
+ 17.151.150.39developer.apple.com
+discussions.apple.com
+ 104.67.107.250forums.developer.apple.com
+ 104.67.123.65getsupport.apple.com
+ 104.67.98.189gsx.apple.com
+ 17.146.1.163idmsa.apple.com
+ 17.151.2.14investor.apple.com
+ 206.200.251.19itunes.apple.com
+ 104.67.119.117itunesconnect.apple.com
+ 104.67.99.78itunespartner.apple.com
+ 17.178.96.65jobs.apple.com
+ 17.151.132.19jointventure.apple.com
+ 17.151.47.32linkmaker.itunes.apple.com
+ 104.67.115.174lists.apple.com
+locate.apple.com
+ 17.254.2.89mapsconnect.apple.com
+ 17.178.98.66mynews.apple.com
+ 23.56.221.109phobos.apple.com
+ 17.154.66.38remoteadvisor.apple.com
+ 17.151.20.53school.apple.com
+ 17.178.106.4searchads.apple.com
+ 17.178.96.78seedsales.apple.com
+ 17.151.21.3selfsolve.apple.com
+ 104.67.105.64signin.info.apple.com
+ 70.186.11.16support.apple.com
+ 104.67.109.77trailers.apple.com
+ 104.67.119.30www.apple.com
+ 104.67.123.95www.lists.apple.com
+lists.apple
+lists.webkit.org
+lists.macosforge.org
+lists.cups
+prod.lists.apple
+lists.apple.com
+lists.cups.org
+prod.lists.apple.com
+appleid.apple.com
+c.apple.com
+beta.apple.com
+appleseed
+appleseed.apple.com
+opensource.apple.com
+developer.apple.com
+www.cups.org
+ara.apple.com
+consultants
+consultants.apple.com
+gsxapp.apple.com
+signin.info.apple.com
+idmsa.apple.com
+hrsignup.apple.com
+diagnostics.apple.com
+gsx.apple.com
+deploy.apple.com
+source.apple.com
+mystore.apple.com
+cooljobs.apple.com
+developer.apple.com
+appleweb
+beta.apple.com
+mypage
+reportaproblem.apple.com
+identity.apple.com
+jobs.apple.com
+asw.apple.com
+appleconnect
+applecareconnect.apple.com
+afsportal.apple.com
+certifications.apple.com
+ws01.apple
+partner.apple.com
+mymessage.apple.com
+myaccess.apple.com
+gra.apple.com
+spapp-p.apple.com
+mysalescomp.apple.com
+wdg2.apple.com
+consultants.apple
+plmapp.apple.com
+aps.info.apple.com
+suppliernet.apple.com
+discussions.apple.com
+concierge.apple.com
+checkrepair.apple.com
+checkcoverage.apple.com
+ir.kraftheinzcompany.com
+investor.apple
+ir.regions.com
+investor.convergys.com
+www.dollartree
+ir.papajohns.com
+investor.walgreens.com
+investors.skyworksinc.com
+ir.amtrustgroup.com
+investor.lpl.com
+ir.kkr.com
+investor.gpreinc.com
+investor
+ir.consolidated.com
+www.ridesta.com
+investor.crackerbarrel
+ir.linnenergy.com
+investor.texasroadhouse
+investor.groupon.com
+investors.bloominbrands
+investor.zimmerbiomet
+trow.client.shareholder.com
+ir.steinmart
+investor.shentel.com
+ir.buffalowildwings
+investors.zillowgroup.com
+ir.snyderslance
+ir.novelion.com
+investor.firstsolar
+investors.centerpointenergy
+investor.caesars.com
+investor.zynga
+investor.enphase.com
+www.intellipharmaceutics
+investors.sportsmanswarehouse
+investor.scasurgery.com
+investor.cree.com
+ir.pilgrims.com
+ir.qorvo.com
+ir.spplus.com
+www.orchidislandcapital
+ir.hdsupply.com
+jkhy.client.shareholder.com
+investor.frontier.com
+investor.dnb.com
+investor.fivebelow.com
+ir.mandtbank.com
+investors.ravenind.com
+investors.wsfsbank.com
+investors.pnkinc.com
+ir.celgene
+ir.breitburn.com
+www.ir.creditacceptance.com
+ir.craneco
+syx.client.shareholder.com
+itunespartner.apple.com
+jobs.apple
+jointventure
+jointventure.apple.com
+locate.apple.com
+www.apple.com
+c.apple.com
+mapsconnect
+maps
+mynews.apple.com
+phobos.apple.com
+init.apple.com
+remoteadvisor.apple.com
+sws.apple.com
+araja.apple.com
+araes.apple.com
+arade.apple.com
+school.apple.com
+searchads
+searchads.apple.com
+seedsales.apple.com
+

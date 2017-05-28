@@ -1,0 +1,378 @@
+
+*******************************************************************
+*                                                                 *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __| '_ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* TheHarvester Ver. 2.7                                           *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*******************************************************************
+
+
+Full harvest..
+[-] Searching in Google..
+	Searching 0 results...
+	Searching 100 results...
+[-] Searching in PGP Key server..
+[-] Searching in Bing..
+	Searching 50 results...
+	Searching 100 results...
+[-] Searching in Exalead..
+	Searching 50 results...
+	Searching 100 results...
+	Searching 150 results...
+
+
+[+] Emails found:
+------------------
+'@microsoft.com
+BCAdmins@microsoft.com
+cmbishop@microsoft.com
+opensource@microsoft.com
+pixel-1495995307495908-web-@microsoft.com
+pixel-1495995310824107-web-@microsoft.com
+
+[+] Hosts found in search engines:
+------------------------------------
+[-] Resolving hostnames IPs... 
+23.103.236.102:064-smtp-out.microsoft.com
+52.161.30.61:account.microsoft.com
+134.170.51.126:admin.manage.microsoft.com
+65.52.100.46:advertising.microsoft.com
+104.67.108.63:answers.microsoft.com
+199.83.129.167:blogs.microsoft.com
+23.57.48.212:blogs.msdn.microsoft.com
+23.210.109.169:blogs.technet.microsoft.com
+23.101.203.214:brandtools.microsoft.com
+65.55.56.209:careers.microsoft.com
+13.91.53.187:classroom.microsoft.com
+40.118.249.35:cloud.microsoft.com
+65.55.58.14:connect.microsoft.com
+40.112.142.148:customers.microsoft.com
+23.60.157.147:developer.microsoft.com
+104.67.123.25:docs.microsoft.com
+104.67.114.152:download.microsoft.com
+104.40.63.98:education.microsoft.com
+151.101.1.83:enterprise.microsoft.com
+104.40.84.133:findtime.microsoft.com
+23.99.51.42:flow.microsoft.com
+23.100.122.175:garage.microsoft.com
+104.67.104.32:go.microsoft.com
+13.88.15.24:home.microsoft.com
+167.220.71.17:mail.exchange.microsoft.com
+166.78.134.173:mran.microsoft.com
+65.52.103.102:msdn.microsoft.com
+13.78.182.63:music.microsoft.com
+157.56.28.57:mva.microsoft.com
+104.40.92.107:opensource.microsoft.com
+104.67.125.5:partner.microsoft.com
+40.112.143.134:powerapps.microsoft.com
+104.40.28.133:powerbi.microsoft.com
+65.52.217.131:secure.azure.bingads.microsoft.com
+104.67.115.226:support.microsoft.com
+65.52.103.106:technet.microsoft.com
+157.56.149.60:teredo.ipv6.microsoft.com
+52.167.208.70:trainingsupport.microsoft.com
+40.112.142.148:translator.microsoft.com
+134.170.58.222:update.microsoft.com
+23.199.225.204:www.microsoft.com
+[+] Virtual hosts:
+==================
+52.161.30.61	account.microsoft
+52.161.30.61	www.microsoft.com
+52.161.30.61	account.microsoft.com
+134.170.51.126	admin.manage.microsoft.com
+134.170.51.126	enterpriseenrollment.tdindustries.com
+65.52.100.46	ads.bingads
+65.52.100.46	advertising
+65.52.100.46	advertise.bingads.microsoft.com
+65.52.100.46	ads.bingads.microsoft.com
+65.52.100.46	advertising.microsoft
+199.83.129.167	vanco
+199.83.129.167	belmar
+199.83.129.167	aworthydog
+199.83.129.167	flavor-your-life
+199.83.129.167	firstexpressions
+199.83.129.167	vancopayments.com
+199.83.129.167	getamillionairemindset
+199.83.129.167	belmar.com
+199.83.129.167	mmslawonline.com
+199.83.129.167	mobilecountypublicworks.net
+199.83.129.167	kitsapwoodflooring
+199.83.129.167	communityaccessability.com.au
+199.83.129.167	firstexpressions4d.com
+199.83.129.167	chriscasella
+199.83.129.167	victoriajimenez
+199.83.129.167	kitsapwoodflooring.com
+199.83.129.167	bhi-holdings.com
+199.83.129.167	bnconline.net
+199.83.129.167	evolutionarysecurity.net
+199.83.129.167	sharethestokefoundation
+199.83.129.167	solo-games
+199.83.129.167	gchartford.org
+199.83.129.167	evolutionarysecurity
+199.83.129.167	www.peacerivercharters.com
+199.83.129.167	nvbeer.com
+199.83.129.167	ilovehairofthedog.com
+199.83.129.167	thelavenderjar.com
+199.83.129.167	flavor-your-life.com
+199.83.129.167	victoriajimenez.co
+199.83.129.167	communityclaim.com
+199.83.129.167	aworthydogg.com
+199.83.129.167	vasco.com.my
+199.83.129.167	2k12cr
+199.83.129.167	botasdesieteleguas.com
+23.101.203.214	community.microsoftcasualgames
+23.101.203.214	scratch.botframework.com
+23.101.203.214	www.mbtionline
+23.101.203.214	brandtools.microsoft.com
+23.101.203.214	www.2minuteclub
+23.101.203.214	pod.aeraenergy.com
+23.101.203.214	www.purador
+23.101.203.214	beta.omnique
+23.101.203.214	www.recore
+23.101.203.214	www.willingbeauty
+23.101.203.214	www.netrostation
+23.101.203.214	invoice.cityofpasadena.net
+23.101.203.214	www.resoltz
+23.101.203.214	omap
+23.101.203.214	mssampw-test.com
+23.101.203.214	cla2.dotnetfoundation.org
+23.101.203.214	www.sierrasoapstone
+23.101.203.214	www.managedmissions
+23.101.203.214	seiu775plus.org
+23.101.203.214	www.microsoftstudios
+23.101.203.214	www.kenzandleslie.com
+23.101.203.214	rapidharness
+23.101.203.214	int.online.wonderware.com
+23.101.203.214	tr20.mytechready.com
+23.101.203.214	cla.microsoft.com
+23.101.203.214	www.hopmarket
+23.101.203.214	www.whenhub
+23.101.203.214	www.tigerpistol
+23.101.203.214	www.fhueng.com
+23.101.203.214	powershell.office.com
+23.101.203.214	webtask
+23.101.203.214	app.omnique
+23.101.203.214	www.ridge-resorts
+23.101.203.214	www.reactapps
+23.101.203.214	mitchellcontractors
+23.101.203.214	www.mswstep1.com
+23.101.203.214	unbury.us
+23.101.203.214	avontus
+23.101.203.214	omap.microsoft.com
+23.101.203.214	springyleap
+23.101.203.214	s42013.mytechready.com
+23.101.203.214	overflowworks-lookup
+23.101.203.214	app.eventpoint.com
+23.101.203.214	www.virtosoftware
+23.101.203.214	www.2minuteclub.com
+23.101.203.214	www.bintarojayaxchange
+23.101.203.214	lizlundeen.willingbeauty.com
+23.101.203.214	www.winway.com
+23.101.203.214	www.thevoid.com
+23.101.203.214	willingbeauty.com
+23.101.203.214	assessment.mbtionline.com
+23.101.203.214	www.jmcshof.com
+23.101.203.214	www.recoregame.com
+23.101.203.214	blog.rbaconsulting
+23.101.203.214	demorazer.mediavalet.com
+23.101.203.214	www.purador.com
+23.101.203.214	www.winloss.com
+23.101.203.214	www.sebacia
+23.101.203.214	name2email.com
+23.101.203.214	www.screenfeed.com
+23.101.203.214	www.aaltoconsulting
+23.101.203.214	savingface.willingbeauty.com
+65.55.56.209	careers.microsoft.com
+13.91.53.187	classroom.microsoft.com
+40.118.249.35	cloud.microsoft.com
+65.55.58.14	connect.microsoft
+65.55.58.14	www.beta.microsoft
+65.55.58.14	connectbeta.microsoft
+65.55.58.14	innovation.connect.microsoft
+65.55.58.14	connect.microsoft.com
+65.55.58.14	www.beta.microsoft.com
+65.55.58.14	connectbeta.microsoft.com
+65.55.58.14	i4.connect.microsoft.com
+40.112.142.148	customers.microsoft.com
+40.112.142.148	www.cinepolisusa.com
+40.112.142.148	seneweb.senegence.com
+40.112.142.148	www.silverrock
+40.112.142.148	akcyclecenter
+40.112.142.148	www.ridemotorsports
+40.112.142.148	www.apachemotorcycles
+40.112.142.148	www.microsoftinnovation
+40.112.142.148	translator.microsoft.com
+40.112.142.148	www.bakerdonelson
+40.112.142.148	socalmotorcycles
+40.112.142.148	temeculamotorsports
+40.112.142.148	snakeriveryamaha
+40.112.142.148	carlscycle.com
+40.112.142.148	design.powerbi.com
+40.112.142.148	valleypowersports
+40.112.142.148	missionmotorsports
+40.112.142.148	qenek.ciri.com
+40.112.142.148	sr-repairs
+40.112.142.148	hillsidepowersports
+40.112.142.148	www.beardsleeph.com
+40.112.142.148	www.westernhonda.com
+40.112.142.148	spokanepowersports
+40.112.142.148	experiencepowersports
+40.112.142.148	yellowstonepolaris
+40.112.142.148	edelweissperennials
+40.112.142.148	eastbaymotorsports
+40.112.142.148	semperspeedandmarine
+40.112.142.148	bellevuemotosports
+40.112.142.148	www.pchpower.com
+40.112.142.148	thechoppergallery
+40.112.142.148	www.windowsforiotdevices.com
+40.112.142.148	landnseapowersports
+40.112.142.148	simivalleycycles
+40.112.142.148	userprovisioning
+40.112.142.148	www.hi-techmotorsports
+40.112.142.148	genrt.genscape.com
+40.112.142.148	mcelectricvehicles
+40.112.142.148	pcpmotorsports
+40.112.142.148	douglasmotorcycles
+40.112.142.148	3brosktm.com
+40.112.142.148	www.nossaman
+40.112.142.148	paintberri
+40.112.142.148	johnburrcycles
+40.112.142.148	socalhonda
+40.112.142.148	larsonmarine
+40.112.142.148	www.jpmotorsports
+40.112.142.148	www.brinksgilson
+40.112.142.148	www.skunktrain.com
+40.112.142.148	greshampowersports
+40.112.142.148	www.ncy-motorsports.com
+40.112.142.148	www.public
+40.112.142.148	vpowersports.com
+40.112.142.148	clientportal.teml.com
+40.112.142.148	www.skunktrain
+40.112.142.148	simiharley.com
+40.112.142.148	www.yamahaoflasvegas
+40.112.142.148	irvseaver
+40.112.142.148	www.parkerpoe
+40.112.142.148	www.estensonlogistics
+40.112.142.148	www.ocktm.com
+40.112.142.148	canyonhondamotorcycles.com
+40.112.142.148	mathewshd.com
+104.40.63.98	www.republicindemnity
+104.40.63.98	tms.drdish
+104.40.63.98	explore.emergencyreporting
+104.40.63.98	bookedout
+104.40.63.98	jobboard.esc14.net
+104.40.63.98	education.microsoft.com
+104.40.63.98	online.wonderware.com
+104.40.63.98	d4s-catalog.azurewebsites.net
+104.40.63.98	www.er-inc.com
+104.40.63.98	portal.labstats
+104.40.63.98	www.scribblemaps
+104.40.63.98	www.loanz
+104.40.63.98	spellspace
+104.40.63.98	www.sourcescrub
+104.40.63.98	jobs.talentforschools
+104.40.63.98	hbi.jobboardhq.com
+104.40.63.98	www.ebizcharge
+104.40.63.98	www.recruitdez.com
+104.40.63.98	louisianahospitalityjobs
+104.40.63.98	mssampw-dev.com
+104.40.63.98	www.linkdentistry
+104.40.63.98	upload.brocksupply.com
+104.40.63.98	www.saleslinkpro
+104.40.63.98	lateraljobs
+104.40.63.98	technical
+104.40.63.98	virtual.7x7experience
+104.40.63.98	server.lifedata
+104.40.63.98	www.dentaltempstaffing.com
+104.40.63.98	msworkspace.com
+104.40.63.98	icapequity
+104.40.63.98	www.autoandart.com
+104.40.63.98	roaddogjobs
+104.40.63.98	kazork
+104.40.63.98	www.shopspy
+104.40.63.98	www.enviroplex
+104.40.63.98	www.hvacinstitute
+104.40.63.98	prose.microsoft-ppe.com
+104.40.63.98	pf.canopyenergy
+104.40.63.98	origamiowl
+104.40.63.98	sunclinicallab
+104.40.63.98	www.wilsonvillefootball.com
+104.40.63.98	www.mylifevantage.com
+104.40.63.98	www.enrollandpay.com
+104.40.63.98	connect.ebizcharge.net
+104.40.63.98	cihealthharmony
+104.40.63.98	staging-explore.emergencyreporting
+104.40.63.98	connectplayground
+104.40.63.98	www.republicindemnity.com
+104.40.63.98	www.russellwilson
+104.40.63.98	www.office365
+104.40.63.98	jobs.talentforschools
+104.40.63.98	www.icalledu
+104.40.63.98	www.platinumbay
+104.40.63.98	i.engage.ms
+104.40.63.98	dev.scribblemaps.com
+104.40.63.98	www.mckinneyrogers
+104.40.63.98	app.pobu.ca
+104.40.84.133	www.crafco
+104.40.84.133	www.mgrc.com
+104.40.84.133	fasttrack.microsoft
+104.40.84.133	www.qbsol.com
+104.40.84.133	hs-articulation.ucop.edu
+104.40.84.133	fasttrack
+104.40.84.133	findtime
+104.40.84.133	www.patients.scnm.edu
+104.40.84.133	cleanwaterservices
+104.40.84.133	www.mossadams.com
+104.40.84.133	www.homie
+104.40.84.133	www.ashfield.com
+104.40.84.133	medcenter.scnm
+104.40.84.133	www.cleanwaterservices.org
+104.40.84.133	www.crafco.com
+104.40.84.133	www.sage.scnm
+104.40.84.133	www.transformhealthcs.com
+104.40.84.133	www.scnm
+104.40.84.133	www.bowfit
+104.40.84.133	ams-connect
+104.40.84.133	dol.assetmark.com
+104.40.84.133	www.tikikon
+104.40.84.133	www.lilaccakeboutique
+104.40.84.133	www.sharp
+104.40.84.133	www.leonetwork
+104.40.84.133	fxpperf.trafficmanager.net
+104.40.84.133	www.pacificbackflow
+104.40.84.133	www.alphafinity
+104.40.84.133	www.bmobilesales
+104.40.84.133	storsimpleorder
+104.40.84.133	platform.homie
+104.40.84.133	hrcentral.com
+104.40.84.133	www.mossadamswealthadvisors.com
+104.40.84.133	www.azelitetrack
+104.40.84.133	www.idahogreen
+104.40.84.133	www.link2labs
+104.40.84.133	gbsbooks
+104.40.84.133	www.luminoslabs
+104.40.84.133	learnanalytics.microsoft.com
+104.40.84.133	www.sharpmedicareadvantage.com
+104.40.84.133	shepherdswithoutborders
+104.40.84.133	www.mossadamscapital
+104.40.84.133	cgthc.com
+104.40.84.133	blog
+104.40.84.133	vendorlobby.com
+104.40.84.133	westernreliabilitysummit
+104.40.84.133	www.mailezahand
+104.40.84.133	utahodyssey.org
+104.40.84.133	www.mossadamscapital.com
+104.40.84.133	medcenter.scnm.edu
+104.40.84.133	www.tikikon.com
+104.40.84.133	www.telexy
+104.40.84.133	utahmediations
+104.40.84.133	www.groupintervaltraining
+104.40.84.133	propy
+23.99.51.42	flow.microsoft.com
+23.100.122.175	microsoft.com

@@ -55,13 +55,14 @@ def dmitry_processor(hosts_file):
                     w.write(write_string)
                     w.close()
                     print colored('Your processed hosts file is: %s','yellow',attrs=['bold']) % processed_hosts_file
+                    dmitry_reader(processed_hosts_file)
                 except IOError:
                     pass
                 except IndexError:
                     pass
     # closes the file and sends it to reader
-        print colored('Loading processed hosts file into Dmitry for detailed scanning','yellow',attrs=['bold'])
-        dmitry_reader(processed_hosts_file)
+                    # print colored('Loading processed hosts file into Dmitry for detailed scanning','yellow',attrs=['bold'])
+                    # dmitry_reader(processed_hosts_file)
     return processed_hosts_file
 
 def dmitry_reader(processed_hosts_file):

@@ -1,0 +1,41 @@
+
+*******************************************************************
+*                                                                 *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __| '_ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* TheHarvester Ver. 2.7                                           *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*******************************************************************
+
+
+Full harvest..
+[-] Searching in Google..
+	Searching 0 results...
+	Searching 100 results...
+[-] Searching in PGP Key server..
+[-] Searching in Bing..
+	Searching 50 results...
+	Searching 100 results...
+[-] Searching in Exalead..
+	Searching 50 results...
+	Searching 100 results...
+	Searching 150 results...
+
+
+[+] Emails found:
+------------------
+pixel-1495995238654056-web-@www.google.com
+pixel-1495995242149465-web-@www.google.com
+pixel-1495995244761023-web-@www.google.com
+
+[+] Hosts found in search engines:
+------------------------------------
+No hosts found
+[+] Virtual hosts:
+==================
+[+] Shodan Database search:
