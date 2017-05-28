@@ -1,0 +1,7 @@
+use auxiliary/scanner/smtp/smtp_relay
+set RHOSTS 45.79.222.0/24
+set RPORT 465
+set EXTENDED true
+set THREADS 254
+run
+exit

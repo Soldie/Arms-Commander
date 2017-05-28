@@ -39,7 +39,21 @@ def installer():
         print 'Now installing two required Python modules for Python 2.7 through pip, termcolor and StringIO'
         # Install the required modules
         os.system('pip install -r /tmp/Arms-Commander/requiredModules.txt')
+        print 'Now installing required repositories from the Kali APT Repo'
+        os.system('sudo apt-get update && apt-get install tsocks proxychains tor -y')
+        print 'Now updating the Metasploit Framework'
+        os.system('msfupdate')
+        print 'Now retrieving and installing the latest version of Hashcat Utilities'
+        os.system('sudo wget https://github.com/hashcat/hashcat-utils/releases/download/v1.8/hashcat-utils-1.8.7z')
+        os.system('7z x ./hashcat*')
+        os.chdir('./hashcat-utils-1.8/bin')
+        os.system('cp -r ./cap2hccapx.bin /usr/local/bin')
+        print 'Now retrieving DarkOperator Metasploit-Plugins from GitHub'
+        os.system('git clone https://github.com/darkoperator/Metasploit-Plugins')
+        os.chdir('./Metasploit-Plugins')
+        os.system('cp -r ./*.rb /root/.msf4/plugins')
         print 'Installation complete'
+        print 'To load Metasploit-Plugins, type "load pentest" in Metasploit Console'
         # Inform the user it has been installed
 
         print 'Starting ArmsCommander'

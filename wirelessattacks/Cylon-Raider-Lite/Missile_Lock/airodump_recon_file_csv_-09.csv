@@ -1,0 +1,9 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+B8:C7:5D:0C:A9:F7, 2017-05-20 23:30:50, 2017-05-20 23:30:51,  1,  54, WPA2, CCMP,PSK, -54,        4,        0,   0.  0.  0.  0,   6, Bender, 
+78:24:AF:ED:AB:A0, 2017-05-20 23:30:50, 2017-05-20 23:30:50,  6,  54, WPA2, CCMP,PSK, -66,        1,        0,   0.  0.  0.  0,  15, Prettyfly4awifi, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+7C:ED:8D:3D:B8:00, 2017-05-20 23:30:49, 2017-05-20 23:30:51, -88,        7, (not associated) ,Maria
+4C:66:41:61:20:F7, 2017-05-20 23:30:50, 2017-05-20 23:30:50, -88,        2, (not associated) ,BeyondWiFi
+

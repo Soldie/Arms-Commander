@@ -1,0 +1,15 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+10:0D:7F:DB:BB:8A, 2017-05-21 00:05:55, 2017-05-21 00:05:55,  1,  -1, WPA, ,   , -91,        0,        2,   0.  0.  0.  0,   0, , 
+FA:8F:CA:58:EE:94, 2017-05-21 00:05:59, 2017-05-21 00:05:59, 11,  54, OPN, ,   , -90,        2,        0,   0.  0.  0.  0,   0, , 
+84:1B:5E:B0:E4:8D, 2017-05-21 00:05:59, 2017-05-21 00:05:59,  6,  54, WPA2 WPA, CCMP TKIP,PSK, -90,        1,        0,   0.  0.  0.  0,   6, B0E48D, 
+9C:34:26:FC:11:6F, 2017-05-21 00:05:59, 2017-05-21 00:05:59,  6,  54, WPA2 WPA, CCMP TKIP,PSK, -89,        1,        0,   0.  0.  0.  0,   8, Madden01, 
+BC:EE:7B:7C:C4:08, 2017-05-21 00:05:59, 2017-05-21 00:05:59,  6,  54, WPA2, CCMP,PSK, -81,        2,        0,   0.  0.  0.  0,   4, ASUS, 
+78:24:AF:ED:AB:A0, 2017-05-21 00:05:59, 2017-05-21 00:06:00,  6,  54, WPA2, CCMP,PSK, -70,        4,        0,   0.  0.  0.  0,  15, Prettyfly4awifi, 
+B8:C7:5D:0C:A9:F7, 2017-05-21 00:05:55, 2017-05-21 00:06:01,  1,  54, WPA2, CCMP,PSK, -55,        9,        0,   0.  0.  0.  0,   6, Bender, 
+2C:56:DC:43:4B:90, 2017-05-21 00:06:01, 2017-05-21 00:06:01,  2,  54, WPA2, CCMP,PSK, -93,        1,        0,   0.  0.  0.  0,  15, RT-AC1200_90_2G, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+56:33:39:E6:ED:BD, 2017-05-21 00:05:59, 2017-05-21 00:05:59, -81,        2, (not associated) ,
+F8:04:2E:DE:BE:67, 2017-05-21 00:05:57, 2017-05-21 00:05:57, -80,        3, (not associated) ,
+

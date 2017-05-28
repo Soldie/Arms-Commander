@@ -23,6 +23,8 @@ mkdir /root/ArmsCommander/logs/nmap
 mkdir /root/ArmsCommander/logs/OWASP
 mkdir /root/ArmsCommander/logs/Pyrit
 mkdir /root/ArmsCommander/logs/SQLMap
+mkdir /root/ArmsCommander/logs/dmitry
+mkdir /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/
 echo Copying main installation into /root/ArmsCommander
 cp -r ./ /root/ArmsCommander #copies contents to the new directory
 echo Copying launcher icon to Kali Desktop
@@ -32,6 +34,10 @@ chmod 777 ./ArmsCommander.py #makes the launcher executable
 cp -r ./ArmsCommander.py /usr/local/bin #copies the main launcher into the /usr/local/bin directory, allowing someone to start AC by typing "ArmsCommander.py" in terminal
 echo Installing python modules via pip
 pip install -r requirements.txt # installs all required python modules
+echo Updating your APT Repos
+sudo apt-get update
+echo Installing required toolkit, fail2ban (autobanner against SSH brute-forcers)
+sudo apt-get fail2ban
 echo Main Installation Completed
 echo Open a terminal and type "ArmsCommander.py" to run AC, or click the Desktop Launcher
 echo To use the Pupy alternative RAT interface Python-based, Similar to Meterpreter

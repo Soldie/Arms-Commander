@@ -1,14 +1,21 @@
 #!/usr/bin/env python
 # coding=UTF-8
-
-#The first line allows this script to be executable
-
 import os
 import socket
 import operator
 from termcolor import colored
 import sys
 # sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
+
+
+
+
+#The first line allows this script to be executable
+
+# ArmsCommander - "Revolutionizing Cyber-Terrorism"
+
+# Chang "Lister" Tan
+# May 22nd, 2017
 
 
 os.system('cat /root/ArmsCommander/banners/ACBanner.txt')
@@ -97,6 +104,11 @@ def output_data():
         output_data()
 
     return
+
+def dmitry():
+    os.system('python /root/ArmsCommander/recon/dmitry_menu.py')
+    one_recon_and_vuln_scan()
+    return
 def one_recon_and_vuln_scan():
     Menu_Header = colored('RECONNAISSANCE AND ENUMERATION', 'cyan', attrs=['bold'])
     print Menu_Header
@@ -104,13 +116,13 @@ def one_recon_and_vuln_scan():
         '\n\t#0. Return to Main Menu',
         '#1. Multi-Tool Single Host Recon, use Dig, NSLookup, fierce, and theharvester against a single target',
         '#2. CornHarvester, mass-harvest emails for phishing/Spear-Phishing',
-        '#3. NMap Scans (preset for maximum information discovery), starts with FIN scan, then XMAS scan, and finally a comprehensive scan',
-        '#4. Run SQLMap (Automatically set to route traffic through Tor)',
-        '#5. OWASP Zaproxy (Alternative vulnerability scanner, much faster than SQLMap)',
-        '#6. BurpSuite',
-        '#7. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap',
-        '#8. Search your logfile directories for anything that matches a term'
-    ]
+        '#3. DMITRY, DeepMagic Information Gathering Tool, with my added wordlist-automation enhancements',
+        '#4. NMap Scans (preset for maximum information discovery), starts with FIN scan, then XMAS scan, and finally a comprehensive scan',
+        '#5. Run SQLMap (Automatically set to route traffic through Tor)',
+        '#6. OWASP Zaproxy (Alternative vulnerability scanner, much faster than SQLMap)',
+        '#7. BurpSuite',
+        '#8. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap'
+        ]
     print ("\n\t".join(opt_List))
 
     opt_Choice = str(raw_input("Enter a OPTION: "))
@@ -126,25 +138,29 @@ def one_recon_and_vuln_scan():
         CornHarvester()
     elif opt_Choice == "3":
         os.system('clear')
-        NMap_Auto()
+        dmitry()
     elif opt_Choice == "4":
         os.system('clear')
-        SQLMap()
+        NMap_Auto()
+
         # NMap_Custom()
     elif opt_Choice == "5":
         os.system('clear')
-        OWASP_zaproxy()
+        SQLMap()
+
         # SQLMap()
     elif opt_Choice == "6":
         os.system('clear')
-        burpsuite()
+        OWASP_zaproxy()
+
     elif opt_Choice == "7":
         os.system('clear')
-        output_data()
+        burpsuite()
+
     elif opt_Choice == "8":
-        search_term = str(raw_input("Enter the SEARCH TERM: "))
         os.system('clear')
-        search_logs(search_term, logfile_directory)
+        output_data()
+
     else:
         print colored('You have entered a invalid option','red')
         one_recon_and_vuln_scan()
@@ -167,6 +183,8 @@ def network_monitor_tools():
     #viewActiveConnections
     print colored('Listing Real Time Active Connections','red','on_white')
     os.system("gnome-terminal -e 'bash -c \"sudo watch -b -c ss -tp; exec bash\"'")
+    print colored('Starting Fail-2-Ban Service','yellow',attrs=['bold'])
+    os.system("gnome-terminal -e 'bash -c \"service fail2ban restart; exec bash\"'")
     main()
 
     return
@@ -242,6 +260,12 @@ def IDS_Flooder():
 
     return
 
+def fail2ban():
+    os.system('service fail2ban restart')
+    os.system('service fail2ban status')
+    main()
+    return
+
 def two_net_defense_traffic_monitor():
     Menu_Header = colored('NETWORK DEFENSE', 'cyan', attrs=['bold'])
     print Menu_Header
@@ -254,7 +278,9 @@ def two_net_defense_traffic_monitor():
         '#5. NGrep or "Network Grep", investigate a suspicious connection',
         '#6. MacChanger, change your network card MAC address temporarily',
         '#7. Fuser, identify and kill processes within a port range',
-        '#8. IDS Flooder, overwhelm a Intrusion Detection System with false-flag DDoS attacks to draw attention away from your actual activity'
+        '#8. IDS Flooder, overwhelm a Intrusion Detection System with false-flag DDoS attacks to draw attention away from your actual activity',
+        '#9. FAIL-2-BAN, automatic banning daemon for SSH. Absolutely essential for remote AWS servers that are subjected to constant SSH brute-force attacks',
+        '#10. VIEW AUTH LOG, view your authentication log and make a backup of it.'
     ]
     print ("\n\t".join(opt_List))
     opt_Choice = str(raw_input("Enter a OPTION: "))
@@ -301,6 +327,16 @@ def two_net_defense_traffic_monitor():
         os.system('clear')
         print colored('[+] Starting IDS Flooder Module','green', attrs=['bold'])
         IDS_Flooder()
+    elif opt_Choice == "9":
+        os.system('clear')
+        print colored('[+] Starting fail2ban Module','green', attrs=['bold'])
+        fail2ban()
+    elif opt_Choice == "10":
+        os.system('clear')
+        print colored('[+] Copying backup of auth.log to /root/Documents','yellow',attrs=['bold'])
+        os.system('cp -r /var/log/auth.log /root/Documents')
+        os.system('cat /var/log/auth.log')
+        main()
     else:
         print colored('You have entered a invalid option','red')
         two_net_defense_traffic_monitor()
@@ -415,7 +451,84 @@ def payload_generators_listeners():
         payload_generators_listeners()
     return
 
-def remote_exploits_toolkits():
+def python_mailer(): # this entire thing needs to be scrapped and rewritten I keep getting  AttributeError: 'function' object has no attribute 'get_var_python_mailer' problems
+# but python itnerpreter input seems fine.
+    os.system('clear')
+    os.system('python /root/ArmsCommander/remoteexploits/python_mailer_menu.py')
+    main()
+    return
+#
+# # this has to be a separate module.
+#     py_mailer_save_file = '/root/ArmsCommander/remoteexploits/py_mailer_save.csv'
+#
+#     print colored('PYTHON HTML MASS-MAILER','cyan',attrs=['bold'])
+#     remote_exploits_dir = '/root/ArmsCommander/remoteexploits'
+#     opt_List = [
+#         '\n\t#0. Return to Remote Exploit Toolkits Menu',
+#         '#1. Start a mass-mailer attack with HTML based mail',
+#         '#2. Configure Python Mailer, including editing the FROM address and name',
+#         '#3. View the smtpctl queue',
+#         '#4. Show the smtpctl stats (bounced, failures, timeouts, successful, etc.)',
+#         '#5. Activate smtpctl monitor (in real time), refer to man page for what all the columns mean',
+#         '#6. Repeat the same mass-mailer attack by using the temporary save file (requires #1 to be done first)',
+#         '#INSTALL, Install Python-Mailer and the opensmtpd service'
+#     ]
+#
+#     print ("\n\t".join(opt_List))
+#     opt_Choice = str(raw_input("Enter a OPTION: "))
+#
+#     if opt_Choice == "1":
+#         print colored('Restarting opensmtpd service','yellow',attrs=['bold'])
+#         os.system('service opensmtpd restart')
+#         remote_exploit_toolkits.get_var_python_mailer()
+#         # # remote_exploit_toolkits.get_var_python_mailer()
+#         # # subject_title = str(raw_input("Enter the SUBJECT title: "))
+#         # # victim_wordlist = str(raw_input("Enter the CSV wordlist PATH of victims (NAME,ADDRESS): "))
+#         # # html_file = str(raw_input("Enter HTML message PATH (*.html): "))
+#         # # print colored('DEBUG: subject_title = %s victim_wordlist = %s html_file = %s','red',attrs=['bold']) % (subject_title, victim_wordlist, html_file)
+#         # # remote_exploit_toolkits.write_savefile_python_mailer(subject_title, victim_wordlist, html_file)
+#         # remote_exploit_toolkits.write_savefile_python_mailer(subject_title, victim_wordlist, html_file)
+#         # cmd_String = "python /root/ArmsCommander/remoteexploits/python-mailer/pymailer.py -s %s %s '%s'" % (html_file, victim_wordlist, subject_title)
+#         # print colored(cmd_String,'red',attrs=['bold'])
+#         # os.system(cmd_String)
+#         # print colored('Mail sent','green',attrs=['bold'])
+#         python_mailer()
+#     elif opt_Choice == "2":
+#         os.system('leafpad /root/ArmsCommander/remoteexploits/python-mailer/config.py')
+#         python_mailer()
+#     elif opt_Choice == "3":
+#         os.system('clear')
+#         os.system('sudo smtpctl show queue')
+#         python_mailer()
+#     elif opt_Choice == "4":
+#         os.system('clear')
+#         os.system('sudo smtpctl show stats')
+#         python_mailer()
+#     elif opt_Choice == "5":
+#         os.system('clear')
+#         os.system('sudo smtpctl monitor')
+#         python_mailer()
+#     elif opt_Choice == "6":
+#         os.system('clear')
+#         remote_exploit_toolkits.read_savefile_python_mailer(py_mailer_save_file)
+#         python_mailer()
+#     elif opt_Choice == "INSTALL":
+#         os.system('clear')
+#         os.chdir(remote_exploits_dir)
+#         os.system('git clone https://github.com/qoda/python-mailer')
+#         print colored('Updating APT repo','red',attrs=['bold'])
+#         os.system('sudo apt-get update')
+#         print colored('Installing opensmtpd','red',attrs=['bold'])
+#         os.system('sudo apt-get install opensmtpd')
+#         python_mailer()
+#     elif opt_Choice == "0":
+#         os.system('clear')
+#         remote_exploit_toolkits()
+#     else:
+#         print colored('You have entered a INVALID OPTION','red',attrs=['bold'])
+#         python_mailer()
+#     return subject_title, victim_wordlist, html_file, py_mailer_save_file
+def remote_exploit_toolkits():
     Menu_Header = colored('REMOTE EXPLOITS-TOOLKITS', 'cyan', attrs=['bold'])
     print Menu_Header
     opt_List = [
@@ -423,7 +536,8 @@ def remote_exploits_toolkits():
         '#1. VEIL-EVASION, change the signature of a Metasploit payload to evade antivirus (the msfvenom encoder hides you from Intrusion Detection Systems ONLY)',
         '#2. METASPLOIT FRAMEWORK, this is a CUSTOM MANUAL-START SCRIPT to get past those pesky database initialization errors',
         '#3. ARMITAGE, the free version of what would later be Cobalt Strike. Still useful in pentests.',
-        '#4. SOCIAL ENGINEERS TOOLKIT, comes with preloaded scripts and a easy-to-use push-button style menu for hacking techniques such as spearphishing'
+        '#4. SOCIAL ENGINEERS TOOLKIT, comes with preloaded scripts and a easy-to-use push-button style menu for hacking techniques such as spearphishing',
+        '#5. PYTHON-MAILER, Python-based mass-mailer to send HTML email with'
     ]
     print ("\n\t".join(opt_List))
     opt_Choice = str(raw_input("Enter a OPTION: "))
@@ -455,9 +569,13 @@ def remote_exploits_toolkits():
         print colored('[+] Starting Social Engineers Toolkit','green')
         social_engineers_toolkit()
         three_remote_exploits_redesigned()
+    elif opt_Choice == "5":
+        os.system('clear')
+        python_mailer()
+        three_remote_exploits_redesigned
     else:
         print colored('You have entered a invalid option','red')
-        remote_exploits_toolkits()
+        remote_exploit_toolkits()
         # placeholder for current menu
     return
 
@@ -515,7 +633,7 @@ def three_remote_exploits_redesigned(): # Tentative project to reduce bloat
         three_remote_exploits_redesigned()
     elif opt_Choice == "2":
         os.system('clear')
-        remote_exploits_toolkits()
+        remote_exploit_toolkits()
         three_remote_exploits_redesigned()
     elif opt_Choice == "3":
         os.system('clear')
@@ -607,7 +725,7 @@ def hidden_network_decloaker():
     os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/sniffHidden.py')
     return
 
-def five_wireless_attacks():
+def five_wireless_attacks(): # In the age of Cyberterrorism. Only the most cunning will survive.
     Menu_Header = colored('WIRELESS ATTACKS', 'cyan', attrs=['bold'])
     print Menu_Header
     opt_List = [
@@ -690,12 +808,18 @@ def seven_book_learning():
         os.system('clear')
         Black_Hat_Python_Menu()
         # MT_host_recon()
-    elif Exception:
-        error_handling()
+
     else:
         print colored('You have entered a invalid option','red')
         seven_book_learning()
     return
+
+# Rise, black amps tear the sky
+# Feedback will free your mind and set you free
+# Rise, black amps tear the sky
+# Riff hewn altar wreathed in smoke and weed
+#
+
 
 def main():
     os.system('cat /root/ArmsCommander/banners/banner_mainmenu.txt\n\n')

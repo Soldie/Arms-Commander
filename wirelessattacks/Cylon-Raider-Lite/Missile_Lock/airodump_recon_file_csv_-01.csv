@@ -1,0 +1,11 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+BC:EE:7B:7C:C4:08, 2017-05-20 17:35:58, 2017-05-20 17:36:07,  6,  54, WPA2, CCMP,PSK, -81,        6,        1,   0.  0.  0.  0,   4, ASUS, 
+B8:C7:5D:0C:A9:F7, 2017-05-20 17:35:54, 2017-05-20 17:36:08,  1,  54, WPA2, CCMP,PSK, -68,       18,        0,   0.  0.  0.  0,   6, Bender, 
+78:24:AF:ED:AB:A0, 2017-05-20 17:35:54, 2017-05-20 17:36:08,  6,  54, WPA2, CCMP,PSK, -65,       23,        2,   0.  0.  0.  0,  15, Prettyfly4awifi, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+F8:04:2E:DE:BE:67, 2017-05-20 17:35:56, 2017-05-20 17:36:06, -80,        9, (not associated) ,CenturyLink1642
+80:29:94:08:B0:8D, 2017-05-20 17:36:00, 2017-05-20 17:36:00, -83,        2, (not associated) ,CenturyLink8943
+6C:AD:F8:15:0B:0F, 2017-05-20 17:35:57, 2017-05-20 17:35:58, -42,       12, (not associated) ,Bender
+

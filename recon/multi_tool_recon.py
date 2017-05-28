@@ -134,7 +134,9 @@ def main():
         return search_term
     elif opt_Choice == "4":
         os.system('clear')
-        recon_toolkits.shodan_result_splitter(str(raw_input("Enter the location of your multi-tool-recon file: ")),str(raw_input("Enter the QUERY you are searching for TO SPLIT: ")))
+        MT_file = str(raw_input("Multi-Tool-Recon Output file location: "))
+        # recon_toolkits.shodan_result_splitter(str(raw_input("Enter the location of your multi-tool-recon file: "))
+        recon_toolkits.cornharvester_to_csv(MT_file)
         main()
     else:
         print colored('You have entered a invalid option','red',attrs=['bold'])

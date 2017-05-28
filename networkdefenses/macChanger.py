@@ -19100,9 +19100,9 @@ def random_VendorMAC():
                     network_interface
         )
         print cmd_String
-        os.system('/root/ChairForce/bring_Interfaces_Down.sh')
+        os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Down.sh')
         os.system(cmd_String)
-        os.system('/root/ChairForce/bring_Interfaces_Up.sh')
+        os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Up.sh')
 
     else:
         print "The vendor that you have entered was not found"
@@ -19112,9 +19112,9 @@ def complete_random_MAC():
     network_interface = str(raw_input("Which interface are you changing the MAC addr of?: "))
     cmd_String = "macchanger -r {0}".format(network_interface)
     print cmd_String
-    os.system('/root/ChairForce/bring_Interfaces_Down.sh')
+    os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Down.sh')
     os.system(cmd_String)
-    os.system('/root/ChairForce/bring_Interfaces_Up.sh')
+    os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Up.sh')
     return
 def specific_MAC():
     network_interface = str(raw_input("Which interface are you changing the MAC addr of?: "))
@@ -19124,9 +19124,9 @@ def specific_MAC():
                                             network_interface
     )
     print cmd_String
-    os.system('/root/ChairForce/bring_Interfaces_Down.sh')
+    os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Down.sh')
     os.system(cmd_String)
-    os.system('/root/ChairForce/bring_Interfaces_Up.sh')
+    os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Up.sh')
     return
 def list_MAC():
     search_Query = str(raw_input("Enter a brand: "))
@@ -19134,14 +19134,14 @@ def list_MAC():
     return
 def reset_MAC():
     network_interface = str(raw_input("Enter the INTERFACE that you want to RESTORE: "))
-    os.system('/root/ChairForce/bring_Interfaces_Down.sh')
+    os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Down.sh')
     #os.system('macchanger -p %s') % network_interface
     cmd_String = 'macchanger -p {0}'.format(
                                     network_interface
     )
     print cmd_String
     os.system(cmd_String)
-    os.system('/root/ChairForce/bring_Interfaces_Down.sh')
+    os.system('/root/ArmsCommander/wirelessattacks/bring_Interfaces_Down.sh')
     return
 
 while True:

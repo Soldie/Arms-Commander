@@ -1,0 +1,16 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+22:25:64:FE:6A:C6, 2017-05-19 22:33:23, 2017-05-19 22:33:23,  6,  54, OPN, ,   , -91,        1,        0,   0.  0.  0.  0,   7, CoxWiFi, 
+D8:5D:E2:75:87:A2, 2017-05-19 22:32:58, 2017-05-19 22:33:32, 11,  54, WPA2 WPA, CCMP TKIP,PSK, -90,        4,        0,   0.  0.  0.  0,  18, DVW326.7587A2-2.4G, 
+00:03:7F:5B:10:E3, 2017-05-19 22:32:54, 2017-05-19 22:33:32,  6,  54, WPA2, CCMP,PSK, -89,        5,        6,   0.  0.  0.  0,  11, AEE Magicam, 
+BC:EE:7B:7C:C4:08, 2017-05-19 22:32:52, 2017-05-19 22:33:42,  6,  54, WPA2, CCMP,PSK, -79,       52,        5,   0.  0.  0.  0,   4, ASUS, 
+78:24:AF:ED:AB:A0, 2017-05-19 22:32:52, 2017-05-19 22:33:42,  6,  54, WPA2, CCMP,PSK, -65,       71,        5,   0.  0.  0.  0,  15, Prettyfly4awifi, 
+B8:C7:5D:0C:A9:F7, 2017-05-19 22:32:52, 2017-05-19 22:33:41,  1,  54, WPA2, CCMP,PSK, -59,       14,        0,   0.  0.  0.  0,   6, Bender, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+7C:ED:8D:3D:B8:00, 2017-05-19 22:32:59, 2017-05-19 22:33:39, -83,       31, (not associated) ,Maria
+F8:04:2E:DE:BE:67, 2017-05-19 22:32:55, 2017-05-19 22:33:42, -81,       29, (not associated) ,CenturyLink1642
+20:2D:07:10:18:46, 2017-05-19 22:33:33, 2017-05-19 22:33:33, -77,        2, (not associated) ,
+6C:AD:F8:15:0B:0F, 2017-05-19 22:33:20, 2017-05-19 22:33:20, -42,        4, (not associated) ,Bender
+02:11:22:33:44:02, 2017-05-19 22:33:06, 2017-05-19 22:33:32,  -1,        6, 00:03:7F:5B:10:E3,
+

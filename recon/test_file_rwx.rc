@@ -1,0 +1,5 @@
+use auxiliary/scanner/smtp/smtp_relay
+set RHOSTS www.yahoo.com
+
+set EXTENDED true
+run

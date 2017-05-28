@@ -1,0 +1,8 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+B8:C7:5D:0C:A9:F7, 2017-05-20 23:28:42, 2017-05-20 23:28:43,  1,  54, WPA2, CCMP,PSK, -56,        5,        0,   0.  0.  0.  0,   6, Bender, 
+BC:EE:7B:7C:C4:08, 2017-05-20 23:28:42, 2017-05-20 23:28:42,  6,  54, WPA2, CCMP,PSK, -82,        1,        0,   0.  0.  0.  0,   4, ASUS, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+F8:04:2E:DE:BE:67, 2017-05-20 23:28:43, 2017-05-20 23:28:43, -84,        3, (not associated) ,
+

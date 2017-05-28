@@ -75,7 +75,9 @@ def main():
                 '\n\t#0 Return to the main menu',
                 '#1. Run a series of NMap scan, gradually increasing in intensity/intrusiveness. First with a unintrusive scan that can get past firewalls, eventually reaching a full comprehensive scan',
                 '#2. Use a completely customized scan',
-                '#3. Run a wordlist scan with supplied wordlist of IP addresses'
+                '#3. Run a wordlist scan with supplied wordlist of IP addresses',
+                '#4. Scan IP addresses for vulnerable services, and write to a csv file',
+                '#5. Attempt to bruteforce common protocols such as SSH, Telnet, and FTP, via a wordlist and THC Hydra'
     ]
 
     print ("\n\t".join(opt_List))
@@ -89,6 +91,16 @@ def main():
         # wordlist_scan() # do not type return here!
         # wordlist = str(raw_input("Enter the full path of a wordlist containing IP addresses: "))
         os.system('python /root/ArmsCommander/recon/nmap_wordlist_scan.py')
+    elif opt_Choice == "4":
+        wordlist = str(raw_input("Enter the PATH to a wordlist of IP addresses: "))
+        recon_toolkits.nmap_read_wordlist(wordlist)
+    elif opt_Choice == "5":
+        protocol = str(raw_input("What protocol are you bruteforcing? (e.g. 'ssh', 'ftp',etc): "))
+        ip_list = str(raw_input("Enter the PATH to a wordlist of HOSTS (IP addresses): "))
+        username_list = str(raw_input("Enter the PATH to a wordlist of USERNAMES: "))
+        password_list = str(raw_input("Enter the PATH to a wordlist of PASSWORDS: "))
+
+        recon_toolkits.hydra_ip_list(username_list, password_list, ip_list, protocol)
     elif opt_Choice == "0":
         os.system('python /root/ArmsCommander/ArmsCommander.py')
     else:
