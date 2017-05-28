@@ -4,6 +4,8 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 
 # Update: Counter-Forensics Suite, Top Metasploit Plugins, TSOCKS. and more!
 
+For the most part this update is another back-end upgrade. However, visually for the user they may notice a few key differences
+
 	1. TSocks (Tor-Socks) now auto-installed as a alternative to using and configuring proxychains, simply preclude your command with "tsocks <cmd>" to automatically route your traffic through Tor, like 'tsocks nmap <target>'"
 	2. Fail2Ban is recognized as a critical component for remote servers in the cloud, due to near-constant SSH brute-forcing attempts, and is now automatically installed and auto-configured
 	3. A bug has been fixed where hashcat utilities failed to download and install. It is now automatically performed through the setup.py file, simply type "python setup.py"
