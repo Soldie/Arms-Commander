@@ -43,7 +43,11 @@ def installer():
         os.system('sudo apt-get update && apt-get install tsocks proxychains tor -y')
         print 'Now updating the Metasploit Framework'
         os.system('msfupdate')
+        print 'Now retrieving Qodas Python Mass-HTML Mailer'
+        os.chdir('/root/ArmsCommander/remoteexploits')
+        os.system('git clone https://github.com/qoda/python-mailer')
         print 'Now retrieving and installing the latest version of Hashcat Utilities'
+        os.chdir('/tmp')
         os.system('sudo wget https://github.com/hashcat/hashcat-utils/releases/download/v1.8/hashcat-utils-1.8.7z')
         os.system('7z x ./hashcat*')
         os.chdir('./hashcat-utils-1.8/bin')
