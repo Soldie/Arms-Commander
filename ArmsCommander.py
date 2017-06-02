@@ -5,22 +5,34 @@ import socket
 import operator
 from termcolor import colored
 import sys
-# sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
+sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
 
-
+os.chdir('/root/ArmsCommander')
 
 
 #The first line allows this script to be executable
 
 # ArmsCommander - "Revolutionizing Cyber-Terrorism"
 
-# Chang "Lister" Tan
-# May 22nd, 2017
-
+# Black chant mirrors the song of the stars
+# Open the abyss dreamt from afar
+# Abominations drawn to our dimension
+# Feed black desires, aid human ascension
+#
+# Black chanting grows
+# From caverns below
+# Echo through time
+# Reveal the sign
 
 os.system('cat /root/ArmsCommander/banners/ACBanner.txt')
 logfile_directory = '/root/ArmsCommander/logs'
+print colored("""
+                    Black chanting grows
+                    From caverns below
+                    Echo through time
+                    Reveal the sign
 
+""",'red')
 def search_logs(search_term, logfile_directory):
     cmd_String = 'find %s -iname "*%s*"' % (logfile_directory, search_term)
     os.system(cmd_String)
@@ -822,7 +834,7 @@ def seven_book_learning():
 
 
 def main():
-    os.system('cat /root/ArmsCommander/banners/banner_mainmenu.txt\n\n')
+    # os.system('cat /root/ArmsCommander/banners/banner_mainmenu.txt\n\n')
     Menu_Header = colored('MAIN MENU', 'cyan', attrs=['bold'])
     print Menu_Header
     opt_List = [
