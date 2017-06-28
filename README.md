@@ -2,7 +2,7 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
-# Update: Explaination for my Absence, June 28th, 2017
+# Update: Explanation for my Absence, June 28th, 2017, Scheduled Return, AFTER July 7th, 2017
 
 Since Late May, my updates have been far more infrequent. Due to the stresses of my summer tax class, Federal Taxation, as well as the terms of my probation (yes I been convicted of a crime, act of violence kind of deal).
 
