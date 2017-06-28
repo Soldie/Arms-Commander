@@ -2,6 +2,18 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
+# Update: Explaination for my Absence, June 28th, 2017
+
+Since Late May, my updates have been far more infrequent. Due to the stresses of my summer tax class, Federal Taxation, as well as the terms of my probation (yes I been convicted of a crime, act of violence kind of deal).
+
+My last exam is on July 7th. Until that date, I wouldn't expect much updates to be done to the Arms-Commander Project, or it's offshoots, Cylon-Raider, and "PMP" or Python-Mirai Project.
+
+**I will return to coding and adding more features to AC, AFTER July 7th**. Until that date, I do not have any time to invest. However, you may find infrequent updates to my other project, meant for my fellow tax class students: https://github.com/tanc7/ACC_410_Tax_Calculator_Project
+
+At least, I have 2 B's on my first two Exams! Which is very abnormal for a student in that class. Even better, I went partying for three days at Electric Daisy Carnival, and I still managed to get 3% higher WITHOUT using the tax calculator software that I made. And the people around me are getting D and F averages lol!
+
+Anywho, until I finish this class, and it is imperative that I do so (it's my "last chance to pass out of 3 withdrawals/drops/fails"), I will not be able to reliably provide support for Arms-Commander. Meanwhile, I will have to pass one more class, Accounting 402, Financial Reporting II in the Fall and complete my terms of probation. 
+
 # Update: Counter-Forensics Suite, Top Metasploit Plugins, TSOCKS. and more!
 
 For the most part this update is another back-end upgrade. However, visually for the user they may notice a few key differences
