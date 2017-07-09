@@ -2,17 +2,28 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
-# Update: Explanation for my Absence, June 28th, 2017, Scheduled Return, AFTER July 7th, 2017
+# New Development: The Automatic NMap Scriptor
 
-Since Late May, my updates have been far more infrequent. Due to the stresses of my summer tax class, Federal Taxation, as well as the terms of my probation (yes I been convicted of a crime, act of violence kind of deal).
+Name tentative to change. Because it really sounds stupid as it is. **However, I managed to incorporate all 568 Unique NMap scripts into a easy-to-use and selectable, point-n-shoot, NMap scanner.** Do not worry, I didn't really type all that 1,800+ lines of code. I wrote another lame program, called list_writer.py that automatically generates the if,elif,else statements, and the user UI menu for me in separate text files.
 
-My last exam is on July 7th. Until that date, I wouldn't expect much updates to be done to the Arms-Commander Project, or it's offshoots, Cylon-Raider, and "PMP" or Python-Mirai Project.
+To use this (since as of right now, it is still not ready for release, and therefore not added to the actual ArmsCommander Menu), type the following commands:
 
-**I will return to coding and adding more features to AC, AFTER July 7th**. Until that date, I do not have any time to invest. However, you may find infrequent updates to my other project, meant for my fellow tax class students: https://github.com/tanc7/ACC_410_Tax_Calculator_Project
+	"cd /root/ArmsCommander/recon/"
+	"python TEST_db_nmap_with_scripts.py"
 
-At least, I have 2 B's on my first two Exams! Which is very abnormal for a student in that class. Even better, I went partying for three days at Electric Daisy Carnival, and I still managed to get 3% higher WITHOUT using the tax calculator software that I made. And the people around me are getting D and F averages lol!
+A second console window will pop up, connecting you to the Tor network. Go ahead and minimize that.
 
-Anywho, until I finish this class, and it is imperative that I do so (it's my "last chance to pass out of 3 withdrawals/drops/fails"), I will not be able to reliably provide support for Arms-Commander. Meanwhile, I will have to pass one more class, Accounting 402, Financial Reporting II in the Fall and complete my terms of probation. 
+	1. Now Select "3. run a NMap script INDIVIDUALLY"
+	
+	2. Go through the massive options, all 568 types of NMap scans spanning across several categories. Type the number to continue
+	
+	3. Select either/or:
+	    #1. Metasploit + Tor Socks proxy
+	    #2. Regular NMap + Tor Socks proxy
+	    
+	4. Enter a IP address, IP range, hostname, website URL and press [Enter]
+
+Now go make a sandwich, it's gonna take a while (hours). Certain NMap scripts will take longer than others. 
 
 # Update: Counter-Forensics Suite, Top Metasploit Plugins, TSOCKS. and more!
 
