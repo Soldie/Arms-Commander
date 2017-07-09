@@ -3,6 +3,7 @@
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
 # New Development: The Automatic NMap Scriptor
+https://github.com/tanc7/Arms-Commander/blob/master/recon/TEST_db_nmap_with_scripts.py
 
 Name tentative to change. Because it really sounds stupid as it is. **However, I managed to incorporate all 568 Unique NMap scripts into a easy-to-use and selectable, point-n-shoot, NMap scanner.** Do not worry, I didn't really type all that 1,800+ lines of code. I wrote another lame program, called list_writer.py that automatically generates the if,elif,else statements, and the user UI menu for me in separate text files.
 
