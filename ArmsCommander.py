@@ -33,6 +33,12 @@ print colored("""
                     Reveal the sign
 
 """,'red')
+
+def dorah_explorah():
+    os.chdir("/root/ArmsCommander/recon")
+    os.system('cat /root/ArmsCommander/banners/dorah_explorah.txt')
+    cmd_String = "python /root/ArmsCommander/recon/dorah_explorah.py"
+    os.system(cmd_String)
 def search_logs(search_term, logfile_directory):
     cmd_String = 'find %s -iname "*%s*"' % (logfile_directory, search_term)
     os.system(cmd_String)
@@ -133,7 +139,8 @@ def one_recon_and_vuln_scan():
         '#5. Run SQLMap (Automatically set to route traffic through Tor)',
         '#6. OWASP Zaproxy (Alternative vulnerability scanner, much faster than SQLMap)',
         '#7. BurpSuite',
-        '#8. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap'
+        '#8. OUTPUT/BACKUP ALL DATA collected from Multi-Tool, CornHarvester, and NMap',
+        '#9. Dorah, the Explorah: I wanna Explorah your booty! A NMap EZ-Mode Script Menu, 568 Scripts'
         ]
     print ("\n\t".join(opt_List))
 
@@ -172,6 +179,11 @@ def one_recon_and_vuln_scan():
     elif opt_Choice == "8":
         os.system('clear')
         output_data()
+
+    elif opt_Choice == "9":
+        os.system('clear')
+        dorah_explorah()
+        one_recon_and_vuln_scan()
 
     else:
         print colored('You have entered a invalid option','red')

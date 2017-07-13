@@ -6,8 +6,8 @@ from termcolor import colored
 import StringIO
 
 
-official_repo_dir = '/root/Documents/GitHub/AC-Test-Repo'
-official_repo_url = 'https://github.com/tanc7/AC-Test-Repo'
+official_repo_dir = '/root/Documents/GitHub/Arms-Commander'
+official_repo_url = 'https://github.com/tanc7/Arms-Commander/'
 official_repo_branch = 'master'
 
 def git_push(official_repo_branch):
