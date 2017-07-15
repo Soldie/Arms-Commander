@@ -12,7 +12,7 @@ official_repo_branch = 'master'
 
 def git_push(official_repo_branch):
     print colored('[*] Now pushing this repo as the new git update','yellow',attrs=['bold'])
-    cmd_String = 'git push origin %s' % official_repo_branch
+    cmd_String = 'git push origin %s --force' % official_repo_branch
     os.system(cmd_String)
 def git_remote_verify():
     text = colored('[*] Remotely verifying git repo','yellow',attrs=['bold'])

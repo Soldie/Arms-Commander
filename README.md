@@ -2,6 +2,23 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
+#Dorah the Explorah Update.
+
+**Imma explorah your booty!**
+
+Thanks to the positive reception from the Las Vegas Python coding Meetup, I have released the official version of the nmap scriptor, as Dorah the Explorah for Arms Commander. 
+
+You can find it under the recon menu. 
+
+** features**
+1. All 568 nmap scripts are available as both selectable scripts and help menus with only three button presses. 
+
+2. Category scanning is available, like all vulnerability scanning, Or try all exploits
+
+3. Simple automatic integration with Metasploit Framework's db_nmap via resource scripts, either option will save your scans. Either in the HOSTS database or as three different file formats in your log directory.
+
+4. Automatic anonymization via tor and tsocks
+
 # New Development: The Automatic NMap Scriptor
 https://github.com/tanc7/Arms-Commander/blob/master/recon/TEST_db_nmap_with_scripts.py
 
