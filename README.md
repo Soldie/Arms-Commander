@@ -6,12 +6,14 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 
 **Imma explorah your booty!**
 
-Thanks to the positive reception from the Las Vegas Python coding Meetup, I have released the official version of the nmap scriptor, as Dorah the Explorah for Arms Commander. 
+Thanks to the positive reception from the Las Vegas Python coding Meetup, I have released the official version of the nmap scriptor, as Dorah the Explorah for Arms Commander.
 
-You can find it under the recon menu. 
+You can find it under the recon menu.
 
-** features**
-1. All 568 nmap scripts are available as both selectable scripts and help menus with only three button presses. 
+![](http://vignette3.wikia.nocookie.net/doratheexplorer/images/2/2f/Dora-the-explorer.png/revision/latest?cb=20130917150432)
+
+**Features**
+1. All 568 nmap scripts are available as both selectable scripts and help menus with only three button presses.
 
 2. Category scanning is available, like all vulnerability scanning, Or try all exploits
 
@@ -32,16 +34,16 @@ To use this (since as of right now, it is still not ready for release, and there
 A second console window will pop up, connecting you to the Tor network. Go ahead and minimize that.
 
 	1. Now Select "3. run a NMap script INDIVIDUALLY"
-	
+
 	2. Go through the massive options, all 568 types of NMap scans spanning across several categories. Type the number to continue
-	
+
 	3. Select either/or:
 	    #1. Metasploit + Tor Socks proxy
 	    #2. Regular NMap + Tor Socks proxy
-	    
+
 	4. Enter a IP address, IP range, hostname, website URL and press [Enter]
 
-Now go make a sandwich, it's gonna take a while (hours). Certain NMap scripts will take longer than others. 
+Now go make a sandwich, it's gonna take a while (hours). Certain NMap scripts will take longer than others.
 
 # Update: Counter-Forensics Suite, Top Metasploit Plugins, TSOCKS. and more!
 
@@ -52,7 +54,7 @@ For the most part this update is another back-end upgrade. However, visually for
 	3. A bug has been fixed where hashcat utilities failed to download and install. It is now automatically performed through the setup.py file, simply type "python setup.py"
 	4. The Metasploit Plugins suite from DarkOperator on GitHub is now automatically installed and dropped into your metasploit installation, to use, type 'load pentest' in msfconsole and type 'help' to see a list of commands on the top.
 	5. Mass-mailer attacks are recognized as a crucial method in getting reverse shells to open, this current AC installation includes a Python HTML mass-mailer installation (go to the menu and type INSTALL)
-	6. There are multiple un-implemented modules to Cylon-Raider & Raider-Lite, as a result of the failed Missile-Lock Project. You can fiddle with them as you wish. 
+	6. There are multiple un-implemented modules to Cylon-Raider & Raider-Lite, as a result of the failed Missile-Lock Project. You can fiddle with them as you wish.
 
 
 As usual, the dev for ArmsCommander rigorously tests his modules before ever releasing it. However, some bugs make it through and he will jump on it immediately if he sees one.
@@ -108,5 +110,3 @@ You are in very dark waters, be warned.
     cd /root/ArmsCommander
     chmod 777 uninstall.sh
     ./uninstall.sh
-
-
