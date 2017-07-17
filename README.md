@@ -2,9 +2,9 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
-#Dorah the Explorah Update.
+# Dorah the Explorah Update.
 
-**Imma explorah your booty!**
+# Imma explorah your booty!**
 
 Thanks to the positive reception from the Las Vegas Python coding Meetup, I have released the official version of the nmap scriptor, as Dorah the Explorah for Arms Commander.
 
