@@ -6,13 +6,13 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 
 # First Impressions on my first ever DEFCON and my Accidental Discovery of a "Counter-Attack System"
 
-While I didnt present because it was my first DEFCON conference, my new friends seemed to be impressed by what I already released, in particular, Cylon Raider, and **my accidental discovery during the con, a bug in Metasploit that allows you to auto-retaliate against port scanners. Its hard to explain how it works, but I will explain in further detail when I roll it out.** For now, enjoy this video, of the unintended perk in action: 
+While I didnt present because it was my first DEFCON conference, my new friends seemed to be impressed by what I already released, in particular, Cylon Raider, and **my accidental discovery during the con, a bug in Metasploit that allows you to auto-retaliate against port scanners. **Its hard to explain how it works, but I will explain in further detail when I roll it out. For now, **enjoy this video, of the unintended perk in action**: https://drive.google.com/file/d/0B5Beow8WOgBFOGF2cVdhMmJOdk0/view?usp=sharing
 
 You see, this being my first ever DEFCON and face-to-face introduction to "hacker culture", I confused the atmosphere of the Packet Sniffing Challenge as "the Wargames" (and there ARE "Wargames", but it's known as "CTF", and its more of a King-of-the-Hill Matchup between hackers than a "actual flag"). 
 
-Apparently I was not alone (about one out of three that I asked sitting beside me thought they were "supposed to hack someone"). So, I started "prepping", stockpiling "for-sure exploits" with fast, easy-to-use, pre-generated resource scripts as well as methods I cooked up to immediately "restealth" on the same network. Now, the original intent was to develop a script that warned me about NMap scans. But after a [Alt][Tab] or two, I noticed that I accidentally opened up 30 shells on myself in rapid succession. 
+Apparently I was not alone (about one out of three that I asked sitting beside me thought they were "supposed to hack someone"). So, I started "prepping", stockpiling "for-sure exploits" with fast, easy-to-use, pre-generated resource scripts as well as methods I cooked up to immediately "restealth" on the same network. Now, the original intent was to develop a script that warned me about NMap scans. But after a [Alt]+[Tab] or two, I noticed that I accidentally opened up 30 shells on myself in rapid succession. 
 
-A bit of investigation showed that Metasploit "Evil File Servers", have trouble telling the difference between a SYN-based NMap Scan (either nmap -sS <target> or a full comprehensive scan), from a legitimate HTTP request. Hence, the servers will launch Meterpreter shells at ANYONE that fits the "TCP Packet Category". 
+A bit of investigation showed that **Metasploit "Evil File Servers", have trouble telling the difference between a SYN-based NMap Scan** (either nmap -sS <target> or a full comprehensive scan), **from a legitimate HTTP request**. Hence, the servers will launch Meterpreter shells at ANYONE that fits the "TCP Packet Category". 
 
 And for Stuart, I will name the countering exploit in honor of you, from what you taught me and what you suggested would be a good name for it, Jeet Kun Do. I am keeping it safe and leave it as a abbreviation, as some martial arts schools may trademark their names and I do not want to get sued over free software.
 
@@ -22,11 +22,11 @@ And for Stuart, I will name the countering exploit in honor of you, from what yo
 
 **Currently I am conducting more tests but you can replicate my discovery by doing these steps**
 
-	1. Download and run the Proof of Concept code in Python: https://raw.githubusercontent.com/tanc7/Arms-Commander/master/JKD_poc.py
-	
-	2. Run a nmap scan against 127.0.0.1 after all three autopwns have loaded, totaling 50 jobs
-	
-	3. In about five minutes, once the comprehensive scan begins enumerating services, the metasploit servers "overreact" and attempts to compromise the "attacking machine" by launching meterpreter shells. On the test box, it totaled about 28 to 30 meterpreter attempts. None Landed because my machine is patched. But for a Windows user, this could be a ton of malware alert popups.
+1. **Download and run the Proof of Concept code in Python**: https://raw.githubusercontent.com/tanc7/Arms-Commander/master/JKD_poc.py
+
+2. Run a nmap scan against 127.0.0.1 after all three autopwns have loaded, totaling 50 jobs
+
+3. In about five minutes, once the comprehensive scan begins enumerating services, the metasploit servers "overreact" and attempts to compromise the "attacking machine" by launching meterpreter shells. On the test box, it totaled about 28 to 30 meterpreter attempts. None Landed because my machine is patched. But for a Windows user, this could be a ton of malware alert popups.
 	
 # Other updates coming your way...
 
