@@ -24,7 +24,7 @@ def main():
     if opt_Choice == "0":
         os.system('python /root/ArmsCommander/ArmsCommander.py')
     elif opt_Choice == "1":
-        os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Cylon_Raider_Main.py')
+        os.system('python /root/Cylon-Raider-Lite/Cylon_Raider_Main.py')
     elif opt_Choice == "2":
         os.system('python /root/ArmsCommander/passwordattacks/hashcat_suite.py')
     else:

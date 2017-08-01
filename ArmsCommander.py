@@ -704,7 +704,7 @@ def four_mobile_dev_hacking():
     return
 
 def cylon_raider():
-    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/Cylon_Raider_Main.py')
+    os.system('python /root/Cylon-Raider-Lite/Cylon_Raider_Main.py')
     main()
     return
 
@@ -746,7 +746,7 @@ def ARP_injection_test():
     return
 
 def hidden_network_decloaker():
-    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/sniffHidden.py')
+    os.system('python /root/Cylon-Raider-Lite/sniffHidden.py')
     return
 
 def five_wireless_attacks(): # In the age of Cyberterrorism. Only the most cunning will survive.
@@ -792,7 +792,7 @@ def five_wireless_attacks(): # In the age of Cyberterrorism. Only the most cunni
         five_wireless_attacks()
 
 def aircrack():
-    os.system('python /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/CrackHead_Aircrack.py')
+    os.system('python /root/Cylon-Raider-Lite/CrackHead_Aircrack.py')
     main()
     return
 
