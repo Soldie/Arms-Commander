@@ -5,7 +5,9 @@ import socket
 import operator
 from termcolor import colored
 import sys
+import toolkits
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=64, cols=200)) # sets window to full screen
+
 
 os.chdir('/root/ArmsCommander')
 
@@ -290,6 +292,11 @@ def fail2ban():
     main()
     return
 
+def jkd_poc():
+    # remember to import toolkits
+    print toolkits.yellow("DO NOT CLOSE THIS WINDOW! \nLet this process run when their scans hit you")
+    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/networkdefenses/JKD_poc.py; exec bash\"'")
+    return
 def two_net_defense_traffic_monitor():
     Menu_Header = colored('NETWORK DEFENSE', 'cyan', attrs=['bold'])
     print Menu_Header
@@ -304,9 +311,12 @@ def two_net_defense_traffic_monitor():
         '#7. Fuser, identify and kill processes within a port range',
         '#8. IDS Flooder, overwhelm a Intrusion Detection System with false-flag DDoS attacks to draw attention away from your actual activity',
         '#9. FAIL-2-BAN, automatic banning daemon for SSH. Absolutely essential for remote AWS servers that are subjected to constant SSH brute-force attacks',
-        '#10. VIEW AUTH LOG, view your authentication log and make a backup of it.'
+        '#10. VIEW AUTH LOG, view your authentication log and make a backup of it.',
+        '#11. ***NEW***, JKD: Bluce-Ree Edition, auto-counterattack aggressive NMAP scans using a Metasploit Server Design Flaw'
     ]
     print ("\n\t".join(opt_List))
+
+    print toolkits.green('\t' + opt_List[11])
     opt_Choice = str(raw_input("Enter a OPTION: "))
 
     if opt_Choice == "0":
@@ -361,6 +371,10 @@ def two_net_defense_traffic_monitor():
         os.system('cp -r /var/log/auth.log /root/Documents')
         os.system('cat /var/log/auth.log')
         main()
+    elif opt_Choice == "11":
+        jkd_poc()
+        two_net_defense_traffic_monitor()
+        return
     else:
         print colored('You have entered a invalid option','red')
         two_net_defense_traffic_monitor()
@@ -603,6 +617,10 @@ def remote_exploit_toolkits():
         # placeholder for current menu
     return
 
+def foreplay():
+    os.system("gnome-terminal -e 'bash -c \"python /root/ArmsCommander/remoteexploits/project_foreplay/main.py; exec bash\"'")
+
+    return
 def remote_exploits_other():
     Menu_Header = colored('REMOTE EXPLOITS-OTHER', 'cyan', attrs=['bold'])
     print Menu_Header
@@ -642,10 +660,13 @@ def three_remote_exploits_redesigned(): # Tentative project to reduce bloat
         '\n\t#0. Return to Main Menu',
         '#1. PAYLOAD GENERATORS & LISTENERS, Metasploit Msfvenom, and open source alternatives RATs like Pupy and Stitch',
         '#2. TOOLKITS, Social Engineers Toolkit',
-        '#3. OTHER, Does not fit in any other category, USB Rubber Ducky Encoders, stuff like Virus-Total Safe-Checker'
+        '#3. OTHER, Does not fit in any other category, USB Rubber Ducky Encoders, stuff like Virus-Total Safe-Checker',
+        '#4. ***NEW***: FOREPLAY PROJECT, Easy-Mode Hacker Collaboration, gang up on single targets, easily generate Armitage Teamservers!'
     ]
 
     print ("\n\t".join(opt_List))
+
+    print toolkits.green('\t' + opt_List[4])
     opt_Choice = str(raw_input("Enter a OPTION: "))
 
     if opt_Choice == "0":
@@ -662,6 +683,10 @@ def three_remote_exploits_redesigned(): # Tentative project to reduce bloat
     elif opt_Choice == "3":
         os.system('clear')
         remote_exploits_other()
+        three_remote_exploits_redesigned()
+    elif opt_Choice == "4":
+        os.system('clear')
+        foreplay()
         three_remote_exploits_redesigned()
     else:
         print colored('You have entered a invalid option','red')
@@ -749,6 +774,10 @@ def hidden_network_decloaker():
     os.system('python /root/Cylon-Raider-Lite/sniffHidden.py')
     return
 
+def mgt_ent_attacker():
+    os.system('python /root/ArmsCommander/wirelessattacks/mgt_enterprise_cracker.py')
+    return
+
 def five_wireless_attacks(): # In the age of Cyberterrorism. Only the most cunning will survive.
     Menu_Header = colored('WIRELESS ATTACKS', 'cyan', attrs=['bold'])
     print Menu_Header
@@ -758,9 +787,12 @@ def five_wireless_attacks(): # In the age of Cyberterrorism. Only the most cunni
         '#2. Cylon Heavy-Raider, automate the WPS PIN brute-forcing vulnerability with Reaver',
         '#3. Router-Sploit, Post-Exploitation hacking of APs that you cracked the passwords of',
         '#4. ARP Injection Test, seeing if your external wireless card is working properly',
-        '#5. Hidden Network Decloaker, uncover hidden wireless APs'
+        '#5. Hidden Network Decloaker, uncover hidden wireless APs',
+        '#6. ***NEW*** DRADIUS WPA2-MGT/ENT (name tentative to change), impersonate Enterprise/Management/PEAP encrypted WPA2 Access Points, steal credentials!'
     ]
     print ("\n\t".join(opt_List))
+
+    print toolkits.green('\t' + opt_List[6])
 
     opt_Choice = str(raw_input("Enter a OPTION: "))
 
@@ -787,6 +819,10 @@ def five_wireless_attacks(): # In the age of Cyberterrorism. Only the most cunni
         os.system('clear')
         hidden_network_decloaker()
         # SQLMap()
+    elif opt_Choice == "6":
+        os.system('clear')
+        mgt_ent_attacker()
+        five_wireless_attacks()
     else:
         print colored('You have entered a invalid option','red')
         five_wireless_attacks()

@@ -1,0 +1,2 @@
+db_export -f xml hosts_file_20170722-190621.xml
+exit

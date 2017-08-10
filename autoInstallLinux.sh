@@ -16,14 +16,15 @@ mkdir /root/ArmsCommander/logs/CornHarvester
 mkdir /root/ArmsCommander/logs/createafolder
 mkdir /root/ArmsCommander/logs/CreditCardInfo
 mkdir /root/ArmsCommander/logs/Cylon-Raider
+mkdir /root/ArmsCommander/logs/dmitry
 mkdir /root/ArmsCommander/logs/HashCat
+mkdir /root/ArmsCommander/logs/MGT_ENT_cracker
 mkdir /root/ArmsCommander/logs/multi_tool_recon
 mkdir /root/ArmsCommander/logs/ngrep
 mkdir /root/ArmsCommander/logs/nmap
 mkdir /root/ArmsCommander/logs/OWASP
 mkdir /root/ArmsCommander/logs/Pyrit
 mkdir /root/ArmsCommander/logs/SQLMap
-mkdir /root/ArmsCommander/logs/dmitry
 mkdir /root/ArmsCommander/wirelessattacks/Cylon-Raider-Lite/logs/
 echo Copying main installation into /root/ArmsCommander
 cp -r ./ /root/ArmsCommander #copies contents to the new directory
@@ -36,12 +37,9 @@ echo Installing python modules via pip
 pip install -r requirements.txt # installs all required python modules
 echo Updating your APT Repos
 sudo apt-get update
-echo Installing required toolkit, fail2ban (autobanner against SSH brute-forcers)
+echo Installing required toolkit, fail2ban autobanner against SSH brute-forcers
 sudo apt-get fail2ban
 echo Main Installation Completed
 echo Open a terminal and type "ArmsCommander.py" to run AC, or click the Desktop Launcher
-echo To use the Pupy alternative RAT interface Python-based, Similar to Meterpreter
-echo You must read the installation instructions in the README.md
-echo or
-echo Take a look at this How-To-Video
-echo https://github.com/tanc7/Arms-Commander/blob/master/How-To-Videos/How-To-Install-Pupy.webm
+
+cp -r toolkits.py /usr/local/bin

@@ -27,7 +27,7 @@ def installer():
         os.chdir(AC_Dir) # change to the new directory in /tmp/Arms-Commander
         os.system('git submodule init')
         os.system('git submodule update')
-
+        os.system('chmod 777 ./*') # modifies files permissions for critical AC files including main executable
         print 'Running autoinstaller'
         # Run the autoInstaller Script
         os.system('chmod 777 autoInstallLinux.sh')
@@ -58,6 +58,16 @@ def installer():
         os.system('cp -r ./*.rb /root/.msf4/plugins')
         print 'Installation complete'
         print 'To load Metasploit-Plugins, type "load pentest" in Metasploit Console'
+
+        # Install Cylon-Raider-Lite (Separate Repo now)
+        os.chdir('/tmp')
+        os.system('git clone https://github.com/tanc7/Cylon-Raider')
+        os.chdir('/tmp/Cylon-Raider')
+        os.system('chmod 777 ./*')
+        os.system('mkdir /root/Cylon-Raider-Lite')
+        os.system('cp -r ./* /root/Cylon-Raider-Lite')
+        os.system('cp -r Cylon_Raider_Main.py /usr/local/bin')
+
         # Inform the user it has been installed
 
         print 'Starting ArmsCommander'

