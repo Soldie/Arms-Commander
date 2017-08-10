@@ -10,7 +10,9 @@ Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", wr
 
 *"EZ-mode, Multiplayer Armitage"*
 
-prepare for the hot, steamy interaction of hacker cooperation in post exploitation. Hot.
+**Tutorial**: https://raw.githubusercontent.com/tanc7/Arms-Commander/master/How-To-Videos/FOREPLAY_tutorial.webm
+
+Prepare for the hot, steamy interaction of hacker cooperation in post exploitation. Hot.
 
 Foreplay dramatically simplifies the launching of a Armitage Teamserver, designed to overcome common annoyances with initializing the Metasploit database (for example), conflicting ports and other nuisances  that prevent a successful launch of a multi-user Metasploit session.
 
@@ -22,6 +24,8 @@ Now you can all circle-jerk together in pwning a box! All of the hassles have be
 
 *"autoretaliation glitch"*
 
+**Tutorial not necessary**: All you have to do is run a comprehensive NMap scan on yourself.
+
 Debuted as a proof of concept right after DEFCON, this accidental discovery gives you auto-retaliation capabilities for particularly aggressive nmap scans from the OpFor.
 
 Push of a button, and the unintended design flaw by Rapid7 will now punish dickheads that use far too many SYN packets and HTTP requests against your IP.
@@ -31,6 +35,11 @@ A total of 30 meterpreter shells were autolaunched in the test lab!
 # D-RADIUS,
 
 *"Enterprise wifi attacker"*
+
+**Tutorial pending**: Due to GitHub file upload restrictions (no more than 25MB and I want to save space for git cloning), I plan to break down the concepts into...
+	1. Configuring the fake-RADIUS attack
+	2. Starting up hostapd-wpe and freeradius-wpe, and capturing a handshake
+	3. Cracking the challenge-response strings with asleap
 
 Originally I planned to scrap this project upon learning of a similar but more fleshed out app called EAPHammer at DEFCON 2017.
 
