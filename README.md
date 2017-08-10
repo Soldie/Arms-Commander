@@ -2,17 +2,97 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
+# The FOREPLAY Update: Three Brand New Spanking Toys!
+
+**Videos will be coming soon on how to use these new scripts and toolkits. Check back soon**
+
+# Foreplay
+
+*"EZ-mode, Multiplayer Armitage"*
+
+prepare for the hot, steamy interaction of hacker cooperation in post exploitation. Hot.
+
+Foreplay dramatically simplifies the launching of a Armitage Teamserver, designed to overcome common annoyances with initializing the Metasploit database (for example), conflicting ports and other nuisances  that prevent a successful launch of a multi-user Metasploit session.
+
+It saves your preferred settings automatically so you can relaunch the teamserver by typing four capital letters, "LOAD".
+
+Now you can all circle-jerk together in pwning a box! All of the hassles have been taken care of. Gang up on a poor bastard via Armitage!
+
+# JKD,
+
+*"autoretaliation glitch"*
+
+Debuted as a proof of concept right after DEFCON, this accidental discovery gives you auto-retaliation capabilities for particularly aggressive nmap scans from the OpFor.
+
+Push of a button, and the unintended design flaw by Rapid7 will now punish dickheads that use far too many SYN packets and HTTP requests against your IP.
+
+A total of 30 meterpreter shells were autolaunched in the test lab!
+
+# D-RADIUS,
+
+*"Enterprise wifi attacker"*
+
+Originally I planned to scrap this project upon learning of a similar but more fleshed out app called EAPHammer at DEFCON 2017.
+
+However I failed to find the legit copy of EH on GitHub, and so, I decided to incorporate this script into ArmsCommander.
+
+Dradius automates the fake access point attack and running a bogus RADIUS server, intended to trick users of WPA2-ENT and MGT networks into handing you their credentials.
+
+Dradius is a interactive option built on top of hostapd-wpe and freeradius-wpe, simplified and tested to work. No more scouring Google for outdated How-Tos on how to attack PEAP wifi networks!
+
+Comes with its own asleap menu to quickly crack those challenge response strings!
+
+# Further notice of developments of AC,
+
+*"and what could happen as the result of the Marcus Hutchins Case (WannaCry-Killer Hero, arrested at DEFCON for accusations of crimeware proliferation and sales by the FBI, verdict pending)"*
+
+A lot of you may wonder why I keep packaging these scripts into ArmsCommander instead of distributing it as standalone modules. In truth, nearly all the tools can be run standalone with a bit of tweaking of one or two lines of code per module...
+
+The answer is... **open source licensure and my bid to avoid criminal liability for POTENTIAL MISUSE** by downloaders of ArmsCommander. By having a single license, and a loophole created by a clause in the license, I automatically avoid criminal liability for any future incidents involving strangers and the misuse of AC.
+
+You see, you keep it open source with a thoroughly encompassing but vague legal disclaimer, then you shouldnt have to be paying for the actions of others (black hats, wolves, etc.) that had the ability to add new features in the code and possess the capacity to use it "for evil". It was a tactic cited by the CIA before the WikiLeaks releases. It got both the CIA and NSA out of hot water, and it should work on Open-Source Projects too.
+
+**As stated in my general license, any component, script, program, or module "touched" by ArmsCommander and its derivatives, waives me of responsibility and liability from the future actions of "malevolent jerks".**
+
+However,
+
+The recent federal case proceedings of a Marcus Hutchins has deeply worried me, and I am considering scaling back development of AC and related works, if not just simplying halting my involvement in the project altogether.
+
+**The forks by GH followers will not be affected, and this repo will not be taken down**, regardless. I plan to leave it here as a persistent reminder of what happens when corporate greed and negligence gets in the way of you receiving your vital security patches.
+
+However, I am simply considering a precaution. I am, shamelessly, pondering about my self preservation since I do have a considerable criminal record (narcotics, violent crimes) and you should too (on covering your ass).
+
+# Real life.... less time for updates :(
+
+I am, right now, a private contractor for front end web development with a special cybersecurity secondary role. Real life responsibilities, and the demands of my clients as well as my criminal probation is placing a serious strain on my real life.
+
+**I have jobs lined up for a few special people, unrelated to AC, but it requires very specific disciplines**. Its what my future employers demand and require. In particular, I need a "Satellite-Guy", with a solid understanding and work experience dealing with satellite TV channels, as well as Incident Response experience to secure a datacenter related to that client.
+
+Contact me if you are interested.
+
+# Finally, Under-the-Hood Compatibility Updates
+
+The required pip modules wordlist is significantly chunkier than before but the outcome is the same. Installation is only 10 seconds longer.
+
+The reason for this is the pip freeze command, which I used to pipe a snapshot of every working required Python module that ArmsCommander needs. Something I learned in coding bootcamps just a few days ago. Thanks Adam.
+
+In this year of 2017, with record numbers of Linux kernel regressions and incompatibilities between programming language releases, I felt this is necessary. I don't want anything to break because a bugged package is released, forcing me to go back and write a hack for it.
+
+As an end-user, you might breath a sigh of relief if you ended up with multiple Python versions installed.
+
+The exact version of a required module will now be auto-installed through the setup.py script and the autoInstallLinux.sh script
+
 # The Upcoming Post-DEFCON Update: J.K.D. The Bluce-Ree Edition
 
 # First Impressions on my first ever DEFCON and my Accidental Discovery of a "Counter-Attack System"
 
 While I didnt present because it was my first DEFCON conference, my new friends seemed to be impressed by what I already released, in particular, Cylon Raider, and **my accidental discovery during the con, a bug in Metasploit that allows you to auto-retaliate against port scanners.** Its hard to explain how it works, but I will explain in further detail when I roll it out. For now, **enjoy this video, of the unintended perk in action**: https://drive.google.com/file/d/0B5Beow8WOgBFOGF2cVdhMmJOdk0/view?usp=sharing
 
-You see, this being my first ever DEFCON and face-to-face introduction to "hacker culture", I confused the atmosphere of the Packet Sniffing Challenge as "the Wargames" (and there ARE "Wargames", but it's known as "CTF", and its more of a King-of-the-Hill Matchup between hackers than a "actual flag"). 
+You see, this being my first ever DEFCON and face-to-face introduction to "hacker culture", I confused the atmosphere of the Packet Sniffing Challenge as "the Wargames" (and there ARE "Wargames", but it's known as "CTF", and its more of a King-of-the-Hill Matchup between hackers than a "actual flag").
 
-Apparently I was not alone (about one out of three that I asked sitting beside me thought they were "supposed to hack someone"). So, I started "prepping", stockpiling "for-sure exploits" with fast, easy-to-use, pre-generated resource scripts as well as methods I cooked up to immediately "restealth" on the same network. Now, the original intent was to develop a script that warned me about NMap scans. But after a [Alt]+[Tab] or two, I noticed that I accidentally opened up 30 shells on myself in rapid succession. 
+Apparently I was not alone (about one out of three that I asked sitting beside me thought they were "supposed to hack someone"). So, I started "prepping", stockpiling "for-sure exploits" with fast, easy-to-use, pre-generated resource scripts as well as methods I cooked up to immediately "restealth" on the same network. Now, the original intent was to develop a script that warned me about NMap scans. But after a [Alt]+[Tab] or two, I noticed that I accidentally opened up 30 shells on myself in rapid succession.
 
-A bit of investigation showed that **Metasploit "Evil File Servers", have trouble telling the difference between a SYN-based NMap Scan** (either nmap -sS <target> or a full comprehensive scan), **from a legitimate HTTP request**. Hence, the servers will launch Meterpreter shells at ANYONE that fits the "TCP Packet Category". 
+A bit of investigation showed that **Metasploit "Evil File Servers", have trouble telling the difference between a SYN-based NMap Scan** (either nmap -sS <target> or a full comprehensive scan), **from a legitimate HTTP request**. Hence, the servers will launch Meterpreter shells at ANYONE that fits the "TCP Packet Category".
 
 And for Stuart, I will name the countering exploit in honor of you, from what you taught me and what you suggested would be a good name for it, Jeet Kun Do. I am keeping it safe and leave it as a abbreviation, as some martial arts schools may trademark their names and I do not want to get sued over free software.
 
@@ -27,14 +107,14 @@ And for Stuart, I will name the countering exploit in honor of you, from what yo
 2. Run a nmap scan against 127.0.0.1 after all three autopwns have loaded, totaling 50 jobs
 
 3. In about five minutes, once the comprehensive scan begins enumerating services, the metasploit servers "overreact" and attempts to compromise the "attacking machine" by launching meterpreter shells. On the test box, it totaled about 28 to 30 meterpreter attempts. None Landed because my machine is patched. But for a Windows user, this could be a ton of malware alert popups.
-	
+
 # Other updates coming your way...
 
 During DEFCON there was a Packet Sniffing Challenge which was basically a scavenger hunt (after the first exercise, which was meant to show you the ropes on using the Aircrack-ng Suite Manually). In less than 12 hours, I managed to enumerate the hidden Access Point amidst a flood of roughly a few hundred bogus wireless routers (and dangerous MitM Evil APs) in the area. **The secret was to use airodump-ng's "--wps" function. Out of the hundreds of access points, only FIVE had the right WPS-protected services**, and only 12 or so in total had WPS-enabled throughout the four days of DEFCON.
 
 That means, in situations where Wi-Fi signals are insanely cluttered, you need to use as many filtering options as possible to "block out the noise". These options are already available within airodump-ng by typing the "airodump-ng --help" command, but I plan to make it a selectable menu.
 
-In a longer project, I will be bringing forth a more detailed version of the "Cylon-Raider Recon Option", now that I know its importance. I will also be applying new "under-the-hood code" that will help speed up my progress tremendously and save more lines from clutter. 
+In a longer project, I will be bringing forth a more detailed version of the "Cylon-Raider Recon Option", now that I know its importance. I will also be applying new "under-the-hood code" that will help speed up my progress tremendously and save more lines from clutter.
 
 Stay tuned, my loves
 
