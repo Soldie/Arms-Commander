@@ -237,3 +237,4 @@ You are in very dark waters, be warned.
     ./uninstall.sh
 test email fix
 test
+test
