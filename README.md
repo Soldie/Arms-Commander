@@ -235,3 +235,4 @@ You are in very dark waters, be warned.
     cd /root/ArmsCommander
     chmod 777 uninstall.sh
     ./uninstall.sh
+test email fix
