@@ -236,3 +236,4 @@ You are in very dark waters, be warned.
     chmod 777 uninstall.sh
     ./uninstall.sh
 test email fix
+test
