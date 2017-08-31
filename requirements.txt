@@ -246,4 +246,3 @@ yara-python==3.5.0
 zenmap==7.40
 zim==0.65
 zope.interface==4.3.2
-termcolor
