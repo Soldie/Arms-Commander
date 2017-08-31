@@ -48,10 +48,10 @@ def installer():
         os.system('git clone https://github.com/qoda/python-mailer')
         print 'Now retrieving and installing the latest version of Hashcat Utilities'
         os.chdir('/tmp')
-        os.system('sudo wget https://github.com/hashcat/hashcat-utils/releases/download/v1.8/hashcat-utils-1.8.7z')
-        os.system('7z x ./hashcat*')
-        os.chdir('./hashcat-utils-1.8/bin')
-        os.system('cp -r ./cap2hccapx.bin /usr/local/bin')
+        #os.system('sudo wget https://github.com/hashcat/hashcat-utils/releases/download/v1.8/hashcat-utils-1.8.7z')
+        #os.system('7z x ./hashcat*')
+        #os.chdir('./hashcat-utils-1.8/bin')
+        #os.system('cp -r ./cap2hccapx.bin /usr/local/bin')
         print 'Now retrieving DarkOperator Metasploit-Plugins from GitHub'
         os.system('git clone https://github.com/darkoperator/Metasploit-Plugins')
         os.chdir('./Metasploit-Plugins')
