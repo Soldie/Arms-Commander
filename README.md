@@ -2,6 +2,24 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
+# Routersploit Automation Released. Separate Git Repo.
+
+https://github.com/tanc7/AutoExploiting-Pi
+
+Due to the positive social media feedback from my adventures testing the Raspberry Pi Wireless Attacker Project, I have created a new repo when I realized the size and scope of the project. For one, there are 25+ different kernel modifications that must be made on the Raspian installation. We eventually settled for Raspian after messing around with both a Kali SD card installation and a docker image and found the other alternatives to the stock OS to be far too buggy and deprecated to be workable.
+
+As of right now, **using the pexpect modules, you are able to automate the AutoPwn module in the Routersploit Framework**. The results of this is culminated in the new repo, AutoExploiting-Pi, which is meant to be the Open Source Alternative to my work-related project, Abominable Intelligence. 
+
+I was encouraged by my peers to actually try to mass produce and market such a device, **a Raspberry Pi powered Wireless Array that automatically attacks new networks and exploits cracked ones and can be expanded with custom modules to perform additional automated feats** such as directory traversal, automatic network detection and routing, automatically entering in target parameters such as gateways and ports, all **without human interaction**. 
+
+So... as of right now there is a planned two branches of the Raspberry Pi Project.
+
+**OPEN SOURCE: AutoExploit Pi**. Open Source Version that represents all of the research that I have done into getting this to work. Entirely free
+
+**CLOSED SOURCE (Copyrighted): Abominable Intelligence**. A long-term project that is going to split off from AutoExploit Pi. Abominable Intelligence is meant to be professionally designed, well documented, and stable and robust. It is meant to be sold with the Wireless Array commercially. Full retail price is to be no more than $1,000 USD.
+
+Will be planned for release either in late 2018 or early 2019 after extensive field testing and debugging.
+
 # December 13th, Upcoming Update After Some Additional Coding and Testing.
 # Improving and Honing your Hacking Abilities by Modifying the Routersploit Shell
 
