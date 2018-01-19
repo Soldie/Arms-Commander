@@ -10,6 +10,8 @@ Due to the positive social media feedback from my adventures testing the Raspber
 
 As of right now, **using the pexpect modules, you are able to automate the AutoPwn module in the Routersploit Framework**. The results of this is culminated in the new repo, AutoExploiting-Pi, which is meant to be the Open Source Alternative to my work-related project, Abominable Intelligence. 
 
+![](https://github.com/tanc7/Arms-Commander/raw/master/COMING_UP/Screenshot%20(12).png)
+
 I was encouraged by my peers to actually try to mass produce and market such a device, **a Raspberry Pi powered Wireless Array that automatically attacks new networks and exploits cracked ones and can be expanded with custom modules to perform additional automated feats** such as directory traversal, automatic network detection and routing, automatically entering in target parameters such as gateways and ports, all **without human interaction**. 
 
 So... as of right now there is a planned two branches of the Raspberry Pi Project.
