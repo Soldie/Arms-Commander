@@ -2,9 +2,15 @@
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
 
-# Routersploit Automation Released. Separate Git Repo.
+# Routersploit Automation Released. Separate Git Repo. February 12th, 2018.
 
-https://github.com/tanc7/AutoExploiting-Pi
+https://github.com/tanc7/pyvegas-abom-intel-proj
+
+Official overview will be revealed at PyVegas in my demonstration tomorrow.
+
+I'll see you there.
+
+# Old
 
 Due to the positive social media feedback from my adventures testing the Raspberry Pi Wireless Attacker Project, I have created a new repo when I realized the size and scope of the project. For one, there are 25+ different kernel modifications that must be made on the Raspian installation. We eventually settled for Raspian after messing around with both a Kali SD card installation and a docker image and found the other alternatives to the stock OS to be far too buggy and deprecated to be workable.
 
