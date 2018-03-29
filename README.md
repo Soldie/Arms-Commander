@@ -1,3 +1,21 @@
+
+
+# FBI Raid on LULLC HQ
+
+Due to a pending investigation from the FBI after a early morning raid on March 28th, for a hacking charge alleging "spearphishing" against the owner, Lister Unlimited has rescinded its project of Abominable Intelligence and all open source variants from being offered to Law Enforcement.
+
+A.I.'s development has been frozen due to the seizure of approximately $5,500 of equipment and crucial proprietary source code. One of the possessions seized is a experimental copy of what would become the proprietary version of A.I. We are now forced to redevelop this technology from backups stored in the cloud.
+
+Furthermore, LULLC is now in the middle of a shift from Amazon Web Services as its primary VPS provider to a new solution.
+
+More information may be found on www.listerunlimited.com
+
+Chang Tan
+Managing Member
+Lister Unlimited Cybersecurity Solutions, LLC
+changtan@listerunlimited.com
+(702) 781-1878
+
 # Arms-Commander-Stable
 
 Malware Suite/Menu designed for "Speedy and No-Mistakes Penetration Testing", written in Python 2.7.13 and tested on Kali Linux 4.6. Requires Python 2.7 + Pip + Termcolor Module. All code is entirely free to be used in your own projects.
